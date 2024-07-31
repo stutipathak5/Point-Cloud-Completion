@@ -54,10 +54,44 @@ if not os.path.exists('results/images/'+str(args.results_folder)):
 	os.makedirs('results/images/'+str(args.results_folder))
 
 
-
 np.random.seed(0)
 data = np.load(args.data_file)[4]
+sampled_indices = np.random.choice(data.shape[0], 1000, replace=False)
+data = data[sampled_indices]
 print(data.shape)
+
+
+
+
+# cylinder point cloud
+# inner_radius = 0.5
+# outer_radius = 1.0
+# height = 2.0
+# num_points = 500
+# center = np.array([0.0, 0.0, 0.0])
+# theta = np.random.uniform(0, 2 * np.pi, num_points)
+# z = np.random.uniform(-height / 2, height / 2, num_points)
+# r = np.sqrt(np.random.uniform(inner_radius**2, outer_radius**2, num_points))
+# x = r * np.cos(theta)
+# y = r * np.sin(theta)
+# points = np.column_stack((x, y, z))
+# points += center
+# print("Cylinder point cloud shape:", points.shape)
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# x = points[:, 0]
+# y = points[:, 1]
+# z = points[:, 2]
+# ax.scatter(x, y, z, c='b', marker='o')
+# ax.set_xlabel('X Label')
+# ax.set_ylabel('Y Label')
+# ax.set_zlabel('Z Label')
+# ax.set_title('Cylinder Point Cloud')
+# plt.show()
+# data =points
+
+
+
 
 # optimization to increase size of holes
 layer = AlphaLayer(maxdim=1)
@@ -65,8 +99,8 @@ x = torch.autograd.Variable(torch.tensor(data).type(torch.float), requires_grad=
 f1 = BarcodePolyFeature(0,2,0)  # dm, p ,q
 
 k=0
-optimizer = torch.optim.Adam([x], lr=1e-4)
-for i in range(1000):
+optimizer = torch.optim.Adam([x], lr=1)
+for i in range(100):
     optimizer.zero_grad()
     loss = f1(layer(x))
     save_topo(x, k, args.results_folder)
