@@ -88,7 +88,7 @@ print(data.shape)
 # ax.set_zlabel('Z Label')
 # ax.set_title('Cylinder Point Cloud')
 # plt.show()
-# data =points
+# data = points
 
 
 
