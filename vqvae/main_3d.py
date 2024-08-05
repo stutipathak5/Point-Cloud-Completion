@@ -34,8 +34,8 @@ results = {
     'perplexities': [],
 }
 
-r_loss = nn.BCELoss()
-log_interval = 10
+r_loss = nn.MSELoss()
+log_interval = 1
 def train():
     num_epochs = 100
     for i in range(num_epochs):
@@ -45,9 +45,7 @@ def train():
             optimizer.zero_grad()
 
             embedding_loss, x_hat, perplexity = model(x)
-            print(x.size(), x_hat.size())
-            # new
-            # recon_loss = r_loss(x, x_hat)
+            recon_loss = r_loss(x, x_hat)
             loss = recon_loss + embedding_loss
 
             loss.backward()
