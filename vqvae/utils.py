@@ -6,30 +6,79 @@ import time
 import os
 from datasets.block import BlockDataset, LatentBlockDataset
 import numpy as np
+import open3d as o3d
 
+
+
+
+
+
+
+def voxelize_point_cloud(point_cloud, voxel_size, grid_size):
+    pcd = o3d.geometry.PointCloud()
+    pcd.points = o3d.utility.Vector3dVector(point_cloud)
+    
+    voxel_grid = o3d.geometry.VoxelGrid.create_from_point_cloud(pcd, voxel_size)   
+    voxels = voxel_grid.get_voxels()
+    voxel_coordinates = np.array([voxel.grid_index for voxel in voxels])
+
+    # bounding_box = voxel_grid.get_axis_aligned_bounding_box()
+    # min_bound = bounding_box.min_bound
+    # max_bound = bounding_box.max_bound
+    # grid_dimensions = np.ceil((max_bound - min_bound) / voxel_size).astype(int)
+    # print("Voxel Grid Dimensions:", grid_dimensions)
+
+    voxel_grid_tensor = np.zeros(grid_size, dtype=np.float32)
+    for coord in voxel_coordinates:
+        if all(coord < np.array(grid_size)):
+            voxel_grid_tensor[tuple(coord)] = 1
+            
+    return voxel_grid_tensor
 
 
 class CatenaryDataset(Dataset):
-    def __init__(self, gt_path, partial_path, transform=None):
+    def __init__(self, gt_path, partial_path, voxel_size, grid_size, transform=None):
         self.gt_path = gt_path
         self.partial_path = partial_path
         self.gt_data = np.load(gt_path)
         self.partial_data = np.load(partial_path)
         self.transform = transform
+        self.voxel_size = voxel_size
+        self.grid_size = grid_size
 
     def __len__(self):
         return self.gt_data.shape[0]
 
+    # FIX:this will take only the last partial pc
     def __getitem__(self, idx):
         for i in range(self.partial_data.shape[1]):
             gt_pc = self.gt_data[idx, :, :]
             partial_pc = self.partial_data[idx, i, :, :]
+            gt_grid = voxelize_point_cloud(gt_pc, self.voxel_size, self.grid_size)
+            partial_grid = voxelize_point_cloud(partial_pc, self.voxel_size, self.grid_size)
 
         if self.transform:
             gt_pc = self.transform(gt_pc)
             partial_pc = self.transform(partial_pc)
 
-        return torch.from_numpy(gt_pc).float(), torch.from_numpy(partial_pc).float()
+        # return torch.from_numpy(gt_pc).float(), torch.from_numpy(partial_pc).float(),\
+        #         torch.from_numpy(gt_grid).float(), torch.from_numpy(partial_grid).float()
+        return torch.from_numpy(gt_grid).float().unsqueeze(0)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

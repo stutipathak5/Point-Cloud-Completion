@@ -42,7 +42,7 @@ class VectorQuantizer(nn.Module):
 
         """
         # reshape z -> (batch, height, width, channel) and flatten
-        z = z.permute(0, 2, 3, 1).contiguous()
+        z = z.permute(0, 2, 3, 4, 1).contiguous()
         z_flattened = z.view(-1, self.e_dim)
         # distances from z to embeddings e_j (z - e)^2 = z^2 + e^2 - 2 e * z
 
@@ -71,6 +71,6 @@ class VectorQuantizer(nn.Module):
         perplexity = torch.exp(-torch.sum(e_mean * torch.log(e_mean + 1e-10)))
 
         # reshape back to match original input shape
-        z_q = z_q.permute(0, 3, 1, 2).contiguous()
+        z_q = z_q.permute(0, 4, 1, 2, 3).contiguous()
 
         return loss, z_q, perplexity, min_encodings, min_encoding_indices
