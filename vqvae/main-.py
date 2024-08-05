@@ -46,6 +46,7 @@ def train():
 
             embedding_loss, x_hat, perplexity = model(x)
             print(x.size(), x_hat.size())
+            # new
             # recon_loss = r_loss(x, x_hat)
             loss = recon_loss + embedding_loss
 
