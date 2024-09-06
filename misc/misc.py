@@ -31,3 +31,18 @@ for coord in voxel_coordinates:
         voxel_grid_tensor[tuple(coord)] = 1
 
 print(np.count_nonzero(voxel_grid_tensor == 1))
+
+
+# Example numbers
+dividend = 152
+divisor = 150
+
+# Calculate the quotient
+quotient = dividend // divisor
+
+# Calculate the remainder
+remainder = dividend % divisor
+
+# Print the results
+print(f"The quotient of {dividend} divided by {divisor} is {quotient}")
+print(f"The remainder of {dividend} divided by {divisor} is {remainder}")

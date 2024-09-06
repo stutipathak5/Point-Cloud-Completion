@@ -26,14 +26,35 @@ class VQVAE(nn.Module):
         else:
             self.img_to_embedding_map = None
 
+    # def forward(self, x, verbose=False):
+
+    #     z_e = self.encoder(x)
+
+    #     z_e = self.pre_quantization_conv(z_e)
+    #     embedding_loss, z_q, perplexity, _, _ = self.vector_quantization(
+    #         z_e)
+    #     x_hat = self.decoder(z_q)
+
+    #     if verbose:
+    #         print('original data shape:', x.shape)
+    #         print('encoded data shape:', z_e.shape)
+    #         print('recon data shape:', x_hat.shape)
+    #         assert False
+
+    #     return embedding_loss, x_hat, perplexity
+    
     def forward(self, x, verbose=False):
 
         z_e = self.encoder(x)
+        # print(z_e.size())
 
         z_e = self.pre_quantization_conv(z_e)
+        # print(z_e.size())
         embedding_loss, z_q, perplexity, _, _ = self.vector_quantization(
             z_e)
-        x_hat = self.decoder(z_q)
+        # print(z_q.size())
+        
+        x_hat = self.decoder(z_e)
 
         if verbose:
             print('original data shape:', x.shape)
@@ -41,4 +62,4 @@ class VQVAE(nn.Module):
             print('recon data shape:', x_hat.shape)
             assert False
 
-        return embedding_loss, x_hat, perplexity
+        return x_hat
