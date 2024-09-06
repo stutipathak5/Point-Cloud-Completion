@@ -7,6 +7,10 @@ import os
 from datasets.block import BlockDataset, LatentBlockDataset
 import numpy as np
 import open3d as o3d
+import h5py
+
+
+
 
 
 
@@ -36,35 +40,81 @@ def voxelize_point_cloud(point_cloud, voxel_size, grid_size):
     return voxel_grid_tensor
 
 
+# class CatenaryDataset(Dataset):
+#     def __init__(self, gt_path, partial_path, voxel_size, grid_size, transform=None):
+#         self.gt_path = gt_path
+#         self.partial_path = partial_path
+#         self.gt_data = np.load(gt_path)
+#         self.partial_data = np.load(partial_path)
+#         self.transform = transform
+#         self.voxel_size = voxel_size
+#         self.grid_size = grid_size
+
+#     def __len__(self):
+#         return self.gt_data.shape[0]
+
+#     # FIX:this will take only the last partial pc
+#     def __getitem__(self, idx):
+#         for i in range(self.partial_data.shape[1]):
+#             gt_pc = self.gt_data[idx, :, :]
+#             partial_pc = self.partial_data[idx, i, :, :]
+#             gt_grid = voxelize_point_cloud(gt_pc, self.voxel_size, self.grid_size)
+#             partial_grid = voxelize_point_cloud(partial_pc, self.voxel_size, self.grid_size)
+
+#         if self.transform:
+#             gt_pc = self.transform(gt_pc)
+#             partial_pc = self.transform(partial_pc)
+
+#         return torch.from_numpy(gt_pc).float(), torch.from_numpy(partial_pc).float(),\
+#                 torch.from_numpy(gt_grid).float(), torch.from_numpy(partial_grid).float()
+#         # return torch.from_numpy(gt_grid).float().unsqueeze(0)
+
+def load_h5(file_path, dataset_name):
+    with h5py.File(file_path, 'r') as hf:
+        array = hf[dataset_name][:]
+    return array
+
+
 class CatenaryDataset(Dataset):
-    def __init__(self, gt_path, partial_path, voxel_size, grid_size, transform=None):
-        self.gt_path = gt_path
-        self.partial_path = partial_path
-        self.gt_data = np.load(gt_path)
-        self.partial_data = np.load(partial_path)
+    def __init__(self, npy_folder_path, voxel_size, grid_size, transform=None):
+        self.npy_folder_path = npy_folder_path
+        self.complete = load_h5(os.path.join(npy_folder_path, "complete.h5"), "complete")
+        self.occl = load_h5(os.path.join(npy_folder_path, "occl.h5"), "occl")
+        self.non_sparse = load_h5(os.path.join(npy_folder_path, "non_sparse.h5"), "non_sparse")
+        self.uni_sparse = load_h5(os.path.join(npy_folder_path, "uni_sparse.h5"), "uni_sparse")
         self.transform = transform
         self.voxel_size = voxel_size
         self.grid_size = grid_size
 
     def __len__(self):
-        return self.gt_data.shape[0]
+        return self.occl.shape[0]
 
-    # FIX:this will take only the last partial pc
     def __getitem__(self, idx):
-        for i in range(self.partial_data.shape[1]):
-            gt_pc = self.gt_data[idx, :, :]
-            partial_pc = self.partial_data[idx, i, :, :]
-            gt_grid = voxelize_point_cloud(gt_pc, self.voxel_size, self.grid_size)
-            partial_grid = voxelize_point_cloud(partial_pc, self.voxel_size, self.grid_size)
+
+        no_partial_per_complete = int(self.occl.shape[0]/self.complete.shape[0])
+        complete_pc = self.complete[idx // no_partial_per_complete, :, :]
+        occl_pc = self.occl[idx, :, :]
+        non_sparse_pc = self.non_sparse[idx, :, :]
+        uni_sparse_pc = self.uni_sparse[idx // no_partial_per_complete, :, :]
 
         if self.transform:
-            gt_pc = self.transform(gt_pc)
-            partial_pc = self.transform(partial_pc)
+            complete_pc = self.transform(complete_pc)
+            occl_pc = self.transform(occl_pc)
+            non_sparse_pc = self.transform(non_sparse_pc)
+            uni_sparse_pc = self.transform(uni_sparse_pc)
+         
+        complete_grid = voxelize_point_cloud(complete_pc, self.voxel_size, self.grid_size)
+        occl_grid = voxelize_point_cloud(occl_pc, self.voxel_size, self.grid_size)
+        non_sparse_grid = voxelize_point_cloud(non_sparse_pc, self.voxel_size, self.grid_size)
+        uni_sparse_grid = voxelize_point_cloud(uni_sparse_pc, self.voxel_size, self.grid_size)
 
-        # return torch.from_numpy(gt_pc).float(), torch.from_numpy(partial_pc).float(),\
-        #         torch.from_numpy(gt_grid).float(), torch.from_numpy(partial_grid).float()
-        return torch.from_numpy(gt_grid).float().unsqueeze(0)
-    
+
+        return torch.from_numpy(complete_grid).float(), torch.from_numpy(occl_grid).float(),\
+                torch.from_numpy(non_sparse_grid).float(), torch.from_numpy(uni_sparse_grid).float()
+
+
+
+
 
 
 
