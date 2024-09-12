@@ -31,6 +31,9 @@ class Decoder(nn.Module):
             nn.ConvTranspose3d(h_dim, h_dim // 2,
                                kernel_size=kernel, stride=stride, padding=1),
             nn.ReLU(),
+            # nn.ConvTranspose3d(h_dim, h_dim,
+            #                    kernel_size=kernel, stride=stride, padding=1),
+            # nn.ReLU(),
             nn.ConvTranspose3d(h_dim//2, 1, kernel_size=kernel,
                                stride=stride, padding=1),
             nn.Sigmoid()
