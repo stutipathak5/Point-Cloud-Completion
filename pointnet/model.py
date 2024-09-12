@@ -87,7 +87,7 @@ class CatenaryDataset_only_comp(Dataset):
     def __getitem__(self, idx):
         complete_pc = self.complete[idx, :, :]
         complete_pc = normalize_point_cloud(complete_pc)
-        sampled_indices = torch.randperm(5000)[:5000]
+        sampled_indices = torch.randperm(5000)[:1024]
         complete_pc = complete_pc[sampled_indices, :]
 
 
