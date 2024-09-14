@@ -87,7 +87,7 @@ class CatenaryDataset_only_comp(Dataset):
     def __getitem__(self, idx):
         complete_pc = self.complete[idx, :, :]
         complete_pc = normalize_point_cloud(complete_pc)
-        sampled_indices = torch.randperm(5000)[:1024]
+        sampled_indices = torch.randperm(5000)[:5000]
         complete_pc = complete_pc[sampled_indices, :]
 
 
@@ -131,14 +131,14 @@ class PointNetDecoder(nn.Module):
         self.fc1 = nn.Linear(128, 256)
         self.fc2 = nn.Linear(256, 512)
         self.fc3 = nn.Linear(512, 1024)
-        self.fc4 = nn.Linear(1024, 3 * 1024)  # Assuming output is a point cloud with 1024 points
+        self.fc4 = nn.Linear(1024, 3 * 5000)  # Assuming output is a point cloud with 1024 points
         
     def forward(self, x):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
         x = self.fc4(x)
-        x = x.view(-1, 3, 1024)  # Reshape to (batch_size, 3, num_points)
+        x = x.view(-1, 3, 5000)  # Reshape to (batch_size, 3, num_points)
         return x
 
 
