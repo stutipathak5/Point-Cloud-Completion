@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import torch
 import model
 import torch.optim as optim
-from Dataloaders import GetDataLoaders
+from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
 # %%
 batch_size = 32
@@ -66,9 +66,6 @@ print(non_sparse.shape)
 print(uni_sparse.shape)
 
 
-concatenated_array = np.concatenate((complete, occl, non_sparse, uni_sparse), axis=0)
-
-
 def normalize(pc_array):
     for i in range(pc_array.shape[0]):
         ptcloud = pc_array[i]
@@ -91,36 +88,24 @@ def normalize(pc_array):
     return pc_array
 
 
-concatenated_array = normalize(concatenated_array)
-pc_array = concatenated_array
+complete = normalize(complete)
+occl = normalize(occl)
+non_sparse = normalize(non_sparse)
+uni_sparse = normalize(uni_sparse)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print(pc_array.shape)
 
 # load dataset from numpy array and divide 90%-10% randomly for train and test sets
-train_loader, test_loader = GetDataLoaders(npArray=pc_array, batch_size=batch_size)
-print(list(train_loader)[0].size())
+
+train_loader, test_loader = GetDataLoaders_Catenary(complete, occl, non_sparse, uni_sparse)
+print(list(train_loader)[0][0].size(), list(train_loader)[0][1].size(), list(train_loader)[0][2].size(), list(train_loader)[0][3].size())
 # Assuming all models have the same size, get the point size from the first model
-point_size = len(train_loader.dataset[0])
+point_size = len(train_loader.dataset[0][0])
 print(point_size)
+
+# till here
 
 # %%
 net = model.PointCloudAE(point_size,latent_size)
@@ -143,11 +128,13 @@ optimizer = optim.Adam(net.parameters(), lr=0.0005)
 def train_epoch():
     epoch_loss = 0
     for i, data in enumerate(train_loader):
-
+        incomplete_data = data[1].to(device)
+        complete_data = data[0].to(device)
         optimizer.zero_grad()
-        data = data.to(device)
-        output = net(data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
-        loss, _ = chamfer_distance(data, output) 
+        # data = data.to(device)
+        # output = net(data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
+        output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
+        loss, _ = chamfer_distance(complete_data, output) 
         loss.backward()
         optimizer.step()
         
@@ -158,9 +145,10 @@ def train_epoch():
 # %%
 def test_batch(data): # test with a batch of inputs
     with torch.no_grad():
-        data = data.to(device)
-        output = net(data.permute(0,2,1))
-        loss, _ = chamfer_distance(data, output)
+        incomplete_data = data[1].to(device)
+        complete_data = data[0].to(device)
+        output = net(incomplete_data.permute(0,2,1))
+        loss, _ = chamfer_distance(complete_data, output) 
         
     return loss.item(), output.cpu()
 
@@ -216,7 +204,7 @@ for i in range(1001) :
         if(i%50==0):
             test_samples = next(iter(test_loader))
             loss , test_output = test_batch(test_samples)
-            utils.plotPCbatch(test_samples, test_output, show=False, save=True, name = (output_folder  + "epoch_" + str(i)))
+            utils.plotPCbatch_comp(test_samples[0], test_samples[1], test_output, show=False, save=True, name = (output_folder  + "epoch_" + str(i))) # complete_gt, occl_input, complete_output
 
     else : # display all outputs
         
