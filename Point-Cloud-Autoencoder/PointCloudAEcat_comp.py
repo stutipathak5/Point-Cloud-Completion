@@ -10,7 +10,7 @@ from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
 # %%
 batch_size = 32
-output_folder = "output/" # folder path to save the results
+output_folder = "output/catenary_occl_topo" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
@@ -124,6 +124,18 @@ from pytorch3d.loss import chamfer_distance # chamfer distance for calculating p
 
 optimizer = optim.Adam(net.parameters(), lr=0.0005)
 
+
+
+
+from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
+
+pdfn_pcd = LevelSetLayer2D(size=(1024, 3),  sublevel=False)   # what is the significance of the size
+topfn = PartialSumBarcodeLengths(dim=1, skip=1)
+topfn2 = SumBarcodeLengths(dim=0)
+topo = True
+
+
+
 # %%
 def train_epoch():
     epoch_loss = 0
@@ -131,10 +143,16 @@ def train_epoch():
         incomplete_data = data[1].to(device)
         complete_data = data[0].to(device)
         optimizer.zero_grad()
-        # data = data.to(device)
-        # output = net(data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
         output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
-        loss, _ = chamfer_distance(complete_data, output) 
+        cham_loss, _ = chamfer_distance(complete_data, output) 
+        if topo == True:
+            loss_topo = 0
+            for  i in range(complete_data.size()[0]):            
+                dgminfo_pcd = pdfn_pcd(complete_data[i])    
+                loss_topo += topfn(dgminfo_pcd) + topfn2(dgminfo_pcd)
+            loss = cham_loss + loss_topo
+        else:
+            loss = cham_loss 
         loss.backward()
         optimizer.step()
         
