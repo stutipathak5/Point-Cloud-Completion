@@ -10,7 +10,7 @@ from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
 # %%
 batch_size = 32
-output_folder = "output/catenary_occl_topo" # folder path to save the results
+output_folder = "output/catenary_occl_topo1/" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
