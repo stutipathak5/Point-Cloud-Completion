@@ -46,11 +46,13 @@ def plotPCbatch(pcArray1, pcArray2, show = True, save = False, name=None, fig_co
         return fig
     
 
-def plotPCbatch_comp(pcArray1, pcArray2, pcArray3, show = True, save = False, name=None, fig_count=9 , sizex = 12, sizey=5):
+def plotPCbatch_comp(pcArray1, pcArray2, pcArray3, show = True, save = False, name=None, fig_count=9 , sizex = 20, sizey=15):
     
-    pc1 = pcArray1[0:fig_count]
-    pc2 = pcArray2[0:fig_count]
-    pc3 = pcArray3[0:fig_count]
+    start = 0
+    end = 9
+    pc1 = pcArray1[start:end]
+    pc2 = pcArray2[start:end]
+    pc3 = pcArray3[start:end]
     
     fig=plt.figure(figsize=(sizex, sizey))
     
@@ -60,7 +62,7 @@ def plotPCbatch_comp(pcArray1, pcArray2, pcArray3, show = True, save = False, na
         
         if(i<fig_count):
             ax.scatter(pc1[i,:,0], pc1[i,:,2], pc1[i,:,1], c='b', marker='.', alpha=0.8, s=8)
-        elif (fig_count<i<fig_count*2):
+        elif (fig_count<=i<fig_count*2):
             ax.scatter(pc2[i-fig_count,:,0], pc2[i-fig_count,:,2], pc2[i-fig_count,:,1], c='b', marker='.', alpha=0.8, s=8)
         else:
             ax.scatter(pc3[i-2*fig_count,:,0], pc3[i-2*fig_count,:,2], pc3[i-2*fig_count,:,1], c='b', marker='.', alpha=0.8, s=8)
@@ -69,9 +71,9 @@ def plotPCbatch_comp(pcArray1, pcArray2, pcArray3, show = True, save = False, na
         # ax.set_ylim3d(0.25, 0.75)
         # ax.set_zlim3d(0.25, 0.75)
 
-        ax.set_xlim3d(-1, 1)
-        ax.set_ylim3d(-1, 1)
-        ax.set_zlim3d(-1, 1)
+        ax.set_xlim3d(-1.5, 1.5)
+        ax.set_ylim3d(-1.5, 1.5)
+        ax.set_zlim3d(-1.5, 1.5)
             
         plt.axis('off')
         
