@@ -10,7 +10,7 @@ from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
 # %%
 batch_size = 32
-output_folder = "output/catenary_occl_topo1/" # folder path to save the results
+output_folder = "output/SNCF_catenary_occl_topo/" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
@@ -46,7 +46,7 @@ def load_h5(file_path, dataset_name):
         array = hf[dataset_name][:]
     return array
 
-npy_folder_path = '../data/Dutch/easy_0.8'
+npy_folder_path = '../data/SNCF/difficult_0.4'
 
 def sample(point_cloud_array):
     new_array = np.zeros((point_cloud_array.shape[0], 1024, 3))
@@ -221,6 +221,7 @@ for i in range(1001) :
         # save input/output as image file
         if(i%50==0):
             test_samples = next(iter(test_loader))
+            # test_samples = [list(test_loader)[10][0], list(test_loader)[10][1]]
             loss , test_output = test_batch(test_samples)
             utils.plotPCbatch_comp(test_samples[0], test_samples[1], test_output, show=False, save=True, name = (output_folder  + "epoch_" + str(i))) # complete_gt, occl_input, complete_output
 
