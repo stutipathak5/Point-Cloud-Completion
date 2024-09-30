@@ -8,9 +8,10 @@ import model
 import torch.optim as optim
 from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
+
 # %%
 batch_size = 32
-output_folder = "output/SNCF_catenary_occl_topo/" # folder path to save the results
+output_folder = "output/trying/" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
@@ -46,7 +47,7 @@ def load_h5(file_path, dataset_name):
         array = hf[dataset_name][:]
     return array
 
-npy_folder_path = '../data/SNCF/difficult_0.4'
+npy_folder_path = '../data/Dutch/easy_0.8'
 
 def sample(point_cloud_array):
     new_array = np.zeros((point_cloud_array.shape[0], 1024, 3))
@@ -131,10 +132,12 @@ from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarco
 
 pdfn_pcd = LevelSetLayer2D(size=(1024, 3),  sublevel=False)   # what is the significance of the size
 topfn = PartialSumBarcodeLengths(dim=1, skip=1)
+# topfn = SumBarcodeLengths(dim=1)
 topfn2 = SumBarcodeLengths(dim=0)
 topo = True
 
-
+from pyemd import emd_samples
+emd = True
 
 # %%
 def train_epoch():
@@ -145,20 +148,30 @@ def train_epoch():
         optimizer.zero_grad()
         output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
         cham_loss, _ = chamfer_distance(complete_data, output) 
+        if emd == True:
+            emd_loss = torch.Tensor([emd_samples(output.cpu(), complete_data.cpu(), bins = 40)])
         if topo == True:
             loss_topo = 0
             for  i in range(complete_data.size()[0]):            
                 dgminfo_pcd = pdfn_pcd(complete_data[i])    
                 loss_topo += topfn(dgminfo_pcd) + topfn2(dgminfo_pcd)
-            loss = cham_loss + loss_topo
+            loss_topo = loss_topo/complete_data.size()[0]
+            if emd == True:
+                loss = emd_loss + loss_topo
+            else:
+                loss = cham_loss + 0.000001*loss_topo
         else:
             loss = cham_loss 
         loss.backward()
         optimizer.step()
         
-        epoch_loss += loss.item()
+        epoch_loss += cham_loss.item()
         
     return epoch_loss/i
+
+
+
+
 
 # %%
 def test_batch(data): # test with a batch of inputs
