@@ -66,7 +66,7 @@ def GetDataLoaders_Catenary(complete, occl, non_sparse, uni_sparse):
 
     dataset = ReadDataset_Catenary(complete, occl, non_sparse, uni_sparse)
 
-    train_indices, test_indices = train_test_split(range(len(dataset)), test_size=0.2, random_state=42)
+    train_indices, test_indices = train_test_split(range(len(dataset)), test_size=0.3, random_state=42)
     train_dataset = Subset(dataset, train_indices)
     test_dataset = Subset(dataset, test_indices)
     train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
