@@ -6,48 +6,31 @@ import matplotlib.pyplot as plt
 import torch
 import model
 import torch.optim as optim
-from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
-
-
-# %%
-batch_size = 32
-output_folder = "output/trying/" # folder path to save the results
-save_results = True # save the results to output_folder
-use_GPU = True # use GPU, False to use CPU
-latent_size = 128 # bottleneck size of the Autoencoder model
-
-# %%
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+from torch.utils.data import Dataset, DataLoader, random_split
+from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
 import h5py
 import os
-
+import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
+import pdb
+from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
+
+parser = argparse.ArgumentParser(description='VAE training of LiDAR')
+parser.add_argument('--data',         type=str,   default='',           help='size of minibatch used during training')
+parser.add_argument('--batch_size',         type=int,   default=512,           help='size of minibatch used during training')
+
+args = parser.parse_args()
 
 def load_h5(file_path, dataset_name):
     with h5py.File(file_path, 'r') as hf:
         array = hf[dataset_name][:]
     return array
 
-npy_folder_path = 'data/Dutch/easy_0.8'
+# npy_folder_path = '../data/Dutch/easy_0.8'
+npy_folder_path = args.data
 
 def sample(point_cloud_array):
     new_array = np.zeros((point_cloud_array.shape[0], 1024, 3))
@@ -56,15 +39,6 @@ def sample(point_cloud_array):
         new_array[i] = point_cloud_array[i][indices, :]
     return new_array
 
-complete = sample(load_h5(os.path.join(npy_folder_path, "complete.h5"), "complete"))
-occl = sample(load_h5(os.path.join(npy_folder_path, "occl.h5"), "occl"))
-non_sparse = sample(load_h5(os.path.join(npy_folder_path, "non_sparse.h5"), "non_sparse"))
-uni_sparse = sample(load_h5(os.path.join(npy_folder_path, "uni_sparse.h5"), "uni_sparse"))
-
-print(complete.shape)
-print(occl.shape)
-print(non_sparse.shape)
-print(uni_sparse.shape)
 
 
 def normalize(pc_array):
@@ -89,64 +63,18 @@ def normalize(pc_array):
     return pc_array
 
 
-complete = normalize(complete)
-occl = normalize(occl)
-non_sparse = normalize(non_sparse)
-uni_sparse = normalize(uni_sparse)
 
 
-
-
-
-# load dataset from numpy array and divide 90%-10% randomly for train and test sets
-
-train_loader, test_loader = GetDataLoaders_Catenary(complete, occl, non_sparse, uni_sparse)
-print(list(train_loader)[0][0].size(), list(train_loader)[0][1].size(), list(train_loader)[0][2].size(), list(train_loader)[0][3].size())
-# Assuming all models have the same size, get the point size from the first model
-point_size = len(train_loader.dataset[0][0])
-print(point_size)
-
-# till here
-
-# %%
-net = model.PointCloudAE(point_size,latent_size)
-
-if(use_GPU):
-    device = torch.device("cuda:0")
-    if torch.cuda.device_count() > 1: # if there are multiple GPUs use all
-        net = torch.nn.DataParallel(net)
-else:
-    device = torch.device("cpu")
-
-net = net.to(device)
-
-# %%
-from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
-
-optimizer = optim.Adam(net.parameters(), lr=0.0005)
-
-
-
-
-from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
-
-pdfn_pcd = LevelSetLayer2D(size=(1024, 3),  sublevel=False)   # what is the significance of the size
-topfn = PartialSumBarcodeLengths(dim=1, skip=1)
-# topfn = SumBarcodeLengths(dim=1)
-topfn2 = SumBarcodeLengths(dim=0)
-topo = False
-
-from pyemd import emd_samples
-emd = False
-
-# %%
 def train_epoch():
     epoch_loss = 0
     for i, data in enumerate(train_loader):
+        
+        # pdb.set_trace()
         incomplete_data = data[1].to(device)
-        complete_data = data[0].to(device)
+        complete_data = data[2].to(device)
         optimizer.zero_grad()
         output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
+        # pdb.set_trace()
         cham_loss, _ = chamfer_distance(complete_data, output) 
         if emd == True:
             emd_loss = torch.Tensor([emd_samples(output.cpu(), complete_data.cpu(), bins = 40)])
@@ -177,7 +105,8 @@ def train_epoch():
 def test_batch(data): # test with a batch of inputs
     with torch.no_grad():
         incomplete_data = data[1].to(device)
-        complete_data = data[0].to(device)
+        complete_data = data[2].to(device)
+        # pdb.set_trace()
         output = net(incomplete_data.permute(0,2,1))
         loss, _ = chamfer_distance(complete_data, output) 
         
@@ -193,6 +122,125 @@ def test_epoch(): # test with all test set
 
     return epoch_loss/i
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# %%
+batch_size = 32
+output_folder = "output/trying/" # folder path to save the results
+save_results = True # save the results to output_folder
+use_GPU = True # use GPU, False to use CPU
+latent_size = 128 # bottleneck size of the Autoencoder model
+
+# %%
+
+
+
+
+class CatenaryLoader(Dataset):
+    """
+    Dataset of numbers in [a,b] inclusive
+    """
+
+    def __init__(self, partial, complete):
+        super(CatenaryLoader, self).__init__()
+
+        self.partial  = partial
+        self.complete = complete
+    
+
+    def __len__(self):
+        return self.complete.shape[0]
+
+    def __getitem__(self, index):
+        
+        return index, self.partial[index], self.complete[index]
+
+
+
+
+
+#-------------------------------------------------------------------------------------------------------------------
+#Dataloaders creation
+
+
+dynamic_lidar = normalize(np.load(os.path.join(args.data, 'part_tr.npy'))).astype(np.float32)   #8668, 4000, 3
+static_lidar = normalize(np.load(os.path.join(args.data, 'comp_tr.npy'))).astype(np.float32)
+# pdb.set_trace()
+
+
+data_train = CatenaryLoader(dynamic_lidar, static_lidar)
+train_loader  = torch.utils.data.DataLoader(data_train, batch_size=args.batch_size,
+                shuffle=True, num_workers=4, drop_last=True)
+
+
+
+
+dynamic_lidar = normalize(np.load(os.path.join(args.data, 'part_te.npy')))
+static_lidar  = normalize(np.load(os.path.join(args.data, 'comp_te.npy')))
+
+
+
+data_test = CatenaryLoader(dynamic_lidar, static_lidar)
+test_loader  = torch.utils.data.DataLoader(data_train, batch_size=args.batch_size,
+                shuffle=True, num_workers=4, drop_last=True)
+
+
+input_size = dynamic_lidar.shape[1]
+output_size = static_lidar.shape[1]
+#-------------------------------------------------------------------------------------------------------------------
+
+
+# %%
+net = model.PointCloudAE(input_size, output_size, latent_size)
+
+if(use_GPU):
+    device = torch.device("cuda:0")
+    if torch.cuda.device_count() > 1: # if there are multiple GPUs use all
+        net = torch.nn.DataParallel(net)
+else:
+    device = torch.device("cpu")
+
+net = net.to(device)
+
+# %%
+
+
+optimizer = optim.Adam(net.parameters(), lr=0.0005)
+
+
+
+
+
+
+pdfn_pcd = LevelSetLayer2D(size=(1024, 3),  sublevel=False)   # what is the significance of the size
+topfn = PartialSumBarcodeLengths(dim=1, skip=1)
+# topfn = SumBarcodeLengths(dim=1)
+topfn2 = SumBarcodeLengths(dim=0)
+topo = False
+
+# from pyemd import emd_samples
+emd = False
+
+# %%
+
+
 # %%
 if(save_results):
     utils.clear_folder(output_folder)
@@ -201,8 +249,12 @@ if(save_results):
 train_loss_list = []  
 test_loss_list = []  
 
+
+
+
+
 for i in range(1001) :
-    print(i)
+    print('Epoch ', i)
 
     startTime = time.time()
     
@@ -215,6 +267,7 @@ for i in range(1001) :
     epoch_time = time.time() - startTime
     
     writeString = "epoch " + str(i) + " train loss : " + str(train_loss) + " test loss : " + str(test_loss) + " epoch time : " + str(epoch_time) + "\n"
+    print(writeString)
     
     # plot train/test loss graph
     plt.plot(train_loss_list, label="Train")
@@ -236,7 +289,7 @@ for i in range(1001) :
             test_samples = next(iter(test_loader))
             # test_samples = [list(test_loader)[10][0], list(test_loader)[10][1]]
             loss , test_output = test_batch(test_samples)
-            utils.plotPCbatch_comp(test_samples[0], test_samples[1], test_output, show=False, save=True, name = (output_folder  + "epoch_" + str(i))) # complete_gt, occl_input, complete_output
+            utils.plotPCbatch_comp(test_samples[2], test_samples[1], test_output, show=False, save=True, name = (output_folder  + "epoch_" + str(i))) # complete_gt, occl_input, complete_output
 
     else : # display all outputs
         
@@ -247,8 +300,3 @@ for i in range(1001) :
         print(writeString)
 
         plt.show()
-
-        
-
-
-
