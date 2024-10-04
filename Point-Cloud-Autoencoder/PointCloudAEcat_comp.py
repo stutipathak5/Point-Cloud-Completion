@@ -4,7 +4,7 @@ import time
 import utils
 import matplotlib.pyplot as plt
 import torch
-import model
+import model_old
 import torch.optim as optim
 from Dataloaders import GetDataLoaders, GetDataLoaders_Catenary
 
@@ -109,7 +109,7 @@ print(point_size)
 # till here
 
 # %%
-net = model.PointCloudAE(point_size,latent_size)
+net = model_old.PointCloudAE(point_size,latent_size)
 
 if(use_GPU):
     device = torch.device("cuda:0")
