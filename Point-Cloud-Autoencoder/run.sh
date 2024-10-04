@@ -20,4 +20,4 @@
 
 export PATH="${VSC_SCRATCH}/containers/pointnet_ae/bin:$PATH"
 python -c "import torch; print(torch.cuda.is_available())"
-python PointCloudAEcat_comp_new_loader.py --data data/final_splits/Dutch/easy/splits --batch_size 2048
+python PointCloudAEcat_comp_new_loader.py --data data/final_splits/Dutch/difficult/splits --batch_size 1024

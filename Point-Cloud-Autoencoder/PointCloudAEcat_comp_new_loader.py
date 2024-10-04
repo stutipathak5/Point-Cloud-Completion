@@ -143,7 +143,7 @@ def test_epoch(): # test with all test set
 
 # %%
 batch_size = 32
-output_folder = "output/trying/" # folder path to save the results
+output_folder = "output/Dutch_difficult/" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
@@ -253,7 +253,7 @@ test_loss_list = []
 
 
 
-for i in range(1001) :
+for i in range(501) :
     print('Epoch ', i)
 
     startTime = time.time()
