@@ -71,9 +71,9 @@ def plotPCbatch_comp(pcArray1, pcArray2, pcArray3, show = True, save = False, na
         # ax.set_ylim3d(0.25, 0.75)
         # ax.set_zlim3d(0.25, 0.75)
 
-        ax.set_xlim3d(-1.5, 1.5)
-        ax.set_ylim3d(-1.5, 1.5)
-        ax.set_zlim3d(-1.5, 1.5)
+        ax.set_xlim3d(-0.5, 0.5)
+        ax.set_ylim3d(-0.5, 0.5)
+        ax.set_zlim3d(-0.5, 0.5)
             
         plt.axis('off')
         
