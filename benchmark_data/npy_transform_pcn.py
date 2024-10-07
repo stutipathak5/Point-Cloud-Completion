@@ -15,19 +15,23 @@ def list_files_in_folders(folders):
         all_files.extend(files)
     return all_files
 
-
+"change this line for train/val/test"
 directory_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\PCN\train\complete"  # Replace with your folder path
 folders = list_folders_in_directory(directory_path)
-files = list_files_in_folders(folders)
+# print(folders)
+"change folder indices in the following two lines for different shapes in each train/val/test"
+shape_code= folders[0].split(os.sep)[-1]                                     # 8 folders for 8 different shapes
+files = list_files_in_folders([folders[0]])
 # print(len(files))
 # print(files)
 
 final_array = np.zeros((len(files)*8, 5000, 3))                    # each complete .pcd has 8 corresponding partial .pcd
-final_part_array = np.zeros((len(files)*8, 500, 3))
+final_part_array = np.zeros((len(files)*8, 1000, 3))
 j=0
 for i in files:
     components = i.split(os.sep)
     last_two_components = os.path.join(components[-2], components[-1][:-4])
+    "change this line for train/val/test"
     new_path = os.path.join(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\PCN\train\partial", last_two_components)
     files_2 = list_files_in_folders([new_path])
     pcd = o3d.io.read_point_cloud(i)
@@ -41,19 +45,19 @@ for i in files:
         final_array[j*8+ii,:,:] = downsampled_np_array
         part = o3d.io.read_point_cloud(files_2[ii])
         part_array = np.asarray(part.points)
-        if part_array.shape[0] > 500:
-            indices = np.random.choice(part_array.shape[0], 500, replace=False)       # each partial pcd is around 1k points
+        if part_array.shape[0] > 1000:
+            indices = np.random.choice(part_array.shape[0], 1000, replace=False)       # each partial pcd is around 1k points; padding with zeros
             downsampled_part_array = part_array[indices]
         else:
             downsampled_part_array = part_array
-        final_part_array[j*8+ii,:,:] = downsampled_part_array
+        final_part_array[j*8+ii,0:downsampled_part_array.shape[0], :] = downsampled_part_array
     j+=1
         
 print(final_array.shape)
 print(final_part_array.shape)
 
-# np.save("comp_tr.npy", final_array)
-# np.save("part_tr.npy", final_part_array)
+# np.save(os.path.join(str(shape_code), "comp_tr.npy", final_array))
+# np.save(os.path.join(str(shape_code), "part_tr.npy", final_part_array))
 
 for i in range(final_array.shape[0]):
     pcd1 = o3d.geometry.PointCloud()
