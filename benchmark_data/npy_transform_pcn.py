@@ -25,10 +25,10 @@ files = list_files_in_folders([folders[0]])
 # print(len(files))
 # print(files)
 
-final_array = np.zeros((len(files)*8, 5000, 3))                    # each complete .pcd has 8 corresponding partial .pcd
-final_part_array = np.zeros((len(files)*8, 1000, 3))
+final_array = np.zeros((len(files[0:1])*8, 5000, 3))                    # each complete .pcd has 8 corresponding partial .pcd
+final_part_array = np.zeros((len(files[0:1])*8, 1000, 3))
 j=0
-for i in files:
+for i in files[0:1]:
     components = i.split(os.sep)
     last_two_components = os.path.join(components[-2], components[-1][:-4])
     "change this line for train/val/test"
@@ -56,8 +56,13 @@ for i in files:
 print(final_array.shape)
 print(final_part_array.shape)
 
-# np.save(os.path.join(str(shape_code), "comp_tr.npy", final_array))
-# np.save(os.path.join(str(shape_code), "part_tr.npy", final_part_array))
+comp_tr_path = os.path.join("..", "Point-Cloud-Autoencoder", "data", "final_splits", str(shape_code), "splits", "comp_tr.npy")
+part_tr_path = os.path.join("..", "Point-Cloud-Autoencoder", "data", "final_splits", str(shape_code), "splits", "part_tr.npy")
+os.makedirs(os.path.dirname(comp_tr_path), exist_ok=True)
+os.makedirs(os.path.dirname(part_tr_path), exist_ok=True)
+np.save(comp_tr_path, final_array)
+np.save(part_tr_path, final_part_array)
+
 
 for i in range(final_array.shape[0]):
     pcd1 = o3d.geometry.PointCloud()
