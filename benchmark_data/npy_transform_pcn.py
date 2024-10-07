@@ -22,7 +22,7 @@ files = list_files_in_folders(folders)
 # print(len(files))
 # print(files)
 
-final_array = np.zeros((len(files)*8, 5000, 3))
+final_array = np.zeros((len(files)*8, 5000, 3))                    # each complete .pcd has 8 corresponding partial .pcd
 final_part_array = np.zeros((len(files)*8, 500, 3))
 j=0
 for i in files:
@@ -33,7 +33,7 @@ for i in files:
     pcd = o3d.io.read_point_cloud(i)
     np_array = np.asarray(pcd.points)
     if np_array.shape[0] > 5000:
-        indices = np.random.choice(np_array.shape[0], 5000, replace=False)
+        indices = np.random.choice(np_array.shape[0], 5000, replace=False)  # each complete pcd is 16k points
         downsampled_np_array = np_array[indices]
     else:
         downsampled_np_array = np_array
@@ -42,7 +42,7 @@ for i in files:
         part = o3d.io.read_point_cloud(files_2[ii])
         part_array = np.asarray(part.points)
         if part_array.shape[0] > 500:
-            indices = np.random.choice(part_array.shape[0], 500, replace=False)
+            indices = np.random.choice(part_array.shape[0], 500, replace=False)       # each partial pcd is around 1k points
             downsampled_part_array = part_array[indices]
         else:
             downsampled_part_array = part_array
