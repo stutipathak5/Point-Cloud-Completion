@@ -67,7 +67,12 @@ def normalize(pc_array):
 
 
 def train_epoch():
+    
     epoch_loss = 0
+    
+    niters = 500
+    eps = 1e-3
+    stop_error = 1e-5
     for i, data in enumerate(train_loader):
         
         # pdb.set_trace()
@@ -83,8 +88,8 @@ def train_epoch():
                 layer = AlphaLayer(maxdim=1)
                 pd_pred = layer(torch.from_numpy(output).float())
                 pd_comp = layer(torch.from_numpy(complete_data).float())
-                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], pd_comp[0][0][1:], p=2, verbose=True)
-                loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[0][1], p=2, verbose=True)
+                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], pd_comp[0][0][1:],  p=2, eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
+                loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[0][1], p=2,  eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
                 loss_pd += loss_h0 + loss_h1
             loss_pd = loss_pd/complete_data.size()[0]
             loss = cham_loss + loss_pd
