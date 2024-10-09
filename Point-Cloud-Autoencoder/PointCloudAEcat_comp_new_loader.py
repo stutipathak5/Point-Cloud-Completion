@@ -19,7 +19,6 @@ from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
 import pdb
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
-from torchsummary import summary
 from sinkhorn import sinkhorn
 import torch
 from scipy.spatial.transform import Rotation
@@ -46,6 +45,8 @@ import pdb
 from topologylayer.nn import AlphaLayer
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
 from sinkhorn import sinkhorn
+import model
+import utils
 
 
 parser = argparse.ArgumentParser(description='VAE training of LiDAR')
@@ -115,8 +116,8 @@ def train_epoch():
             loss_pd = 0
             for i in range(complete_data.size()[0]):      
                 layer = AlphaLayer(maxdim=1)
-                pd_pred = layer(torch.from_numpy(output).float())
-                pd_comp = layer(torch.from_numpy(complete_data).float())
+                pd_pred = layer(output[i])
+                pd_comp = layer(complete_data[i])
                 loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], pd_comp[0][0][1:],  p=2, eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
                 loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[0][1], p=2,  eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
                 loss_pd += loss_h0 + loss_h1
@@ -191,7 +192,7 @@ def test_epoch(): # test with all test set
 
 # %%
 batch_size = 32
-output_folder = "output/Dutch_difficult/" # folder path to save the results
+output_folder = "output/Dutch_difficult_pdloss/" # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model

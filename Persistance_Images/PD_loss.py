@@ -24,6 +24,7 @@ print(non_sparse.shape)
 print(uni_sparse.shape)
 
 data = complete[11]
+data2 = complete[5]
 
 print(data.shape)
 
@@ -33,8 +34,19 @@ layer = AlphaLayer(maxdim=2)
 s=time.time()
 pd = layer(torch.from_numpy(data).float())
 print(time.time()-s)
-print(pd[0][0])
+print(pd[0][0].size())
 
-loss, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd[0][0][1:], pd[0][0][1:], p=2, verbose=True)
+
+s=time.time()
+pd2 = layer(torch.from_numpy(data2).float())
+print(time.time()-s)
+print(pd2[0][0].size())
+
+niters = 500
+
+eps = 1e-3
+stop_error = 1e-5
+
+loss, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd[0][0][1:], pd[0][0][1:], p=2, eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=True)
 
 print(loss)

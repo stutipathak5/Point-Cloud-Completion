@@ -92,7 +92,7 @@ def sinkhorn(x: torch.Tensor, y: torch.Tensor, p: float = 2,
     if w_x is None and w_y is None:
         w_x = torch.ones(x.shape[0]).to(x) / x.shape[0]
         w_y = torch.ones(y.shape[0]).to(x) / y.shape[0]
-        w_y *= (w_x.shape[0] / w_y.shape[0])
+        # w_y *= (w_x.shape[0] / w_y.shape[0])
 
     sum_w_x = w_x.sum().item()
     sum_w_y = w_y.sum().item()
