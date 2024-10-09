@@ -1,10 +1,37 @@
 # %%
+# import point_cloud_utils as pcu
+# import polyscope as ps
 import numpy as np
 import time
-import utils
 import matplotlib.pyplot as plt
 import torch
-import model
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import Dataset, DataLoader, random_split
+from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
+from torch.optim.lr_scheduler import CosineAnnealingLR
+import h5py
+import os
+import argparse
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import open3d as o3d
+import pdb
+from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
+from torchsummary import summary
+from sinkhorn import sinkhorn
+import torch
+from scipy.spatial.transform import Rotation
+import time, pdb
+import numpy as np
+# %%
+import numpy as np
+import time
+
+import matplotlib.pyplot as plt
+import torch
+
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, random_split
 from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
@@ -16,8 +43,10 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
 import pdb
+from topologylayer.nn import AlphaLayer
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
 from sinkhorn import sinkhorn
+
 
 parser = argparse.ArgumentParser(description='VAE training of LiDAR')
 parser.add_argument('--data',         type=str,   default='',           help='size of minibatch used during training')
