@@ -17,6 +17,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
 import pdb
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
+from sinkhorn import sinkhorn
 
 parser = argparse.ArgumentParser(description='VAE training of LiDAR')
 parser.add_argument('--data',         type=str,   default='',           help='size of minibatch used during training')
@@ -76,11 +77,24 @@ def train_epoch():
         output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
         # pdb.set_trace()
         cham_loss, _ = chamfer_distance(complete_data, output) 
+        if wasserstein == True:
+            loss_pd = 0
+            for i in range(complete_data.size()[0]):      
+                layer = AlphaLayer(maxdim=1)
+                pd_pred = layer(torch.from_numpy(output).float())
+                pd_comp = layer(torch.from_numpy(complete_data).float())
+                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0], pd_comp[0][0], p=2, verbose=True)
+                loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[0][1], p=2, verbose=True)
+                loss_pd += loss_h0 + loss_h1
+            loss_pd = loss_pd/complete_data.size()[0]
+            loss = cham_loss + loss_pd
+        else:
+            loss = cham_loss
         if emd == True:
             emd_loss = torch.Tensor([emd_samples(output.cpu(), complete_data.cpu(), bins = 40)])
         if topo == True:
             loss_topo = 0
-            for  i in range(complete_data.size()[0]):            
+            for i in range(complete_data.size()[0]):            
                 dgminfo_pcd = pdfn_pcd(complete_data[i])    
                 loss_topo += topfn(dgminfo_pcd) + topfn2(dgminfo_pcd)
             loss_topo = loss_topo/complete_data.size()[0]
@@ -237,6 +251,8 @@ topo = False
 
 # from pyemd import emd_samples
 emd = False
+
+wasserstein = True
 
 # %%
 
