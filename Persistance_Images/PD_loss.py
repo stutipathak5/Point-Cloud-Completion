@@ -35,6 +35,6 @@ pd = layer(torch.from_numpy(data).float())
 print(time.time()-s)
 print(pd[0][0])
 
-loss, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd[0][1], pd[0][1], p=2, verbose=True)
+loss, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd[0][0][1:], pd[0][0][1:], p=2, verbose=True)
 
 print(loss)

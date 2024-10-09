@@ -83,7 +83,7 @@ def train_epoch():
                 layer = AlphaLayer(maxdim=1)
                 pd_pred = layer(torch.from_numpy(output).float())
                 pd_comp = layer(torch.from_numpy(complete_data).float())
-                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0], pd_comp[0][0], p=2, verbose=True)
+                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], pd_comp[0][0][1:], p=2, verbose=True)
                 loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[0][1], p=2, verbose=True)
                 loss_pd += loss_h0 + loss_h1
             loss_pd = loss_pd/complete_data.size()[0]
