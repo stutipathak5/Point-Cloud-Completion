@@ -47,7 +47,7 @@ def load_h5(file_path, dataset_name):
         array = hf[dataset_name][:]
     return array
 
-npy_folder_path = 'data/SNCF/easy_0.8'
+npy_folder_path = 'data/Dutch/easy_0.8'
 
 def sample(point_cloud_array):
     new_array = np.zeros((point_cloud_array.shape[0], 1024, 3))
