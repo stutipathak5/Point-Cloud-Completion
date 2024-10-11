@@ -17,31 +17,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import open3d as o3d
-import pdb
+
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
 from sinkhorn import sinkhorn
-import torch
 from scipy.spatial.transform import Rotation
 import time, pdb
-import numpy as np
-# %%
-import numpy as np
-import time
+from tqdm import trange
 
 import matplotlib.pyplot as plt
-import torch
 
-import torch.optim as optim
-from torch.utils.data import Dataset, DataLoader, random_split
 from topologylayer.nn import LevelSetLayer2D, SumBarcodeLengths, PartialSumBarcodeLengths
 import h5py
 import os
 import argparse
-import numpy as np
-import matplotlib.pyplot as plt
+
 from mpl_toolkits.mplot3d import Axes3D
-import open3d as o3d
-import pdb
 from topologylayer.nn import AlphaLayer
 from pytorch3d.loss import chamfer_distance # chamfer distance for calculating point cloud distance
 from sinkhorn import sinkhorn
@@ -51,8 +41,9 @@ import pickle
 
 
 parser = argparse.ArgumentParser(description='VAE training of LiDAR')
-parser.add_argument('--data',         type=str,   default='',           help='size of minibatch used during training')
-parser.add_argument('--batch_size',         type=int,   default=512,           help='size of minibatch used during training')
+parser.add_argument('--data',         type=str,   default='',            help='size of minibatch used during training')
+parser.add_argument('--batch_size',   type=int,   default=512,           help='size of minibatch used during training')
+parser.add_argument('--log',          type=str,   default=512,           help='size of minibatch used during training')
 
 args = parser.parse_args()
 
@@ -97,7 +88,7 @@ def normalize(pc_array):
 
 
 
-def train_epoch(epoch):
+def train_epoch(epoch, static_persistence):
 
 
     
@@ -106,16 +97,20 @@ def train_epoch(epoch):
     niters = 500
     eps = 1e-3
     stop_error = 1e-5
-    for i, data in enumerate(train_loader):
+    k=0
+    for data in (train_loader):
         
-        # pdb.set_trace()
+        # #pdb.set_trace()
         incomplete_data = data[1].to(device)
         complete_data = data[2].to(device)
-        static_persistence = data[3].to(device)
+        persistence =  static_persistence[k*args.batch_size: (k+1)*args.batch_size]
+        k+=1 
+        
+        
 
         optimizer.zero_grad()
         output = net(incomplete_data.permute(0,2,1)) # transpose data for NumberxChannelxSize format
-        # pdb.set_trace()
+        # #pdb.set_trace()
         cham_loss, _ = chamfer_distance(complete_data, output) 
 
         loss = cham_loss
@@ -125,15 +120,17 @@ def train_epoch(epoch):
         if wasserstein == True and epoch % 10 ==0 :
 
             loss_pd = 0
-            for i in range(complete_data.size()[0]):   
+            for i in trange(complete_data.size()[0]):   
 
                 layer = AlphaLayer(maxdim=1)
 
                 pd_pred = layer(output[i])
-                pd_comp = static_persistence    #add 
-
-                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], static_persistence[0][0][1:],  p=2, eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
-                loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], static_persistence[0][1], p=2,  eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
+                pd_comp = persistence[i]    #add 
+                # pd_comp = pd_comp.cuda()
+                
+                # #pdb.set_trace()
+                loss_h0, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][0][1:], pd_comp[0][1:].cuda(),  p=2, eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
+                loss_h1, corrs_1_to_2, corrs_2_to_1 = sinkhorn(pd_pred[0][1], pd_comp[1].cuda(), p=2,  eps=eps, max_iters=niters, stop_thresh=stop_error, verbose=False)
             
                 loss_pd += loss_h0 + loss_h1
             
@@ -167,7 +164,7 @@ def train_epoch(epoch):
         
         epoch_loss += loss.item()
         
-    return epoch_loss/i
+    return epoch_loss/k
 
 
 
@@ -178,7 +175,7 @@ def test_batch(data): # test with a batch of inputs
     with torch.no_grad():
         incomplete_data = data[1].to(device)
         complete_data = data[2].to(device)
-        # pdb.set_trace()
+        # #pdb.set_trace()
         output = net(incomplete_data.permute(0,2,1))
         loss, _ = chamfer_distance(complete_data, output) 
         
@@ -192,7 +189,7 @@ def test_epoch(): # test with all test set
             loss, output = test_batch(data)
             epoch_loss += loss
 
-    return epoch_loss/i
+    return epoch_loss/(i+1)
 
 
 
@@ -215,7 +212,7 @@ def test_epoch(): # test with all test set
 
 # %%
 batch_size = 32
-output_folder = "output/Dutch_difficult_pdloss/" # folder path to save the results
+output_folder = args.log # folder path to save the results
 save_results = True # save the results to output_folder
 use_GPU = True # use GPU, False to use CPU
 latent_size = 128 # bottleneck size of the Autoencoder model
@@ -277,20 +274,39 @@ class CatenaryLoaderTest(Dataset):
 #Dataloaders creation
 
 
-dynamic_lidar = normalize(np.load(os.path.join(args.data, 'part_tr.npy'))).astype(np.float32)[::4]   #8668, 4000, 3
-static_lidar = normalize(np.load(os.path.join(args.data, 'comp_tr.npy'))).astype(np.float32)[::4]
+dynamic_lidar = normalize(np.load(os.path.join(args.data, 'part_tr.npy'))).astype(np.float32)[::16]   #8668, 4000, 3
+static_lidar = normalize(np.load(os.path.join(args.data, 'comp_tr.npy'))).astype(np.float32)[::16]
+
+# pdb.set_trace()
 
 with open(os.path.join(args.data, 'pds.pkl'), 'rb') as file:
     pds = pickle.load(file)
 
-static_persistence  = pds[3::4]   #add - assuming that  laoding gives as list --> the [3::4] gives every 4th element
-# pdb.set_trace()
+
+static_persistence = pds[15::16]       #add - assuming that  laoding gives as list --> the [3::4] gives every 4th element
 
 
-data_train = CatenaryLoader(dynamic_lidar, static_lidar, static_persistence)
+# static_persistence =[]
+
+# for i in static_persistence1:
+#     if not isinstance(i[], tuple):
+#         tup = tuple(i)
+#         static_persistence.append(tup)
+# #pdb.set_trace()
+
+
+
+
+
+# static_persistence = np.ndarray(static_persistence, dtype = tuple)
+
+
+data_train = CatenaryLoaderTest(dynamic_lidar, static_lidar)
+
+# data_train = list(zip(dynamic_lidar, static_lidar, static_persistence))
 
 train_loader  = torch.utils.data.DataLoader(data_train, batch_size=args.batch_size,
-                shuffle=True, num_workers=4, drop_last=True)
+                shuffle=False, num_workers=4, drop_last=True)
 
 
 
@@ -342,7 +358,7 @@ topo = False
 emd = False
 
 wasserstein = True
-
+"xxxx"
 # %%
 
 
@@ -363,13 +379,14 @@ for i in range(501) :
 
     startTime = time.time()
     
-    train_loss = train_epoch(i) #train one epoch, get the average loss
+    train_loss = train_epoch(i, static_persistence) #train one epoch, get the average loss
     train_loss_list.append(train_loss)
     
     test_loss = test_epoch() # test with test set
     test_loss_list.append(test_loss)
     
     epoch_time = time.time() - startTime
+    #pdb.set_trace()
     
     writeString = "epoch " + str(i) + " train loss : " + str(train_loss) + " test loss : " + str(test_loss) + " epoch time : " + str(epoch_time) + "\n"
     print(writeString)
