@@ -1,8 +1,14 @@
 /CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
 Traceback (most recent call last):
-  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/pointnet_p1-bastian.py", line 260, in <module>
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/pointnet_p1-bastian.py", line 261, in <module>
     train_loss = train_epoch() #train one epoch, get the average loss
-  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/pointnet_p1-bastian.py", line 75, in train_epoch
-    output,z = net(incomplete_data.permute(0,2,1)) # takes input as 3,4000
-ValueError: too many values to unpack (expected 2)
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/pointnet_p1-bastian.py", line 90, in train_epoch
+    topo_loss = Topoloss([complete_data, pi_x], [z, pi_z])
+  File "/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/torch_topological/nn/loss.py", line 153, in forward
+    X_sig_X = [
+  File "/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/torch_topological/nn/loss.py", line 154, in <listcomp>
+    self._select_distances(X_dist, X_pi[dim].pairing)
+TypeError: 'VietorisRipsComplex' object is not subscriptable

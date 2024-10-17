@@ -73,20 +73,21 @@ def train_epoch():
         complete_data = data[2].to(device)
         optimizer.zero_grad()
         output,z = net(incomplete_data.permute(0,2,1)) # takes input as 3,4000
-        
-        cham_loss, _ = chamfer_distance(complete_data, output.permute(0,2,1))
+        # print(complete_data.shape, output.permute(0,2,1).shape)
+        # cham_loss, _ = chamfer_distance(complete_data, output.permute(0,2,1))
+        cham_loss, _ = chamfer_distance(complete_data, output)
 
         #-------------------------------------------------------
-        pdb.set_trace()
+        # pdb.set_trace()
 
         # expand z dimesion to 1 at end
-        pi_z = pi_z.unsqueeze(2)
+        z = z.unsqueeze(2)
 
         pi_x = VietorisRipsComplex(complete_data)   #[bs,5000,3]
         pi_z = VietorisRipsComplex(z)               #[bs,512,1]  to be 
 
-
-        topo_loss = self.loss([complete_data, pi_x], [z, pi_z])
+        Topoloss = SignatureLoss(p=1)
+        topo_loss = Topoloss([complete_data, pi_x], [z, pi_z])
         #-------------------------------------------------------
 
         loss = cham_loss + 10*topo_loss
@@ -245,7 +246,7 @@ train_loss_list = []
 test_loss_list = []  
 
 
-summary(net, (3, input_size), device='cuda')
+# summary(net, (3, input_size), device='cuda')
 # exit(0)
 
 
