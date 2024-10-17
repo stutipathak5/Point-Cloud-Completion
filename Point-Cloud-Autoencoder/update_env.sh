@@ -8,6 +8,8 @@
 #conda install -c fvcore -c conda-forge fvcore
 #conda install pytorch3d -c pytorch3d
 #pip install pyemd
-pip install pykeops tqdm
+# pip install pykeops tqdm
+# pip install torch_topological
+pip install torchsummary
 # Or from a file:
 #  pip install -r requirements.txt

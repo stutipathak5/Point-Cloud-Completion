@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/bastian_topo/pointnet_p1-bastian.py", line 3, in <module>
+    import utils
+ModuleNotFoundError: No module named 'utils'
