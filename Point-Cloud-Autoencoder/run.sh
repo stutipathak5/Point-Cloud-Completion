@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=pcne
 #SBATCH -A ap_invilab
-#SBATCH -p ampere_gpu
+#SBATCH -p pascal_gpu
 #SBATCH --gpus-per-node=2
 #SBATCH --time=24:00:00
 #SBATCH -o logs/output
@@ -20,6 +20,7 @@
 
 export PATH="${VSC_SCRATCH}/containers/pointnet_ae/bin:$PATH"
 python -c "import torch; print(torch.cuda.is_available())"
-# python misc.py
-# python PointCloudAEcat_comp_new_loader.py --data data/final_splits/Dutch/difficult/splits --batch_size 256
-python PointCloudAEcat_PDloss.py --data data/final_splits/Dutch/easy/splits --batch_size 256 --log "output/Dutch_easy_pd_loss/"
+# # python misc.py
+# # python PointCloudAEcat_comp_new_loader.py --data data/final_splits/Dutch/difficult/splits --batch_size 256
+# python PointCloudAEcat_PDloss.py --data data/final_splits/Dutch/easy/splits --batch_size 256 --log "output/Dutch_easy_pd_loss/"
+python pointnet_p1-bastian.py --data data/final_splits/Dutch/difficult/splits --batch_size 256
