@@ -52,6 +52,7 @@ class PointCloudAE(nn.Module):
     
     def forward(self, x):
         x = self.encoder(x)
+        z = x
         x = self.decoder(x)
-        return x
+        return x, z
     
