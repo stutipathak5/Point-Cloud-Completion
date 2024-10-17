@@ -1,3 +1,21 @@
 True
 [Warning] Since Open3D 0.15, installing Open3D via conda is deprecated. Please re-install Open3D via: `pip install open3d -U`.
+[KeOps] Compiling cuda jit compiler engine ... OK
+[pyKeOps] Compiling nvrtc binder for python ... OK
 Epoch  0
+[KeOps] Generating code for Max_SumShiftExpWeight_Reduction reduction (with parameters 0) of formula [(-Sqrt(Sum((a-b)**2))+c)/d,1] with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,1), d=Var(3,1,2) ... OK
+[KeOps] Generating code for Max_SumShiftExpWeight_Reduction reduction (with parameters 1) of formula [(-Sqrt(Sum((a-b)**2))+c)/d,1] with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,2) ... OK
+[KeOps] Generating code for ArgMax_Reduction reduction (with parameters 0) of formula Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2) ... OK
+[KeOps] Generating code for ArgMax_Reduction reduction (with parameters 1) of formula Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula Sqrt(Sum((a-b)**2))*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 1) of formula Sqrt(Sum((a-b)**2))*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula (Rsqrt(Sum((a-b)**2))*((a-b)*(f-(f*Sqrt(Sum((a-b)**2)))/e)))*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,0) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula ((f*Sqrt(Sum((a-b)**2)))/e)*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,0) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 1) of formula ((f*Sqrt(Sum((a-b)**2)))/e)*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,0) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula -((((a-b)*(Extract(e,1,1)/d))*Rsqrt(Sum((a-b)**2)))*Exp((-Sqrt(Sum((a-b)**2))+c)/d-Extract(f,0,1))) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,2), e=Var(4,2,1), f=Var(5,2,1) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula (Extract(e,1,1)/d)*Exp((-Sqrt(Sum((a-b)**2))+c)/d-Extract(f,0,1)) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,2), e=Var(4,2,1), f=Var(5,2,1) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula -((((a-b)*(Extract(e,1,1)/d))*Rsqrt(Sum((a-b)**2)))*Exp((-Sqrt(Sum((a-b)**2))+c)/d-Extract(f,0,1))) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,1), d=Var(3,1,2), e=Var(4,2,0), f=Var(5,2,0) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 1) of formula (Extract(e,1,1)/d)*Exp((-Sqrt(Sum((a-b)**2))+c)/d-Extract(f,0,1)) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,1), d=Var(3,1,2), e=Var(4,2,0), f=Var(5,2,0) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula (Rsqrt(Sum((a-b)**2))*((a-b)*(f-(f*Sqrt(Sum((a-b)**2)))/e)))*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,1) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 0) of formula ((f*Sqrt(Sum((a-b)**2)))/e)*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,1) ... OK
+[KeOps] Generating code for Sum_Reduction reduction (with parameters 1) of formula ((f*Sqrt(Sum((a-b)**2)))/e)*Exp(((-Sqrt(Sum((a-b)**2))+c)+d)/e) with a=Var(0,2,0), b=Var(1,2,1), c=Var(2,1,0), d=Var(3,1,1), e=Var(4,1,2), f=Var(5,1,1) ... OK

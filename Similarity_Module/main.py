@@ -1,6 +1,4 @@
 # %%
-# import point_cloud_utils as pcu
-# import polyscope as ps
 import numpy as np
 import time
 import matplotlib.pyplot as plt
@@ -40,7 +38,7 @@ import utils
 import pickle
 
 
-parser = argparse.ArgumentParser(description='VAE training of LiDAR')
+parser = argparse.ArgumentParser(description='')
 parser.add_argument('--data',         type=str,   default='',            help='size of minibatch used during training')
 parser.add_argument('--batch_size',   type=int,   default=512,           help='size of minibatch used during training')
 parser.add_argument('--log',          type=str,   default=512,           help='size of minibatch used during training')
@@ -52,7 +50,6 @@ def load_h5(file_path, dataset_name):
         array = hf[dataset_name][:]
     return array
 
-# npy_folder_path = '../data/Dutch/easy_0.8'
 npy_folder_path = args.data
 
 def sample(point_cloud_array):
@@ -61,7 +58,6 @@ def sample(point_cloud_array):
         indices = np.random.choice(point_cloud_array[i].shape[0], 1024, replace=False)
         new_array[i] = point_cloud_array[i][indices, :]
     return new_array
-
 
 
 def normalize(pc_array):
@@ -87,10 +83,7 @@ def normalize(pc_array):
 
 
 
-
 def train_epoch(epoch, static_persistence):
-
-
     
     epoch_loss = 0
     
@@ -357,7 +350,7 @@ topo = False
 # from pyemd import emd_samples
 emd = False
 
-wasserstein = True
+wasserstein = False
 # %%
 
 
