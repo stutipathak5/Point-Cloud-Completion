@@ -2,6 +2,7 @@
 #SBATCH --job-name=pcne
 #SBATCH -A ap_invilab
 #SBATCH -p ampere_gpu
+#SBATCH --nodes=1
 #SBATCH --gpus-per-node=2
 #SBATCH --time=24:00:00
 #SBATCH -o logs/output
