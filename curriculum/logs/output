@@ -101,3 +101,1933 @@ epoch 34 train loss : 0 test loss : 0.004556487663649023 epoch time : 11.0342230
 
 epoch 35 train loss : 0 test loss : 0.0028735357336699963 epoch time : 11.103270769119263
 
+epoch 36 train loss : 0 test loss : 0.0020485117953891554 epoch time : 11.157833337783813
+
+epoch 37 train loss : 0 test loss : 0.0020718193845823407 epoch time : 11.041194915771484
+
+epoch 38 train loss : 0 test loss : 0.003295465954579413 epoch time : 11.011345148086548
+
+epoch 39 train loss : 0 test loss : 0.0015398826217278838 epoch time : 11.112605810165405
+
+epoch 40 train loss : 0 test loss : 0.002050271024927497 epoch time : 10.997534990310669
+
+epoch 41 train loss : 0 test loss : 0.0013694997372416158 epoch time : 11.56620192527771
+
+epoch 42 train loss : 0 test loss : 0.0017332144586058955 epoch time : 11.066943407058716
+
+epoch 43 train loss : 0 test loss : 0.0016318681106592219 epoch time : 11.207188844680786
+
+epoch 44 train loss : 0 test loss : 0.0015584419403846066 epoch time : 11.206814527511597
+
+epoch 45 train loss : 0 test loss : 0.0019344507600180805 epoch time : 11.129910230636597
+
+epoch 46 train loss : 0 test loss : 0.001965084132583191 epoch time : 11.085926294326782
+
+epoch 47 train loss : 0 test loss : 0.002404430454286436 epoch time : 11.047814130783081
+
+epoch 48 train loss : 0 test loss : 0.004807308898307383 epoch time : 11.106323480606079
+
+epoch 49 train loss : 0 test loss : 0.0018442760726126532 epoch time : 11.154691219329834
+
+epoch 50 train loss : 0 test loss : 0.0012691831992318232 epoch time : 11.222790479660034
+
+epoch 51 train loss : 0 test loss : 0.0013923603886117537 epoch time : 10.86772084236145
+
+epoch 52 train loss : 0 test loss : 0.001223226737541457 epoch time : 11.138365507125854
+
+epoch 53 train loss : 0 test loss : 0.0011191469869421173 epoch time : 11.182270765304565
+
+epoch 54 train loss : 0 test loss : 0.0014293457109791536 epoch time : 10.940939664840698
+
+epoch 55 train loss : 0 test loss : 0.0019138201799554129 epoch time : 11.013941049575806
+
+epoch 56 train loss : 0 test loss : 0.0011141295059739302 epoch time : 10.891417741775513
+
+epoch 57 train loss : 0 test loss : 0.001704697225553294 epoch time : 10.95108699798584
+
+epoch 58 train loss : 0 test loss : 0.0013715352785463135 epoch time : 11.052099704742432
+
+epoch 59 train loss : 0 test loss : 0.001029925838035221 epoch time : 11.189775228500366
+
+epoch 60 train loss : 0 test loss : 0.0012585547713873286 epoch time : 11.051235675811768
+
+epoch 61 train loss : 0 test loss : 0.0018272357992827892 epoch time : 11.097702980041504
+
+epoch 62 train loss : 0 test loss : 0.0011896427313331515 epoch time : 11.258176326751709
+
+epoch 63 train loss : 0 test loss : 0.0010822022062105436 epoch time : 11.045845746994019
+
+epoch 64 train loss : 0 test loss : 0.0010791889508254826 epoch time : 10.944818019866943
+
+epoch 65 train loss : 0 test loss : 0.0021863672882318497 epoch time : 11.223279237747192
+
+epoch 66 train loss : 0 test loss : 0.0014220265826831262 epoch time : 11.248143911361694
+
+epoch 67 train loss : 0 test loss : 0.00114827665189902 epoch time : 11.242898941040039
+
+epoch 68 train loss : 0 test loss : 0.000918488532382374 epoch time : 11.321140050888062
+
+epoch 69 train loss : 0 test loss : 0.0008907036972232163 epoch time : 11.041608572006226
+
+epoch 70 train loss : 0 test loss : 0.0008957780858812233 epoch time : 12.138878107070923
+
+epoch 71 train loss : 0 test loss : 0.000998604838969186 epoch time : 10.956048488616943
+
+epoch 72 train loss : 0 test loss : 0.0009127927575415621 epoch time : 11.247553586959839
+
+epoch 73 train loss : 0 test loss : 0.0009438121342100203 epoch time : 11.081923246383667
+
+epoch 74 train loss : 0 test loss : 0.0015494490507990122 epoch time : 11.131160974502563
+
+epoch 75 train loss : 0 test loss : 0.0012151494932671387 epoch time : 10.8695547580719
+
+epoch 76 train loss : 0 test loss : 0.0007352557149715722 epoch time : 10.962575197219849
+
+epoch 77 train loss : 0 test loss : 0.0010926372876080375 epoch time : 11.074480056762695
+
+epoch 78 train loss : 0 test loss : 0.0007239555319150289 epoch time : 11.06356692314148
+
+epoch 79 train loss : 0 test loss : 0.000911187239883778 epoch time : 11.028450965881348
+
+epoch 80 train loss : 0 test loss : 0.0006005141622154042 epoch time : 10.829103231430054
+
+epoch 81 train loss : 0 test loss : 0.0006100435178571691 epoch time : 11.085522174835205
+
+epoch 82 train loss : 0 test loss : 0.0008356669034886485 epoch time : 11.088157415390015
+
+epoch 83 train loss : 0 test loss : 0.0007272172127462303 epoch time : 10.936740398406982
+
+epoch 84 train loss : 0 test loss : 0.0008253257886584228 epoch time : 11.126734018325806
+
+epoch 85 train loss : 0 test loss : 0.0012076594575773925 epoch time : 11.129242420196533
+
+epoch 86 train loss : 0 test loss : 0.0016199677581122767 epoch time : 11.021542072296143
+
+epoch 87 train loss : 0 test loss : 0.0008787167122742782 epoch time : 11.062051057815552
+
+epoch 88 train loss : 0 test loss : 0.0008658826651905353 epoch time : 11.0569007396698
+
+epoch 89 train loss : 0 test loss : 0.0008269767567981035 epoch time : 11.05277395248413
+
+epoch 90 train loss : 0 test loss : 0.0006355027483853822 epoch time : 10.941967248916626
+
+epoch 91 train loss : 0 test loss : 0.0009731716224147627 epoch time : 11.021315813064575
+
+epoch 92 train loss : 0 test loss : 0.000697613533702679 epoch time : 11.022693157196045
+
+epoch 93 train loss : 0 test loss : 0.0006530560882917295 epoch time : 10.934799909591675
+
+epoch 94 train loss : 0 test loss : 0.0006514022873792177 epoch time : 11.093054294586182
+
+epoch 95 train loss : 0 test loss : 0.0006155442921832824 epoch time : 11.338558912277222
+
+epoch 96 train loss : 0 test loss : 0.0010164917330257595 epoch time : 10.92077112197876
+
+epoch 97 train loss : 0 test loss : 0.0009763949589493374 epoch time : 11.213873624801636
+
+epoch 98 train loss : 0 test loss : 0.0007401880041773742 epoch time : 11.04109239578247
+
+epoch 99 train loss : 0 test loss : 0.000619220154476352 epoch time : 11.273666858673096
+
+epoch 100 train loss : 0 test loss : 0.0006437716268313428 epoch time : 11.083760261535645
+
+epoch 101 train loss : 0 test loss : 0.0006042305612936616 epoch time : 11.078240156173706
+
+epoch 102 train loss : 0 test loss : 0.000639581218517075 epoch time : 10.935885190963745
+
+epoch 103 train loss : 0 test loss : 0.0004500665236264467 epoch time : 11.095207452774048
+
+epoch 104 train loss : 0 test loss : 0.001277411220750461 epoch time : 10.929847240447998
+
+epoch 105 train loss : 0 test loss : 0.0008507151893960933 epoch time : 11.181349754333496
+
+epoch 106 train loss : 0 test loss : 0.0008060291535609091 epoch time : 11.075404167175293
+
+epoch 107 train loss : 0 test loss : 0.0005109766158663357 epoch time : 11.050121307373047
+
+epoch 108 train loss : 0 test loss : 0.0004887170798610896 epoch time : 11.01794147491455
+
+epoch 109 train loss : 0 test loss : 0.000545334696653299 epoch time : 10.966178178787231
+
+epoch 110 train loss : 0 test loss : 0.0005460320729374265 epoch time : 11.119325876235962
+
+epoch 111 train loss : 0 test loss : 0.0006102379556978121 epoch time : 10.936677932739258
+
+epoch 112 train loss : 0 test loss : 0.0004937347111990675 epoch time : 11.240681409835815
+
+epoch 113 train loss : 0 test loss : 0.0005057905849146967 epoch time : 11.099520444869995
+
+epoch 114 train loss : 0 test loss : 0.0007166357827372849 epoch time : 11.020282983779907
+
+epoch 115 train loss : 0 test loss : 0.0008666862268000841 epoch time : 10.951627016067505
+
+epoch 116 train loss : 0 test loss : 0.000764622813827979 epoch time : 11.023712158203125
+
+epoch 117 train loss : 0 test loss : 0.0011828547721961513 epoch time : 11.226270198822021
+
+epoch 118 train loss : 0 test loss : 0.0006905690194495643 epoch time : 11.194533586502075
+
+epoch 119 train loss : 0 test loss : 0.0009489281025404731 epoch time : 10.90750503540039
+
+epoch 120 train loss : 0 test loss : 0.0006244341348065063 epoch time : 11.010107278823853
+
+epoch 121 train loss : 0 test loss : 0.0005257726491739353 epoch time : 11.251529216766357
+
+epoch 122 train loss : 0 test loss : 0.00047826206719037145 epoch time : 11.237167596817017
+
+epoch 123 train loss : 0 test loss : 0.0009295010386267677 epoch time : 11.249040603637695
+
+epoch 124 train loss : 0 test loss : 0.0006725447989689807 epoch time : 11.222500085830688
+
+epoch 125 train loss : 0 test loss : 0.0005037017253926024 epoch time : 10.943769454956055
+
+epoch 126 train loss : 0 test loss : 0.0009813507300956796 epoch time : 10.99091386795044
+
+epoch 127 train loss : 0 test loss : 0.0005608169788805147 epoch time : 11.069897651672363
+
+epoch 128 train loss : 0 test loss : 0.0005942392551029722 epoch time : 11.008282899856567
+
+epoch 129 train loss : 0 test loss : 0.0005136467564928656 epoch time : 11.180353164672852
+
+epoch 130 train loss : 0 test loss : 0.00040301825598968816 epoch time : 11.206397533416748
+
+epoch 131 train loss : 0 test loss : 0.0006894397714252894 epoch time : 11.116204977035522
+
+epoch 132 train loss : 0 test loss : 0.000657235180066588 epoch time : 11.162074327468872
+
+epoch 133 train loss : 0 test loss : 0.0007961097532340015 epoch time : 10.914596796035767
+
+epoch 134 train loss : 0 test loss : 0.0005021855419424052 epoch time : 11.233397722244263
+
+epoch 135 train loss : 0 test loss : 0.0024891740370852253 epoch time : 10.935027360916138
+
+epoch 136 train loss : 0 test loss : 0.0007676805835217237 epoch time : 11.051482439041138
+
+epoch 137 train loss : 0 test loss : 0.0006763298394313703 epoch time : 11.2557213306427
+
+epoch 138 train loss : 0 test loss : 0.000468567445447358 epoch time : 11.155166625976562
+
+epoch 139 train loss : 0 test loss : 0.0004739963721173505 epoch time : 11.020950078964233
+
+epoch 140 train loss : 0 test loss : 0.0004457663793194418 epoch time : 10.955491304397583
+
+epoch 141 train loss : 0 test loss : 0.0004143800518553083 epoch time : 11.178119659423828
+
+epoch 142 train loss : 0 test loss : 0.00046215884988972295 epoch time : 11.126264095306396
+
+epoch 143 train loss : 0 test loss : 0.00038469897359997657 epoch time : 11.147353649139404
+
+epoch 144 train loss : 0 test loss : 0.0004110412531493542 epoch time : 11.186164379119873
+
+epoch 145 train loss : 0 test loss : 0.0005022033316587718 epoch time : 11.311388492584229
+
+epoch 146 train loss : 0 test loss : 0.0004438616427554128 epoch time : 10.978012800216675
+
+epoch 147 train loss : 0 test loss : 0.0015953412124266226 epoch time : 11.154133796691895
+
+epoch 148 train loss : 0 test loss : 0.0005962909538842117 epoch time : 10.978102922439575
+
+epoch 149 train loss : 0 test loss : 0.0005428005000188326 epoch time : 11.084054470062256
+
+epoch 150 train loss : 0 test loss : 0.0005849232984473929 epoch time : 11.223479986190796
+
+epoch 151 train loss : 0 test loss : 0.000641903427701133 epoch time : 11.211782693862915
+
+epoch 152 train loss : 0 test loss : 0.00038098531755773973 epoch time : 11.101157903671265
+
+epoch 153 train loss : 0 test loss : 0.0014233629141623776 epoch time : 11.295248031616211
+
+epoch 154 train loss : 0 test loss : 0.0008152807713486254 epoch time : 10.904880285263062
+
+epoch 155 train loss : 0 test loss : 0.000654249777047274 epoch time : 11.13883924484253
+
+epoch 156 train loss : 0 test loss : 0.0006272143461198235 epoch time : 10.944763422012329
+
+epoch 157 train loss : 0 test loss : 0.0007215680670924485 epoch time : 11.188391923904419
+
+epoch 158 train loss : 0 test loss : 0.0008927954428751642 epoch time : 11.006354570388794
+
+epoch 159 train loss : 0 test loss : 0.0006185609866709759 epoch time : 11.149014472961426
+
+epoch 160 train loss : 0 test loss : 0.0005741572967963293 epoch time : 10.857282400131226
+
+epoch 161 train loss : 0 test loss : 0.000563527995836921 epoch time : 11.286109685897827
+
+epoch 162 train loss : 0 test loss : 0.0006951032458649328 epoch time : 11.078551292419434
+
+epoch 163 train loss : 0 test loss : 0.0006333166432644551 epoch time : 11.023054361343384
+
+epoch 164 train loss : 0 test loss : 0.000541015833732672 epoch time : 11.147969484329224
+
+epoch 165 train loss : 0 test loss : 0.00040964789271432284 epoch time : 10.998249292373657
+
+epoch 166 train loss : 0 test loss : 0.0004660778649849817 epoch time : 11.112029314041138
+
+epoch 167 train loss : 0 test loss : 0.0017861133092083037 epoch time : 11.382896900177002
+
+epoch 168 train loss : 0 test loss : 0.0008002875595896816 epoch time : 11.055518627166748
+
+epoch 169 train loss : 0 test loss : 0.0005848317426474144 epoch time : 11.007965326309204
+
+epoch 170 train loss : 0 test loss : 0.0003680570225697011 epoch time : 11.204307556152344
+
+epoch 171 train loss : 0 test loss : 0.000445727394738545 epoch time : 11.200513124465942
+
+epoch 172 train loss : 0 test loss : 0.0003796523524215445 epoch time : 11.251686811447144
+
+epoch 173 train loss : 0 test loss : 0.0004602059319343728 epoch time : 11.182786703109741
+
+epoch 174 train loss : 0 test loss : 0.000308877521698984 epoch time : 11.203213930130005
+
+epoch 175 train loss : 0 test loss : 0.00037820849926598993 epoch time : 11.181493282318115
+
+epoch 176 train loss : 0 test loss : 0.0006042456079740077 epoch time : 10.955434322357178
+
+epoch 177 train loss : 0 test loss : 0.000536915763708142 epoch time : 11.204839944839478
+
+epoch 178 train loss : 0 test loss : 0.0009569860073194528 epoch time : 11.154040813446045
+
+epoch 179 train loss : 0 test loss : 0.0010098212320978444 epoch time : 11.163158893585205
+
+epoch 180 train loss : 0 test loss : 0.0009601260438406219 epoch time : 11.099437713623047
+
+epoch 181 train loss : 0 test loss : 0.0007040861819405109 epoch time : 10.992541551589966
+
+epoch 182 train loss : 0 test loss : 0.0005329394771251827 epoch time : 11.168641328811646
+
+epoch 183 train loss : 0 test loss : 0.00038903158080453676 epoch time : 10.948753833770752
+
+epoch 184 train loss : 0 test loss : 0.00047778493899386376 epoch time : 11.111349105834961
+
+epoch 185 train loss : 0 test loss : 0.0005275076303708678 epoch time : 11.169225454330444
+
+epoch 186 train loss : 0 test loss : 0.0005353358525705213 epoch time : 11.04653024673462
+
+epoch 187 train loss : 0 test loss : 0.0006363723562875142 epoch time : 11.266361951828003
+
+epoch 188 train loss : 0 test loss : 0.0008389165838404248 epoch time : 10.996917963027954
+
+epoch 189 train loss : 0 test loss : 0.0003733008585792656 epoch time : 11.27242112159729
+
+epoch 190 train loss : 0 test loss : 0.001072173710175169 epoch time : 10.952979564666748
+
+epoch 191 train loss : 0 test loss : 0.0004817966279612544 epoch time : 10.949423789978027
+
+epoch 192 train loss : 0 test loss : 0.0004920354864831703 epoch time : 11.1948561668396
+
+epoch 193 train loss : 0 test loss : 0.0006066689093131572 epoch time : 11.252354621887207
+
+epoch 194 train loss : 0 test loss : 0.0004989357670031799 epoch time : 11.314763069152832
+
+epoch 195 train loss : 0 test loss : 0.0004815325131251787 epoch time : 11.109350681304932
+
+epoch 196 train loss : 0 test loss : 0.001167041880156224 epoch time : 11.103337526321411
+
+epoch 197 train loss : 0 test loss : 0.00047259118340055767 epoch time : 11.074090480804443
+
+epoch 198 train loss : 0 test loss : 0.0005115192495092439 epoch time : 11.192393779754639
+
+epoch 199 train loss : 0 test loss : 0.0004885661037405953 epoch time : 10.955899000167847
+
+epoch 200 train loss : 0 test loss : 0.0005952732414395238 epoch time : 11.268477201461792
+
+epoch 201 train loss : 0 test loss : 0.0005073872162029147 epoch time : 10.956114292144775
+
+epoch 202 train loss : 0 test loss : 0.0003846123945550062 epoch time : 11.256625175476074
+
+epoch 203 train loss : 0 test loss : 0.00044575351057574153 epoch time : 11.288398742675781
+
+epoch 204 train loss : 0 test loss : 0.0005913019413128495 epoch time : 11.25612473487854
+
+epoch 205 train loss : 0 test loss : 0.0006444183721517523 epoch time : 10.981050491333008
+
+epoch 206 train loss : 0 test loss : 0.001513076334958896 epoch time : 10.971909284591675
+
+epoch 207 train loss : 0 test loss : 0.0005139981367392465 epoch time : 10.90439510345459
+
+epoch 208 train loss : 0 test loss : 0.0004989327668833236 epoch time : 10.932726383209229
+
+epoch 209 train loss : 0 test loss : 0.0006297356934131434 epoch time : 11.001692771911621
+
+epoch 210 train loss : 0 test loss : 0.0015232115401886404 epoch time : 10.888446569442749
+
+epoch 211 train loss : 0 test loss : 0.0008601481094956398 epoch time : 11.388955354690552
+
+epoch 212 train loss : 0 test loss : 0.0008112135207435737 epoch time : 11.18053674697876
+
+epoch 213 train loss : 0 test loss : 0.0006207618813884134 epoch time : 11.194326162338257
+
+epoch 214 train loss : 0 test loss : 0.0004226666351314634 epoch time : 11.05888295173645
+
+epoch 215 train loss : 0 test loss : 0.0004531172016868368 epoch time : 11.04331111907959
+
+epoch 216 train loss : 0 test loss : 0.00036788864235859364 epoch time : 11.027240753173828
+
+epoch 217 train loss : 0 test loss : 0.00048234854572607827 epoch time : 11.23397946357727
+
+epoch 218 train loss : 0 test loss : 0.00037776499812025577 epoch time : 11.060567617416382
+
+epoch 219 train loss : 0 test loss : 0.0004739368693359817 epoch time : 11.032711505889893
+
+epoch 220 train loss : 0 test loss : 0.0005250221608245434 epoch time : 11.282471179962158
+
+epoch 221 train loss : 0 test loss : 0.000454988580410524 epoch time : 11.269716024398804
+
+epoch 222 train loss : 0 test loss : 0.0004096905346765804 epoch time : 10.978492736816406
+
+epoch 223 train loss : 0 test loss : 0.000462019049640124 epoch time : 11.098210096359253
+
+epoch 224 train loss : 0 test loss : 0.00038545838712404173 epoch time : 11.071059942245483
+
+epoch 225 train loss : 0 test loss : 0.0003578079097981875 epoch time : 11.020368576049805
+
+epoch 226 train loss : 0 test loss : 0.001593314518686384 epoch time : 11.269026756286621
+
+epoch 227 train loss : 0 test loss : 0.00106481509283185 epoch time : 11.031070232391357
+
+epoch 228 train loss : 0 test loss : 0.0005932758892110238 epoch time : 11.048008441925049
+
+epoch 229 train loss : 0 test loss : 0.0005392810271587223 epoch time : 11.36398458480835
+
+epoch 230 train loss : 0 test loss : 0.000589471606266064 epoch time : 11.220126867294312
+
+epoch 231 train loss : 0 test loss : 0.00052275504519154 epoch time : 11.249102115631104
+
+epoch 232 train loss : 0 test loss : 0.0007321802501489098 epoch time : 10.922916173934937
+
+epoch 233 train loss : 0 test loss : 0.0004698379076823282 epoch time : 11.243456602096558
+
+epoch 234 train loss : 0 test loss : 0.0005795448960270733 epoch time : 11.064839839935303
+
+epoch 235 train loss : 0 test loss : 0.0005944189276002968 epoch time : 11.036094427108765
+
+epoch 236 train loss : 0 test loss : 0.0005160887182379762 epoch time : 11.290611028671265
+
+epoch 237 train loss : 0 test loss : 0.0006297394478072723 epoch time : 11.24829363822937
+
+epoch 238 train loss : 0 test loss : 0.0005126255200593732 epoch time : 11.120270013809204
+
+epoch 239 train loss : 0 test loss : 0.0004508826168603264 epoch time : 11.249385118484497
+
+epoch 240 train loss : 0 test loss : 0.0004714506503660232 epoch time : 11.058953523635864
+
+epoch 241 train loss : 0 test loss : 0.0004988766449969262 epoch time : 11.188457727432251
+
+epoch 242 train loss : 0 test loss : 0.000376389793624791 epoch time : 11.125980377197266
+
+epoch 243 train loss : 0 test loss : 0.0005730893462896347 epoch time : 11.116580486297607
+
+epoch 244 train loss : 0 test loss : 0.0005922890559304506 epoch time : 10.971804141998291
+
+epoch 245 train loss : 0 test loss : 0.0007666737559096267 epoch time : 11.20559287071228
+
+epoch 246 train loss : 0 test loss : 0.0007084450868812079 epoch time : 11.142655611038208
+
+epoch 247 train loss : 0 test loss : 0.00048044549475889653 epoch time : 11.039529085159302
+
+epoch 248 train loss : 0 test loss : 0.000824794095630447 epoch time : 10.819347143173218
+
+epoch 249 train loss : 0 test loss : 0.0005797579166634629 epoch time : 11.091014862060547
+
+epoch 250 train loss : 0 test loss : 0.00178879745847856 epoch time : 11.207881212234497
+
+epoch 251 train loss : 0 test loss : 0.0005299728121220445 epoch time : 10.984125852584839
+
+epoch 252 train loss : 0 test loss : 0.001123906394544368 epoch time : 11.312105655670166
+
+epoch 253 train loss : 0 test loss : 0.000925838146940805 epoch time : 11.205938339233398
+
+epoch 254 train loss : 0 test loss : 0.0009312015899922699 epoch time : 11.233543872833252
+
+epoch 255 train loss : 0 test loss : 0.0006566900362183029 epoch time : 11.270901441574097
+
+epoch 256 train loss : 0 test loss : 0.0006827929513140892 epoch time : 11.193315029144287
+
+epoch 257 train loss : 0 test loss : 0.0006323124495490143 epoch time : 11.216808319091797
+
+epoch 258 train loss : 0 test loss : 0.0005839870888545798 epoch time : 11.12302303314209
+
+epoch 259 train loss : 0 test loss : 0.0005043825270452847 epoch time : 11.226118326187134
+
+epoch 260 train loss : 0 test loss : 0.0004763884862768464 epoch time : 11.002861976623535
+
+epoch 261 train loss : 0 test loss : 0.002904586998435358 epoch time : 11.14450216293335
+
+epoch 262 train loss : 0 test loss : 0.0007720775902271271 epoch time : 11.084017515182495
+
+epoch 263 train loss : 0 test loss : 0.0005400661563423151 epoch time : 11.066844463348389
+
+epoch 264 train loss : 0 test loss : 0.0005960490452707745 epoch time : 11.148151397705078
+
+epoch 265 train loss : 0 test loss : 0.0005128421471454203 epoch time : 11.18936562538147
+
+epoch 266 train loss : 0 test loss : 0.000466300642680532 epoch time : 11.135146617889404
+
+epoch 267 train loss : 0 test loss : 0.0005699971006833948 epoch time : 11.049490928649902
+
+epoch 268 train loss : 0 test loss : 0.0006499650504944535 epoch time : 11.206308603286743
+
+epoch 269 train loss : 0 test loss : 0.0003966015453139941 epoch time : 11.240043640136719
+
+epoch 270 train loss : 0 test loss : 0.0005028774515570452 epoch time : 11.09347414970398
+
+epoch 271 train loss : 0 test loss : 0.0003979211226881792 epoch time : 11.032328844070435
+
+epoch 272 train loss : 0 test loss : 0.0005409508206260701 epoch time : 11.092562198638916
+
+epoch 273 train loss : 0 test loss : 0.0012021631797930847 epoch time : 10.902800798416138
+
+epoch 274 train loss : 0 test loss : 0.000620066697592847 epoch time : 11.252125024795532
+
+epoch 275 train loss : 0 test loss : 0.0007703774414646128 epoch time : 11.124532222747803
+
+epoch 276 train loss : 0 test loss : 0.0006736886522655064 epoch time : 11.11489200592041
+
+epoch 277 train loss : 0 test loss : 0.0004830940500445043 epoch time : 11.054855346679688
+
+epoch 278 train loss : 0 test loss : 0.0004237869482797881 epoch time : 11.209249019622803
+
+epoch 279 train loss : 0 test loss : 0.0004601064574671909 epoch time : 11.218819856643677
+
+epoch 280 train loss : 0 test loss : 0.00046337565436260775 epoch time : 10.921690225601196
+
+epoch 281 train loss : 0 test loss : 0.000707424696884118 epoch time : 11.11964750289917
+
+epoch 282 train loss : 0 test loss : 0.0006199539930094033 epoch time : 11.148271083831787
+
+epoch 283 train loss : 0 test loss : 0.00047553920740028843 epoch time : 11.030426740646362
+
+epoch 284 train loss : 0 test loss : 0.00033185515106500435 epoch time : 10.949514865875244
+
+epoch 285 train loss : 0 test loss : 0.0004989606410769435 epoch time : 10.972195863723755
+
+epoch 286 train loss : 0 test loss : 0.0005514753429451957 epoch time : 10.724626541137695
+
+epoch 287 train loss : 0 test loss : 0.0005272736598271877 epoch time : 11.207150220870972
+
+epoch 288 train loss : 0 test loss : 0.0005137372451523939 epoch time : 11.20661473274231
+
+epoch 289 train loss : 0 test loss : 0.00041804610373219475 epoch time : 11.033309936523438
+
+epoch 290 train loss : 0 test loss : 0.0004955434803074846 epoch time : 10.920296669006348
+
+epoch 291 train loss : 0 test loss : 0.0005699309355501706 epoch time : 11.246466636657715
+
+epoch 292 train loss : 0 test loss : 0.0004601132871660714 epoch time : 11.258229970932007
+
+epoch 293 train loss : 0 test loss : 0.0007023919558074946 epoch time : 11.21068286895752
+
+epoch 294 train loss : 0 test loss : 0.0003732834350860988 epoch time : 10.770620584487915
+
+epoch 295 train loss : 0 test loss : 0.0006832611397840083 epoch time : 11.217005252838135
+
+epoch 296 train loss : 0 test loss : 0.0004228900894910718 epoch time : 10.939829587936401
+
+epoch 297 train loss : 0 test loss : 0.0020370782391789057 epoch time : 10.984053134918213
+
+epoch 298 train loss : 0 test loss : 0.000403243694260406 epoch time : 11.157103776931763
+
+epoch 299 train loss : 0 test loss : 0.00038131777303836617 epoch time : 11.109202146530151
+
+epoch 300 train loss : 0 test loss : 0.0004584943720450004 epoch time : 10.989164113998413
+
+epoch 301 train loss : 0 test loss : 0.00048401798752214137 epoch time : 11.055592060089111
+
+epoch 302 train loss : 0 test loss : 0.00048590945516480133 epoch time : 11.04426622390747
+
+epoch 303 train loss : 0 test loss : 0.00045054240520888317 epoch time : 11.100428819656372
+
+epoch 304 train loss : 0 test loss : 0.0005616181442746893 epoch time : 11.069728374481201
+
+epoch 305 train loss : 0 test loss : 0.00038675946901397157 epoch time : 11.052127361297607
+
+epoch 306 train loss : 0 test loss : 0.00047273562813643366 epoch time : 11.249432802200317
+
+epoch 307 train loss : 0 test loss : 0.0009244405810022727 epoch time : 11.246598720550537
+
+epoch 308 train loss : 0 test loss : 0.00049481712388418 epoch time : 11.006447076797485
+
+epoch 309 train loss : 0 test loss : 0.0005205838121279763 epoch time : 11.061939477920532
+
+epoch 310 train loss : 0 test loss : 0.0004098911716331107 epoch time : 11.001577854156494
+
+epoch 311 train loss : 0 test loss : 0.0004461974458536133 epoch time : 11.035728454589844
+
+epoch 312 train loss : 0 test loss : 0.0005046697551733814 epoch time : 11.02629041671753
+
+epoch 313 train loss : 0 test loss : 0.00047633469027156633 epoch time : 11.108330249786377
+
+epoch 314 train loss : 0 test loss : 0.0003482965500249217 epoch time : 11.232675552368164
+
+epoch 315 train loss : 0 test loss : 0.0005516211119053575 epoch time : 10.905533790588379
+
+epoch 316 train loss : 0 test loss : 0.00044650628115050495 epoch time : 11.114184617996216
+
+epoch 317 train loss : 0 test loss : 0.0014927446221311886 epoch time : 11.125511646270752
+
+epoch 318 train loss : 0 test loss : 0.00047465907846344635 epoch time : 11.25763750076294
+
+epoch 319 train loss : 0 test loss : 0.0004573241943338265 epoch time : 10.980347394943237
+
+epoch 320 train loss : 0 test loss : 0.0004655252123484388 epoch time : 11.1524178981781
+
+epoch 321 train loss : 0 test loss : 0.0006585671532472285 epoch time : 11.037008285522461
+
+epoch 322 train loss : 0 test loss : 0.0006784012269539138 epoch time : 11.173108577728271
+
+epoch 323 train loss : 0 test loss : 0.0011654535483103245 epoch time : 11.08983325958252
+
+epoch 324 train loss : 0 test loss : 0.0008959096254936109 epoch time : 11.163218975067139
+
+epoch 325 train loss : 0 test loss : 0.0005568374278179059 epoch time : 10.965577363967896
+
+epoch 326 train loss : 0 test loss : 0.00048593422494983923 epoch time : 11.005333423614502
+
+epoch 327 train loss : 0 test loss : 0.0003934531390162495 epoch time : 11.026309251785278
+
+epoch 328 train loss : 0 test loss : 0.0004170521206106059 epoch time : 11.203425168991089
+
+epoch 329 train loss : 0 test loss : 0.0003730824779874335 epoch time : 10.957880973815918
+
+epoch 330 train loss : 0 test loss : 0.0005328617893004169 epoch time : 11.132960081100464
+
+epoch 331 train loss : 0 test loss : 0.00045782986368673545 epoch time : 11.21517825126648
+
+epoch 332 train loss : 0 test loss : 0.0005058232830682149 epoch time : 11.18495512008667
+
+epoch 333 train loss : 0 test loss : 0.0004202182293132258 epoch time : 11.216552734375
+
+epoch 334 train loss : 0 test loss : 0.0005089541712853437 epoch time : 11.250972032546997
+
+epoch 335 train loss : 0 test loss : 0.0004985123208219496 epoch time : 11.307548999786377
+
+epoch 336 train loss : 0 test loss : 0.0004167561564827338 epoch time : 11.178077220916748
+
+epoch 337 train loss : 0 test loss : 0.0004312920937081799 epoch time : 11.171771764755249
+
+epoch 338 train loss : 0 test loss : 0.0007543796673417091 epoch time : 11.190117597579956
+
+epoch 339 train loss : 0 test loss : 0.00046438185624235 epoch time : 11.192093133926392
+
+epoch 340 train loss : 0 test loss : 0.00047572014106359955 epoch time : 11.114771127700806
+
+epoch 341 train loss : 0 test loss : 0.0004591136918558429 epoch time : 11.226526021957397
+
+epoch 342 train loss : 0 test loss : 0.00041871813785595197 epoch time : 11.264304399490356
+
+epoch 343 train loss : 0 test loss : 0.00037316234859948355 epoch time : 11.267075061798096
+
+epoch 344 train loss : 0 test loss : 0.0005255665140187679 epoch time : 11.123378992080688
+
+epoch 345 train loss : 0 test loss : 0.00046557483437936753 epoch time : 10.89495301246643
+
+epoch 346 train loss : 0 test loss : 0.0004988158131406332 epoch time : 11.209887981414795
+
+epoch 347 train loss : 0 test loss : 0.0008982376457424834 epoch time : 11.030224561691284
+
+epoch 348 train loss : 0 test loss : 0.0007303901778262419 epoch time : 10.80298662185669
+
+epoch 349 train loss : 0 test loss : 0.0004871118677935253 epoch time : 11.764202117919922
+
+epoch 350 train loss : 0 test loss : 0.00045462510267194983 epoch time : 11.063422203063965
+
+epoch 351 train loss : 0 test loss : 0.0014392703451449051 epoch time : 10.915159225463867
+
+epoch 352 train loss : 0 test loss : 0.0005921891085260237 epoch time : 11.121124982833862
+
+epoch 353 train loss : 0 test loss : 0.0004876975290244445 epoch time : 11.26822304725647
+
+epoch 354 train loss : 0 test loss : 0.000532170781904521 epoch time : 11.284364461898804
+
+epoch 355 train loss : 0 test loss : 0.0004824935264574985 epoch time : 11.075231552124023
+
+epoch 356 train loss : 0 test loss : 0.0006556389174268892 epoch time : 11.156971216201782
+
+epoch 357 train loss : 0 test loss : 0.00048394174276230234 epoch time : 11.175150632858276
+
+epoch 358 train loss : 0 test loss : 0.0004831253536394797 epoch time : 11.061100959777832
+
+epoch 359 train loss : 0 test loss : 0.00043978321870478493 epoch time : 11.074899911880493
+
+epoch 360 train loss : 0 test loss : 0.0004803833095744873 epoch time : 11.07251763343811
+
+epoch 361 train loss : 0 test loss : 0.0007416675362037495 epoch time : 11.312554121017456
+
+epoch 362 train loss : 0 test loss : 0.00034179202824210125 epoch time : 11.107852220535278
+
+epoch 363 train loss : 0 test loss : 0.00040732298414998996 epoch time : 11.128665208816528
+
+epoch 364 train loss : 0 test loss : 0.0010382419180435438 epoch time : 11.16283655166626
+
+epoch 365 train loss : 0 test loss : 0.000353811243257951 epoch time : 11.027765989303589
+
+epoch 366 train loss : 0 test loss : 0.0005156526603968814 epoch time : 10.819819688796997
+
+epoch 367 train loss : 0 test loss : 0.00040270282382455963 epoch time : 11.062302589416504
+
+epoch 368 train loss : 0 test loss : 0.0004864638128007452 epoch time : 11.21811819076538
+
+epoch 369 train loss : 0 test loss : 0.0005216274730628356 epoch time : 10.81524109840393
+
+epoch 370 train loss : 0 test loss : 0.0005816347426540839 epoch time : 11.236860752105713
+
+epoch 371 train loss : 0 test loss : 0.0005494868140279626 epoch time : 11.039753198623657
+
+epoch 372 train loss : 0 test loss : 0.0005707330468188351 epoch time : 11.032024383544922
+
+epoch 373 train loss : 0 test loss : 0.0005876671105700856 epoch time : 11.076489448547363
+
+epoch 374 train loss : 0 test loss : 0.0005259115229515979 epoch time : 11.015877723693848
+
+epoch 375 train loss : 0 test loss : 0.000391640775584771 epoch time : 11.138955116271973
+
+epoch 376 train loss : 0 test loss : 0.0004564501723507419 epoch time : 10.990556478500366
+
+epoch 377 train loss : 0 test loss : 0.0005562897034299871 epoch time : 11.143485307693481
+
+epoch 378 train loss : 0 test loss : 0.00045863787818234414 epoch time : 11.383261680603027
+
+epoch 379 train loss : 0 test loss : 0.0005316163951647468 epoch time : 11.056456327438354
+
+epoch 380 train loss : 0 test loss : 0.0004237264850720142 epoch time : 11.280512571334839
+
+epoch 381 train loss : 0 test loss : 0.0005680595544011643 epoch time : 11.103071928024292
+
+epoch 382 train loss : 0 test loss : 0.00043949468090431765 epoch time : 11.108965396881104
+
+epoch 383 train loss : 0 test loss : 0.0003834771123365499 epoch time : 11.021501302719116
+
+epoch 384 train loss : 0 test loss : 0.0005120989808347076 epoch time : 11.015329360961914
+
+epoch 385 train loss : 0 test loss : 0.0006689452711725608 epoch time : 10.969987869262695
+
+epoch 386 train loss : 0 test loss : 0.0008803433641636124 epoch time : 11.165134191513062
+
+epoch 387 train loss : 0 test loss : 0.0004563025334694733 epoch time : 11.129976749420166
+
+epoch 388 train loss : 0 test loss : 0.0005353112016261244 epoch time : 11.074490308761597
+
+epoch 389 train loss : 0 test loss : 0.0004960690130246803 epoch time : 11.252908706665039
+
+epoch 390 train loss : 0 test loss : 0.00045734837719161686 epoch time : 10.970328330993652
+
+epoch 391 train loss : 0 test loss : 0.0005748399901979914 epoch time : 11.218013763427734
+
+epoch 392 train loss : 0 test loss : 0.00041491669981041923 epoch time : 11.116459608078003
+
+epoch 393 train loss : 0 test loss : 0.00044136088884746033 epoch time : 11.223659992218018
+
+epoch 394 train loss : 0 test loss : 0.0004195142658621383 epoch time : 11.120370149612427
+
+epoch 395 train loss : 0 test loss : 0.0004617158992914483 epoch time : 11.054003477096558
+
+epoch 396 train loss : 0 test loss : 0.0004547119921577784 epoch time : 10.986075162887573
+
+epoch 397 train loss : 0 test loss : 0.000523516801573957 epoch time : 11.014579772949219
+
+epoch 398 train loss : 0 test loss : 0.0004430646513355896 epoch time : 10.874626398086548
+
+epoch 399 train loss : 0 test loss : 0.0005469314128276892 epoch time : 11.028452396392822
+
+epoch 400 train loss : 0 test loss : 0.000509176784059188 epoch time : 11.238958597183228
+
+epoch 401 train loss : 0 test loss : 0.0005189016471073652 epoch time : 11.119354009628296
+
+epoch 402 train loss : 0 test loss : 0.0005602382540625209 epoch time : 11.062440633773804
+
+epoch 403 train loss : 0 test loss : 0.0004644702979324696 epoch time : 10.975828886032104
+
+epoch 404 train loss : 0 test loss : 0.0005057212304867184 epoch time : 11.180733680725098
+
+epoch 405 train loss : 0 test loss : 0.00047388307818134007 epoch time : 11.262636423110962
+
+epoch 406 train loss : 0 test loss : 0.0008799478140038749 epoch time : 11.20031476020813
+
+epoch 407 train loss : 0 test loss : 0.0005648807758310189 epoch time : 10.928740978240967
+
+epoch 408 train loss : 0 test loss : 0.0008370971578794221 epoch time : 11.17853856086731
+
+epoch 409 train loss : 0 test loss : 0.0006045241704365859 epoch time : 11.172505855560303
+
+epoch 410 train loss : 0 test loss : 0.0004935067239178655 epoch time : 11.122663736343384
+
+epoch 411 train loss : 0 test loss : 0.002372838013495008 epoch time : 11.157109260559082
+
+epoch 412 train loss : 0 test loss : 0.0011544750498918195 epoch time : 11.045989274978638
+
+epoch 413 train loss : 0 test loss : 0.0006983888791486 epoch time : 11.174477815628052
+
+epoch 414 train loss : 0 test loss : 0.00044221800393036875 epoch time : 11.174164533615112
+
+epoch 415 train loss : 0 test loss : 0.00035005634708795696 epoch time : 10.988087177276611
+
+epoch 416 train loss : 0 test loss : 0.0005702747075702064 epoch time : 11.131672859191895
+
+epoch 417 train loss : 0 test loss : 0.0005027362470476268 epoch time : 11.116803646087646
+
+epoch 418 train loss : 0 test loss : 0.0005858142685610801 epoch time : 11.361502170562744
+
+epoch 419 train loss : 0 test loss : 0.0004144800647433537 epoch time : 11.314623355865479
+
+epoch 420 train loss : 0 test loss : 0.00046339334221556783 epoch time : 11.239957332611084
+
+epoch 421 train loss : 0 test loss : 0.0004212292357503126 epoch time : 11.050868034362793
+
+epoch 422 train loss : 0 test loss : 0.00040663725667400286 epoch time : 11.080332279205322
+
+epoch 423 train loss : 0 test loss : 0.00042685977920579415 epoch time : 10.962141036987305
+
+epoch 424 train loss : 0 test loss : 0.0003437937266426161 epoch time : 11.014684438705444
+
+epoch 425 train loss : 0 test loss : 0.00037918878661002964 epoch time : 11.000227451324463
+
+epoch 426 train loss : 0 test loss : 0.0003527775576609808 epoch time : 11.25912356376648
+
+epoch 427 train loss : 0 test loss : 0.00033080006687669083 epoch time : 11.149117708206177
+
+epoch 428 train loss : 0 test loss : 0.00029651447645543766 epoch time : 11.149640083312988
+
+epoch 429 train loss : 0 test loss : 0.00036009441343291354 epoch time : 11.018692255020142
+
+epoch 430 train loss : 0 test loss : 0.00029698478950498003 epoch time : 11.10567307472229
+
+epoch 431 train loss : 0 test loss : 0.00047144698328338563 epoch time : 10.978112697601318
+
+epoch 432 train loss : 0 test loss : 0.00044804612844018266 epoch time : 11.18357539176941
+
+epoch 433 train loss : 0 test loss : 0.00030936914360305917 epoch time : 10.729114055633545
+
+epoch 434 train loss : 0 test loss : 0.0003438478330887544 epoch time : 11.013514518737793
+
+epoch 435 train loss : 0 test loss : 0.0004909024137305096 epoch time : 11.826094150543213
+
+epoch 436 train loss : 0 test loss : 0.00039916007275072235 epoch time : 11.240477085113525
+
+epoch 437 train loss : 0 test loss : 0.0005915938988133954 epoch time : 11.039190769195557
+
+epoch 438 train loss : 0 test loss : 0.0005881707693333738 epoch time : 11.185807704925537
+
+epoch 439 train loss : 0 test loss : 0.000469660112382068 epoch time : 11.039005756378174
+
+epoch 440 train loss : 0 test loss : 0.0005284129559489278 epoch time : 11.192191123962402
+
+epoch 441 train loss : 0 test loss : 0.000522406779055018 epoch time : 11.084022045135498
+
+epoch 442 train loss : 0 test loss : 0.0006386351354497796 epoch time : 11.06240725517273
+
+epoch 443 train loss : 0 test loss : 0.0024687236485381923 epoch time : 10.913480043411255
+
+epoch 444 train loss : 0 test loss : 0.0005469391035148874 epoch time : 11.094539403915405
+
+epoch 445 train loss : 0 test loss : 0.0004505030083237216 epoch time : 10.9332914352417
+
+epoch 446 train loss : 0 test loss : 0.0003675959208824982 epoch time : 10.904111385345459
+
+epoch 447 train loss : 0 test loss : 0.0003446092838809515 epoch time : 10.865732908248901
+
+epoch 448 train loss : 0 test loss : 0.00031674522081933293 epoch time : 11.051383018493652
+
+epoch 449 train loss : 0 test loss : 0.0005089360808293956 epoch time : 11.054394483566284
+
+epoch 450 train loss : 0 test loss : 0.0003849460675458734 epoch time : 11.000881910324097
+
+epoch 451 train loss : 0 test loss : 0.0003647664198069833 epoch time : 11.241058111190796
+
+epoch 452 train loss : 0 test loss : 0.00038259095163084567 epoch time : 11.01570463180542
+
+epoch 453 train loss : 0 test loss : 0.00035860830394085497 epoch time : 10.717219114303589
+
+epoch 454 train loss : 0 test loss : 0.00041763032155965146 epoch time : 10.795583248138428
+
+epoch 455 train loss : 0 test loss : 0.000505936028882085 epoch time : 10.873976230621338
+
+epoch 456 train loss : 0 test loss : 0.0005080298069515266 epoch time : 11.070882081985474
+
+epoch 457 train loss : 0 test loss : 0.003062245814362541 epoch time : 11.25601053237915
+
+epoch 458 train loss : 0 test loss : 0.0014917304312499862 epoch time : 11.15434455871582
+
+epoch 459 train loss : 0 test loss : 0.0005679420428350568 epoch time : 11.011187314987183
+
+epoch 460 train loss : 0 test loss : 0.00039918262579400715 epoch time : 11.142503499984741
+
+epoch 461 train loss : 0 test loss : 0.0004467156735093643 epoch time : 11.111325025558472
+
+epoch 462 train loss : 0 test loss : 0.0003797070312430151 epoch time : 11.034518718719482
+
+epoch 463 train loss : 0 test loss : 0.0003592787664577675 epoch time : 11.104321718215942
+
+epoch 464 train loss : 0 test loss : 0.00029034160979790613 epoch time : 11.331536293029785
+
+epoch 465 train loss : 0 test loss : 0.00029464800415250164 epoch time : 11.164731979370117
+
+epoch 466 train loss : 0 test loss : 0.00036925166690101224 epoch time : 11.12677788734436
+
+epoch 467 train loss : 0 test loss : 0.000362996433977969 epoch time : 11.098545789718628
+
+epoch 468 train loss : 0 test loss : 0.0003496365752653219 epoch time : 11.144719123840332
+
+epoch 469 train loss : 0 test loss : 0.0010759139743944008 epoch time : 11.100204944610596
+
+epoch 470 train loss : 0 test loss : 0.0005374979712845137 epoch time : 11.126761674880981
+
+epoch 471 train loss : 0 test loss : 0.00034370132198091596 epoch time : 11.282501459121704
+
+epoch 472 train loss : 0 test loss : 0.0014565625557831179 epoch time : 10.835562705993652
+
+epoch 473 train loss : 0 test loss : 0.0005493066225123281 epoch time : 11.047771215438843
+
+epoch 474 train loss : 0 test loss : 0.0004117154943135877 epoch time : 10.926976919174194
+
+epoch 475 train loss : 0 test loss : 0.000421062499905626 epoch time : 11.031362295150757
+
+epoch 476 train loss : 0 test loss : 0.0003535817183243732 epoch time : 11.033606767654419
+
+epoch 477 train loss : 0 test loss : 0.0003623981392593123 epoch time : 11.051285028457642
+
+epoch 478 train loss : 0 test loss : 0.0003599953973510613 epoch time : 11.106404781341553
+
+epoch 479 train loss : 0 test loss : 0.0003664578956280214 epoch time : 11.113499879837036
+
+epoch 480 train loss : 0 test loss : 0.0003733029783082505 epoch time : 11.225908279418945
+
+epoch 481 train loss : 0 test loss : 0.0003593203388542558 epoch time : 11.010819673538208
+
+epoch 482 train loss : 0 test loss : 0.0003712502390650722 epoch time : 11.24640154838562
+
+epoch 483 train loss : 0 test loss : 0.0003671225155509698 epoch time : 11.088732481002808
+
+epoch 484 train loss : 0 test loss : 0.00033202961640199646 epoch time : 11.145920038223267
+
+epoch 485 train loss : 0 test loss : 0.0005941974523011595 epoch time : 11.07505202293396
+
+epoch 486 train loss : 0 test loss : 0.0010985970147885382 epoch time : 11.110685110092163
+
+epoch 487 train loss : 0 test loss : 0.00039349429910847295 epoch time : 11.033578395843506
+
+epoch 488 train loss : 0 test loss : 0.0004321002658495369 epoch time : 11.103490591049194
+
+epoch 489 train loss : 0 test loss : 0.0006223777478832441 epoch time : 11.191860437393188
+
+epoch 490 train loss : 0 test loss : 0.000458328977401834 epoch time : 11.266580581665039
+
+epoch 491 train loss : 0 test loss : 0.0004500337866678213 epoch time : 11.18915581703186
+
+epoch 492 train loss : 0 test loss : 0.0006072153191780671 epoch time : 11.094554424285889
+
+epoch 493 train loss : 0 test loss : 0.0003441421431489289 epoch time : 11.170602798461914
+
+epoch 494 train loss : 0 test loss : 0.0003938657270434002 epoch time : 11.124126434326172
+
+epoch 495 train loss : 0 test loss : 0.0003075347946529898 epoch time : 11.128798723220825
+
+epoch 496 train loss : 0 test loss : 0.00038778092615151155 epoch time : 11.003326416015625
+
+epoch 497 train loss : 0 test loss : 0.00048060874056924757 epoch time : 10.971368312835693
+
+epoch 498 train loss : 0 test loss : 0.001349099591607228 epoch time : 11.116353988647461
+
+epoch 499 train loss : 0 test loss : 0.0004247544614675765 epoch time : 10.875733613967896
+
+epoch 500 train loss : 0 test loss : 0.0004579228528503639 epoch time : 11.031900882720947
+
+epoch 501 train loss : 0 test loss : 0.0005563723777110378 epoch time : 11.089535236358643
+
+epoch 502 train loss : 0 test loss : 0.00048012985644163564 epoch time : 11.081095695495605
+
+epoch 503 train loss : 0 test loss : 0.00040806459583109245 epoch time : 11.054765224456787
+
+epoch 504 train loss : 0 test loss : 0.0005227371463358091 epoch time : 11.002570152282715
+
+epoch 505 train loss : 0 test loss : 0.0003718911102623679 epoch time : 11.256054162979126
+
+epoch 506 train loss : 0 test loss : 0.0009752051361526052 epoch time : 11.1923508644104
+
+epoch 507 train loss : 0 test loss : 0.0004753099152973543 epoch time : 10.756002187728882
+
+epoch 508 train loss : 0 test loss : 0.00045251246774569154 epoch time : 11.049740552902222
+
+epoch 509 train loss : 0 test loss : 0.00034775097932045657 epoch time : 10.907579898834229
+
+epoch 510 train loss : 0 test loss : 0.00038365817939241725 epoch time : 11.175820350646973
+
+epoch 511 train loss : 0 test loss : 0.00034873512292203185 epoch time : 11.143066167831421
+
+epoch 512 train loss : 0 test loss : 0.00045387124312886346 epoch time : 11.213819980621338
+
+epoch 513 train loss : 0 test loss : 0.00036368509851551306 epoch time : 10.955497980117798
+
+epoch 514 train loss : 0 test loss : 0.0003668766973229746 epoch time : 11.111656427383423
+
+epoch 515 train loss : 0 test loss : 0.0003370050787149618 epoch time : 11.137829780578613
+
+epoch 516 train loss : 0 test loss : 0.0003865070757456124 epoch time : 10.924658298492432
+
+epoch 517 train loss : 0 test loss : 0.000633765058106898 epoch time : 11.10997986793518
+
+epoch 518 train loss : 0 test loss : 0.0004613519849954173 epoch time : 11.11771011352539
+
+epoch 519 train loss : 0 test loss : 0.00043902510272649425 epoch time : 11.018723487854004
+
+epoch 520 train loss : 0 test loss : 0.00036147339900101844 epoch time : 10.989708662033081
+
+epoch 521 train loss : 0 test loss : 0.0006660311628365889 epoch time : 11.116621255874634
+
+epoch 522 train loss : 0 test loss : 0.0011583122201651956 epoch time : 10.884623527526855
+
+epoch 523 train loss : 0 test loss : 0.0007684907322982326 epoch time : 10.989177703857422
+
+epoch 524 train loss : 0 test loss : 0.0006924144011766961 epoch time : 11.1798255443573
+
+epoch 525 train loss : 0 test loss : 0.0003434974714764394 epoch time : 10.846173524856567
+
+epoch 526 train loss : 0 test loss : 0.0004910407733405009 epoch time : 11.025641202926636
+
+epoch 527 train loss : 0 test loss : 0.0017815974036542077 epoch time : 11.237464189529419
+
+epoch 528 train loss : 0 test loss : 0.0008607376948930323 epoch time : 11.045755624771118
+
+epoch 529 train loss : 0 test loss : 0.0006992097235828018 epoch time : 11.130616188049316
+
+epoch 530 train loss : 0 test loss : 0.0004324101658615594 epoch time : 11.107317447662354
+
+epoch 531 train loss : 0 test loss : 0.0006727533182129264 epoch time : 10.991140365600586
+
+epoch 532 train loss : 0 test loss : 0.0004662832531418341 epoch time : 11.305175304412842
+
+epoch 533 train loss : 0 test loss : 0.00043239206812965375 epoch time : 11.28943657875061
+
+epoch 534 train loss : 0 test loss : 0.00047936473129084334 epoch time : 11.009385108947754
+
+epoch 535 train loss : 0 test loss : 0.0004691993720674266 epoch time : 11.123770236968994
+
+epoch 536 train loss : 0 test loss : 0.0009419367440083685 epoch time : 11.064472198486328
+
+epoch 537 train loss : 0 test loss : 0.0006191220842689896 epoch time : 11.06925082206726
+
+epoch 538 train loss : 0 test loss : 0.0004344937769928947 epoch time : 11.089965581893921
+
+epoch 539 train loss : 0 test loss : 0.00048459811417463544 epoch time : 11.124171257019043
+
+epoch 540 train loss : 0 test loss : 0.0004275518682940553 epoch time : 10.960119247436523
+
+epoch 541 train loss : 0 test loss : 0.0004831048233124117 epoch time : 11.15237045288086
+
+epoch 542 train loss : 0 test loss : 0.0004800944492065658 epoch time : 10.842682361602783
+
+epoch 543 train loss : 0 test loss : 0.0005309898673052279 epoch time : 11.147329568862915
+
+epoch 544 train loss : 0 test loss : 0.0005486713562277146 epoch time : 11.33748745918274
+
+epoch 545 train loss : 0 test loss : 0.000612047893810086 epoch time : 10.923705816268921
+
+epoch 546 train loss : 0 test loss : 0.0005921319922587523 epoch time : 11.407111644744873
+
+epoch 547 train loss : 0 test loss : 0.0005720611928457705 epoch time : 11.12428069114685
+
+epoch 548 train loss : 0 test loss : 0.0011476675329807524 epoch time : 11.050431728363037
+
+epoch 549 train loss : 0 test loss : 0.0008575894316891208 epoch time : 10.953319311141968
+
+epoch 550 train loss : 0 test loss : 0.0006350833646138199 epoch time : 10.99038028717041
+
+epoch 551 train loss : 0 test loss : 0.0008768650271425334 epoch time : 11.085463285446167
+
+epoch 552 train loss : 0 test loss : 0.0006563699231871093 epoch time : 11.217156648635864
+
+epoch 553 train loss : 0 test loss : 0.0007009908319256889 epoch time : 11.095537662506104
+
+epoch 554 train loss : 0 test loss : 0.0005984081120307868 epoch time : 11.079227209091187
+
+epoch 555 train loss : 0 test loss : 0.0002830646117217839 epoch time : 11.078148365020752
+
+epoch 556 train loss : 0 test loss : 0.0003984816018297958 epoch time : 11.290753841400146
+
+epoch 557 train loss : 0 test loss : 0.0003917658783999893 epoch time : 11.082129716873169
+
+epoch 558 train loss : 0 test loss : 0.0004377764053060673 epoch time : 10.904766321182251
+
+epoch 559 train loss : 0 test loss : 0.0005081622778864888 epoch time : 11.05106806755066
+
+epoch 560 train loss : 0 test loss : 0.00045271161798154935 epoch time : 11.24486756324768
+
+epoch 561 train loss : 0 test loss : 0.0005628691821281487 epoch time : 11.270095586776733
+
+epoch 562 train loss : 0 test loss : 0.00042459440252666053 epoch time : 11.298543691635132
+
+epoch 563 train loss : 0 test loss : 0.0002890240236107881 epoch time : 10.940251111984253
+
+epoch 564 train loss : 0 test loss : 0.00043198204366490245 epoch time : 11.15763258934021
+
+epoch 565 train loss : 0 test loss : 0.00036950727614263695 epoch time : 11.101625680923462
+
+epoch 566 train loss : 0 test loss : 0.0002570797708661606 epoch time : 11.198466300964355
+
+epoch 567 train loss : 0 test loss : 0.00029982735092441243 epoch time : 10.897560358047485
+
+epoch 568 train loss : 0 test loss : 0.0004094416290172376 epoch time : 11.106874465942383
+
+epoch 569 train loss : 0 test loss : 0.000473070487108392 epoch time : 11.058471918106079
+
+epoch 570 train loss : 0 test loss : 0.00043741436578178156 epoch time : 11.07887601852417
+
+epoch 571 train loss : 0 test loss : 0.000293013503930221 epoch time : 10.895636796951294
+
+epoch 572 train loss : 0 test loss : 0.00044061283066791174 epoch time : 11.153960943222046
+
+epoch 573 train loss : 0 test loss : 0.0003946134529542178 epoch time : 11.02048659324646
+
+epoch 574 train loss : 0 test loss : 0.00034187091174923506 epoch time : 11.06708812713623
+
+epoch 575 train loss : 0 test loss : 0.0002884706627810374 epoch time : 11.110045194625854
+
+epoch 576 train loss : 0 test loss : 0.00036125716966732096 epoch time : 11.075212478637695
+
+epoch 577 train loss : 0 test loss : 0.0002829700169968419 epoch time : 11.244448900222778
+
+epoch 578 train loss : 0 test loss : 0.0004244649826432578 epoch time : 11.406505107879639
+
+epoch 579 train loss : 0 test loss : 0.00040246582405719283 epoch time : 11.267246007919312
+
+epoch 580 train loss : 0 test loss : 0.0004516503128494757 epoch time : 11.072370290756226
+
+epoch 581 train loss : 0 test loss : 0.00036776784448496375 epoch time : 11.185429334640503
+
+epoch 582 train loss : 0 test loss : 0.00041586076986277476 epoch time : 11.14029335975647
+
+epoch 583 train loss : 0 test loss : 0.0003444509323647556 epoch time : 11.070018529891968
+
+epoch 584 train loss : 0 test loss : 0.0008594925190360906 epoch time : 10.982222557067871
+
+epoch 585 train loss : 0 test loss : 0.0004900985416801026 epoch time : 10.914863586425781
+
+epoch 586 train loss : 0 test loss : 0.0012889409845229238 epoch time : 11.095372438430786
+
+epoch 587 train loss : 0 test loss : 0.0005632727867729651 epoch time : 10.897708892822266
+
+epoch 588 train loss : 0 test loss : 0.0011693453222202759 epoch time : 10.913117170333862
+
+epoch 589 train loss : 0 test loss : 0.0007927780582879981 epoch time : 10.9963698387146
+
+epoch 590 train loss : 0 test loss : 0.0009048740515330186 epoch time : 10.998467445373535
+
+epoch 591 train loss : 0 test loss : 0.0007243881967345563 epoch time : 11.044097661972046
+
+epoch 592 train loss : 0 test loss : 0.000783542377272776 epoch time : 11.14182448387146
+
+epoch 593 train loss : 0 test loss : 0.0007813541742507368 epoch time : 11.109936475753784
+
+epoch 594 train loss : 0 test loss : 0.0006611992721445858 epoch time : 11.20548939704895
+
+epoch 595 train loss : 0 test loss : 0.0007226652984779017 epoch time : 10.935145139694214
+
+epoch 596 train loss : 0 test loss : 0.0004692099173553288 epoch time : 11.154424667358398
+
+epoch 597 train loss : 0 test loss : 0.0006189849470198775 epoch time : 11.078443050384521
+
+epoch 598 train loss : 0 test loss : 0.0004709087806986645 epoch time : 11.183558940887451
+
+epoch 599 train loss : 0 test loss : 0.0005048274979344569 epoch time : 11.322125434875488
+
+epoch 600 train loss : 0 test loss : 0.00053403690981213 epoch time : 11.147925853729248
+
+epoch 601 train loss : 0 test loss : 0.00045226209476822987 epoch time : 11.099625825881958
+
+epoch 602 train loss : 0 test loss : 0.00040884142799768597 epoch time : 11.052104711532593
+
+epoch 603 train loss : 0 test loss : 0.0004146116989431903 epoch time : 11.121124744415283
+
+epoch 604 train loss : 0 test loss : 0.0005791950291798761 epoch time : 10.974234342575073
+
+epoch 605 train loss : 0 test loss : 0.0004928294462539876 epoch time : 11.155508041381836
+
+epoch 606 train loss : 0 test loss : 0.0004436336481982532 epoch time : 10.8842294216156
+
+epoch 607 train loss : 0 test loss : 0.000592053504078649 epoch time : 10.887967824935913
+
+epoch 608 train loss : 0 test loss : 0.0008913238949996108 epoch time : 10.96903920173645
+
+epoch 609 train loss : 0 test loss : 0.0003557816380634904 epoch time : 11.030641794204712
+
+epoch 610 train loss : 0 test loss : 0.0003832700628360423 epoch time : 11.03789234161377
+
+epoch 611 train loss : 0 test loss : 0.0005997841678132924 epoch time : 11.054116249084473
+
+epoch 612 train loss : 0 test loss : 0.00037447205977514386 epoch time : 11.206626653671265
+
+epoch 613 train loss : 0 test loss : 0.00043424929754110053 epoch time : 11.23759913444519
+
+epoch 614 train loss : 0 test loss : 0.00058886647214725 epoch time : 11.28867244720459
+
+epoch 615 train loss : 0 test loss : 0.00042942326884561527 epoch time : 10.951173305511475
+
+epoch 616 train loss : 0 test loss : 0.0003898224385920912 epoch time : 11.085422277450562
+
+epoch 617 train loss : 0 test loss : 0.0004944340107613243 epoch time : 11.180071353912354
+
+epoch 618 train loss : 0 test loss : 0.0006413327888973678 epoch time : 11.106603860855103
+
+epoch 619 train loss : 0 test loss : 0.0005778652387865199 epoch time : 11.106467247009277
+
+epoch 620 train loss : 0 test loss : 0.0006455890276508095 epoch time : 11.275721788406372
+
+epoch 621 train loss : 0 test loss : 0.0006623070876230486 epoch time : 11.044150114059448
+
+epoch 622 train loss : 0 test loss : 0.0006024749212277433 epoch time : 11.104065656661987
+
+epoch 623 train loss : 0 test loss : 0.0006482368165355487 epoch time : 11.01712155342102
+
+epoch 624 train loss : 0 test loss : 0.0008547423688772445 epoch time : 11.12656283378601
+
+epoch 625 train loss : 0 test loss : 0.0006612618793345367 epoch time : 10.910714387893677
+
+epoch 626 train loss : 0 test loss : 0.0005033409421836647 epoch time : 11.237030744552612
+
+epoch 627 train loss : 0 test loss : 0.0005469467287184671 epoch time : 11.20535922050476
+
+epoch 628 train loss : 0 test loss : 0.0008472194191805708 epoch time : 11.090746879577637
+
+epoch 629 train loss : 0 test loss : 0.00036048437080656487 epoch time : 11.048583984375
+
+epoch 630 train loss : 0 test loss : 0.00042898376705124974 epoch time : 11.133951187133789
+
+epoch 631 train loss : 0 test loss : 0.00045741101591071737 epoch time : 10.92629098892212
+
+epoch 632 train loss : 0 test loss : 0.001778153411578387 epoch time : 11.043607234954834
+
+epoch 633 train loss : 0 test loss : 0.0008090098514609659 epoch time : 11.238941431045532
+
+epoch 634 train loss : 0 test loss : 0.0005071138924298187 epoch time : 11.138558387756348
+
+epoch 635 train loss : 0 test loss : 0.0007456748426193371 epoch time : 10.933789014816284
+
+epoch 636 train loss : 0 test loss : 0.0005251440719196884 epoch time : 11.261731624603271
+
+epoch 637 train loss : 0 test loss : 0.00042734025676812354 epoch time : 11.24885892868042
+
+epoch 638 train loss : 0 test loss : 0.00044382990745361894 epoch time : 11.134024143218994
+
+epoch 639 train loss : 0 test loss : 0.0006054028514578628 epoch time : 10.971201419830322
+
+epoch 640 train loss : 0 test loss : 0.0005003057934421425 epoch time : 11.034466743469238
+
+epoch 641 train loss : 0 test loss : 0.0004236872385566433 epoch time : 11.076911211013794
+
+epoch 642 train loss : 0 test loss : 0.00036353694304125383 epoch time : 11.20077896118164
+
+epoch 643 train loss : 0 test loss : 0.0003959487779259992 epoch time : 11.058122158050537
+
+epoch 644 train loss : 0 test loss : 0.00036024818109581247 epoch time : 11.27133321762085
+
+epoch 645 train loss : 0 test loss : 0.0005287171225063503 epoch time : 11.006727695465088
+
+epoch 646 train loss : 0 test loss : 0.000450078456196934 epoch time : 10.815165996551514
+
+epoch 647 train loss : 0 test loss : 0.000571425679178598 epoch time : 11.074906826019287
+
+epoch 648 train loss : 0 test loss : 0.0004839343673666008 epoch time : 11.037977457046509
+
+epoch 649 train loss : 0 test loss : 0.0004587587366889541 epoch time : 11.074005365371704
+
+epoch 650 train loss : 0 test loss : 0.00042043960274895653 epoch time : 11.249980211257935
+
+epoch 651 train loss : 0 test loss : 0.0004479119331032659 epoch time : 10.907450675964355
+
+epoch 652 train loss : 0 test loss : 0.0006186683943572765 epoch time : 11.190805196762085
+
+epoch 653 train loss : 0 test loss : 0.00042594437157580006 epoch time : 11.03505802154541
+
+epoch 654 train loss : 0 test loss : 0.0004240215542570998 epoch time : 10.964157342910767
+
+epoch 655 train loss : 0 test loss : 0.0006403801574682196 epoch time : 10.856919527053833
+
+epoch 656 train loss : 0 test loss : 0.0006538984622845115 epoch time : 11.117448329925537
+
+epoch 657 train loss : 0 test loss : 0.00036869299462220323 epoch time : 11.11192536354065
+
+epoch 658 train loss : 0 test loss : 0.0007535975237260573 epoch time : 11.128729581832886
+
+epoch 659 train loss : 0 test loss : 0.0006457302588387392 epoch time : 11.421217441558838
+
+epoch 660 train loss : 0 test loss : 0.0005993121667415835 epoch time : 11.20295262336731
+
+epoch 661 train loss : 0 test loss : 0.0006359656351075197 epoch time : 11.093733072280884
+
+epoch 662 train loss : 0 test loss : 0.0006139931865618564 epoch time : 11.12744927406311
+
+epoch 663 train loss : 0 test loss : 0.0005448320516734384 epoch time : 11.065357685089111
+
+epoch 664 train loss : 0 test loss : 0.0006422619868923599 epoch time : 11.111806154251099
+
+epoch 665 train loss : 0 test loss : 0.00046358936621497077 epoch time : 11.039139986038208
+
+epoch 666 train loss : 0 test loss : 0.0005534898712843036 epoch time : 11.19843053817749
+
+epoch 667 train loss : 0 test loss : 0.000677487919650351 epoch time : 11.266082763671875
+
+epoch 668 train loss : 0 test loss : 0.00029543747708279017 epoch time : 11.103128910064697
+
+epoch 669 train loss : 0 test loss : 0.00032497625943506137 epoch time : 11.088756799697876
+
+epoch 670 train loss : 0 test loss : 0.00035576643373739597 epoch time : 11.270001649856567
+
+epoch 671 train loss : 0 test loss : 0.00041851111260863644 epoch time : 11.026334047317505
+
+epoch 672 train loss : 0 test loss : 0.00038461518367209163 epoch time : 10.927519083023071
+
+epoch 673 train loss : 0 test loss : 0.0003868679632432759 epoch time : 11.071086168289185
+
+epoch 674 train loss : 0 test loss : 0.0003546557200024836 epoch time : 10.916412830352783
+
+epoch 675 train loss : 0 test loss : 0.00044522717750320834 epoch time : 11.013771295547485
+
+epoch 676 train loss : 0 test loss : 0.0003097967055509798 epoch time : 11.262587785720825
+
+epoch 677 train loss : 0 test loss : 0.0002677992597455159 epoch time : 11.227859258651733
+
+epoch 678 train loss : 0 test loss : 0.0003155839125004907 epoch time : 11.321892738342285
+
+epoch 679 train loss : 0 test loss : 0.0003721575145997728 epoch time : 11.116188526153564
+
+epoch 680 train loss : 0 test loss : 0.0004894632947980426 epoch time : 10.995636224746704
+
+epoch 681 train loss : 0 test loss : 0.0013383552335047473 epoch time : 11.010797500610352
+
+epoch 682 train loss : 0 test loss : 0.0007271576275040085 epoch time : 10.984330654144287
+
+epoch 683 train loss : 0 test loss : 0.0005764632999974614 epoch time : 10.97109317779541
+
+epoch 684 train loss : 0 test loss : 0.0005385390007480358 epoch time : 11.049073696136475
+
+epoch 685 train loss : 0 test loss : 0.0005192448103722805 epoch time : 11.030611038208008
+
+epoch 686 train loss : 0 test loss : 0.000657199687945346 epoch time : 10.939407587051392
+
+epoch 687 train loss : 0 test loss : 0.0008023151992044101 epoch time : 11.204632997512817
+
+epoch 688 train loss : 0 test loss : 0.00046104817738523707 epoch time : 11.152233839035034
+
+epoch 689 train loss : 0 test loss : 0.00043519731116248295 epoch time : 10.894748449325562
+
+epoch 690 train loss : 0 test loss : 0.00046975806132347014 epoch time : 10.966538429260254
+
+epoch 691 train loss : 0 test loss : 0.00044852891005575657 epoch time : 11.169986248016357
+
+epoch 692 train loss : 0 test loss : 0.0004001666554055798 epoch time : 11.027218341827393
+
+epoch 693 train loss : 0 test loss : 0.0004201805083236347 epoch time : 10.9584641456604
+
+epoch 694 train loss : 0 test loss : 0.0005082453814490387 epoch time : 11.073935985565186
+
+epoch 695 train loss : 0 test loss : 0.00045864682033425197 epoch time : 11.015201807022095
+
+epoch 696 train loss : 0 test loss : 0.0007378306181635708 epoch time : 10.951956748962402
+
+epoch 697 train loss : 0 test loss : 0.0004003616559202783 epoch time : 11.361095905303955
+
+epoch 698 train loss : 0 test loss : 0.0002942154436217 epoch time : 11.234650135040283
+
+epoch 699 train loss : 0 test loss : 0.0003221144555330587 epoch time : 11.163521766662598
+
+epoch 700 train loss : 0 test loss : 0.0004091633842714752 epoch time : 11.208733320236206
+
+epoch 701 train loss : 0 test loss : 0.0004811761342959168 epoch time : 11.11174464225769
+
+epoch 702 train loss : 0 test loss : 0.0005391332185051093 epoch time : 11.17755937576294
+
+epoch 703 train loss : 0 test loss : 0.0003751293625100516 epoch time : 11.281358003616333
+
+epoch 704 train loss : 0 test loss : 0.0003355556327733211 epoch time : 11.035346031188965
+
+epoch 705 train loss : 0 test loss : 0.0004736252546232815 epoch time : 11.148013353347778
+
+epoch 706 train loss : 0 test loss : 0.00037940477098648745 epoch time : 11.055854082107544
+
+epoch 707 train loss : 0 test loss : 0.0003706441178413418 epoch time : 11.262043714523315
+
+epoch 708 train loss : 0 test loss : 0.000459758074915347 epoch time : 10.991708993911743
+
+epoch 709 train loss : 0 test loss : 0.0004941061051795259 epoch time : 11.08719539642334
+
+epoch 710 train loss : 0 test loss : 0.00040162436926038936 epoch time : 10.960582256317139
+
+epoch 711 train loss : 0 test loss : 0.0003900143541007613 epoch time : 10.880904197692871
+
+epoch 712 train loss : 0 test loss : 0.00042573659933016944 epoch time : 11.088397979736328
+
+epoch 713 train loss : 0 test loss : 0.0003293932677479461 epoch time : 11.006527423858643
+
+epoch 714 train loss : 0 test loss : 0.0003313894145928013 epoch time : 11.013183116912842
+
+epoch 715 train loss : 0 test loss : 0.00030979395038836327 epoch time : 10.99290132522583
+
+epoch 716 train loss : 0 test loss : 0.000393572083946007 epoch time : 11.013830661773682
+
+epoch 717 train loss : 0 test loss : 0.0003659116749380094 epoch time : 10.836681604385376
+
+epoch 718 train loss : 0 test loss : 0.0004218622173842353 epoch time : 11.185218334197998
+
+epoch 719 train loss : 0 test loss : 0.0004933590510821281 epoch time : 11.335463285446167
+
+epoch 720 train loss : 0 test loss : 0.0003670901472408635 epoch time : 10.964874744415283
+
+epoch 721 train loss : 0 test loss : 0.00037648887276494253 epoch time : 11.055203676223755
+
+epoch 722 train loss : 0 test loss : 0.0010027398335902642 epoch time : 11.254016876220703
+
+epoch 723 train loss : 0 test loss : 0.0014966258119481306 epoch time : 11.009896993637085
+
+epoch 724 train loss : 0 test loss : 0.0003889071012963541 epoch time : 10.986788988113403
+
+epoch 725 train loss : 0 test loss : 0.00039376466156682 epoch time : 11.235767364501953
+
+epoch 726 train loss : 0 test loss : 0.00045743478161360446 epoch time : 11.23312783241272
+
+epoch 727 train loss : 0 test loss : 0.00045837554838120315 epoch time : 10.943624258041382
+
+epoch 728 train loss : 0 test loss : 0.0004131243670902525 epoch time : 11.053728103637695
+
+epoch 729 train loss : 0 test loss : 0.0003933856642106548 epoch time : 11.105552673339844
+
+epoch 730 train loss : 0 test loss : 0.0004797889535742191 epoch time : 10.838767290115356
+
+epoch 731 train loss : 0 test loss : 0.0003992720279105318 epoch time : 11.23747992515564
+
+epoch 732 train loss : 0 test loss : 0.00041970745466339093 epoch time : 11.075506448745728
+
+epoch 733 train loss : 0 test loss : 0.0009467898247142633 epoch time : 11.179431915283203
+
+epoch 734 train loss : 0 test loss : 0.0005384258353539432 epoch time : 10.915236234664917
+
+epoch 735 train loss : 0 test loss : 0.0004781562408121924 epoch time : 11.087913751602173
+
+epoch 736 train loss : 0 test loss : 0.00043827129411511123 epoch time : 11.120898723602295
+
+epoch 737 train loss : 0 test loss : 0.0003386905057899033 epoch time : 11.186883687973022
+
+epoch 738 train loss : 0 test loss : 0.00035982008072702837 epoch time : 10.874770641326904
+
+epoch 739 train loss : 0 test loss : 0.0004695985116995871 epoch time : 11.73492956161499
+
+epoch 740 train loss : 0 test loss : 0.0003732964226704401 epoch time : 11.103883504867554
+
+epoch 741 train loss : 0 test loss : 0.0004175618135680755 epoch time : 11.204483270645142
+
+epoch 742 train loss : 0 test loss : 0.000398559791695637 epoch time : 10.942277431488037
+
+epoch 743 train loss : 0 test loss : 0.00040238501484661054 epoch time : 11.08573865890503
+
+epoch 744 train loss : 0 test loss : 0.0004385463786699499 epoch time : 10.935026168823242
+
+epoch 745 train loss : 0 test loss : 0.000350178769925454 epoch time : 11.034130096435547
+
+epoch 746 train loss : 0 test loss : 0.00033272829750785604 epoch time : 11.229444026947021
+
+epoch 747 train loss : 0 test loss : 0.0004667262643730889 epoch time : 11.301739931106567
+
+epoch 748 train loss : 0 test loss : 0.00030992426036391407 epoch time : 11.253520488739014
+
+epoch 749 train loss : 0 test loss : 0.00044144902494736016 epoch time : 11.180039644241333
+
+epoch 750 train loss : 0 test loss : 0.0005124275946097138 epoch time : 11.171824216842651
+
+epoch 751 train loss : 0 test loss : 0.0003117473340050007 epoch time : 11.000064373016357
+
+epoch 752 train loss : 0 test loss : 0.0005082358281166913 epoch time : 11.149241924285889
+
+epoch 753 train loss : 0 test loss : 0.000548296275762065 epoch time : 10.86793303489685
+
+epoch 754 train loss : 0 test loss : 0.00033792304505671683 epoch time : 11.055171012878418
+
+epoch 755 train loss : 0 test loss : 0.0004732554662041366 epoch time : 11.128562688827515
+
+epoch 756 train loss : 0 test loss : 0.0004874154741022115 epoch time : 11.189398050308228
+
+epoch 757 train loss : 0 test loss : 0.000335077362251468 epoch time : 11.0677330493927
+
+epoch 758 train loss : 0 test loss : 0.0005401050924168279 epoch time : 11.290030241012573
+
+epoch 759 train loss : 0 test loss : 0.00030268158540517714 epoch time : 11.2291898727417
+
+epoch 760 train loss : 0 test loss : 0.000521444720410121 epoch time : 11.023916006088257
+
+epoch 761 train loss : 0 test loss : 0.00048224879962314543 epoch time : 11.311004638671875
+
+epoch 762 train loss : 0 test loss : 0.0004053593802382238 epoch time : 11.244967937469482
+
+epoch 763 train loss : 0 test loss : 0.0021752133519233516 epoch time : 10.89114236831665
+
+epoch 764 train loss : 0 test loss : 0.0005725755375654747 epoch time : 11.022236824035645
+
+epoch 765 train loss : 0 test loss : 0.00039670401262507465 epoch time : 11.277950048446655
+
+epoch 766 train loss : 0 test loss : 0.0004680048077716492 epoch time : 11.103056192398071
+
+epoch 767 train loss : 0 test loss : 0.0004433792200870812 epoch time : 11.325675964355469
+
+epoch 768 train loss : 0 test loss : 0.0003416924688887472 epoch time : 11.021858215332031
+
+epoch 769 train loss : 0 test loss : 0.0003635793521728677 epoch time : 11.046566724777222
+
+epoch 770 train loss : 0 test loss : 0.0004401258775033057 epoch time : 11.118557691574097
+
+epoch 771 train loss : 0 test loss : 0.00044199904611256596 epoch time : 11.06157898902893
+
+epoch 772 train loss : 0 test loss : 0.0004369021068365934 epoch time : 11.12791109085083
+
+epoch 773 train loss : 0 test loss : 0.00042235373014894623 epoch time : 11.034273147583008
+
+epoch 774 train loss : 0 test loss : 0.0004696016767411493 epoch time : 10.855405807495117
+
+epoch 775 train loss : 0 test loss : 0.00045852084440412 epoch time : 11.002690553665161
+
+epoch 776 train loss : 0 test loss : 0.00042942597065120935 epoch time : 11.205747604370117
+
+epoch 777 train loss : 0 test loss : 0.00039086343167582527 epoch time : 11.120391845703125
+
+epoch 778 train loss : 0 test loss : 0.0004575597170817976 epoch time : 11.154550552368164
+
+epoch 779 train loss : 0 test loss : 0.00031801516888663173 epoch time : 10.862580060958862
+
+epoch 780 train loss : 0 test loss : 0.0003665908006951213 epoch time : 11.158316135406494
+
+epoch 781 train loss : 0 test loss : 0.000363420990955395 epoch time : 11.224453926086426
+
+epoch 782 train loss : 0 test loss : 0.000396612158510834 epoch time : 11.204402446746826
+
+epoch 783 train loss : 0 test loss : 0.0007265101060814535 epoch time : 11.117279767990112
+
+epoch 784 train loss : 0 test loss : 0.0006121619856761148 epoch time : 11.250611782073975
+
+epoch 785 train loss : 0 test loss : 0.00047011717591279495 epoch time : 11.306994199752808
+
+epoch 786 train loss : 0 test loss : 0.00035384886966009316 epoch time : 11.009464025497437
+
+epoch 787 train loss : 0 test loss : 0.00048259497513451305 epoch time : 10.993348598480225
+
+epoch 788 train loss : 0 test loss : 0.0004625049017098111 epoch time : 11.256545782089233
+
+epoch 789 train loss : 0 test loss : 0.00044442613822563243 epoch time : 10.984530210494995
+
+epoch 790 train loss : 0 test loss : 0.0004162869227002375 epoch time : 11.302316427230835
+
+epoch 791 train loss : 0 test loss : 0.00039893046535629156 epoch time : 10.890484809875488
+
+epoch 792 train loss : 0 test loss : 0.00034792501780126867 epoch time : 11.161163091659546
+
+epoch 793 train loss : 0 test loss : 0.0004232837139473607 epoch time : 10.92738151550293
+
+epoch 794 train loss : 0 test loss : 0.00043733880496195826 epoch time : 11.019564628601074
+
+epoch 795 train loss : 0 test loss : 0.0004208528504629309 epoch time : 10.862233400344849
+
+epoch 796 train loss : 0 test loss : 0.00040236993906243396 epoch time : 11.189621925354004
+
+epoch 797 train loss : 0 test loss : 0.0004234562341783506 epoch time : 11.252362728118896
+
+epoch 798 train loss : 0 test loss : 0.00036938333020467934 epoch time : 11.183105230331421
+
+epoch 799 train loss : 0 test loss : 0.00036209395572465536 epoch time : 11.20348072052002
+
+epoch 800 train loss : 0 test loss : 0.0005439020751509815 epoch time : 10.923697233200073
+
+epoch 801 train loss : 0 test loss : 0.0008244548031749824 epoch time : 11.239282131195068
+
+epoch 802 train loss : 0 test loss : 0.00043827869133868563 epoch time : 11.225941896438599
+
+epoch 803 train loss : 0 test loss : 0.00044768807614066947 epoch time : 11.395477771759033
+
+epoch 804 train loss : 0 test loss : 0.0004518841402993227 epoch time : 11.19434666633606
+
+epoch 805 train loss : 0 test loss : 0.00045692069882837433 epoch time : 10.972666263580322
+
+epoch 806 train loss : 0 test loss : 0.00041309353643252206 epoch time : 11.132776021957397
+
+epoch 807 train loss : 0 test loss : 0.0003901172215895106 epoch time : 11.20259428024292
+
+epoch 808 train loss : 0 test loss : 0.00037484181181450066 epoch time : 10.867139101028442
+
+epoch 809 train loss : 0 test loss : 0.0011336315122510616 epoch time : 10.97216248512268
+
+epoch 810 train loss : 0 test loss : 0.0004705597336093585 epoch time : 11.290187358856201
+
+epoch 811 train loss : 0 test loss : 0.00041066617510902387 epoch time : 11.109983205795288
+
+epoch 812 train loss : 0 test loss : 0.0003366402961546555 epoch time : 11.018300294876099
+
+epoch 813 train loss : 0 test loss : 0.0003809015834121965 epoch time : 11.256670713424683
+
+epoch 814 train loss : 0 test loss : 0.0003460871836675021 epoch time : 11.049000263214111
+
+epoch 815 train loss : 0 test loss : 0.00043782705324701965 epoch time : 10.978206872940063
+
+epoch 816 train loss : 0 test loss : 0.0003507764510383519 epoch time : 11.208338499069214
+
+epoch 817 train loss : 0 test loss : 0.00037328215936819714 epoch time : 11.16380500793457
+
+epoch 818 train loss : 0 test loss : 0.00038535436760867015 epoch time : 11.049721479415894
+
+epoch 819 train loss : 0 test loss : 0.0003144872122599433 epoch time : 11.084434986114502
+
+epoch 820 train loss : 0 test loss : 0.0003146524856371495 epoch time : 10.974249362945557
+
+epoch 821 train loss : 0 test loss : 0.00033819271144845214 epoch time : 11.251741409301758
+
+epoch 822 train loss : 0 test loss : 0.0004066155621937166 epoch time : 10.651530504226685
+
+epoch 823 train loss : 0 test loss : 0.00046274496950597194 epoch time : 11.16274118423462
+
+epoch 824 train loss : 0 test loss : 0.000331327501044143 epoch time : 11.217060089111328
+
+epoch 825 train loss : 0 test loss : 0.0003586467428249307 epoch time : 11.06407880783081
+
+epoch 826 train loss : 0 test loss : 0.0007726031520481532 epoch time : 11.273923873901367
+
+epoch 827 train loss : 0 test loss : 0.00047642428156298894 epoch time : 11.161360502243042
+
+epoch 828 train loss : 0 test loss : 0.0004235646386708443 epoch time : 11.168285131454468
+
+epoch 829 train loss : 0 test loss : 0.0005258322877731795 epoch time : 11.227037906646729
+
+epoch 830 train loss : 0 test loss : 0.0004614864058870201 epoch time : 11.021203517913818
+
+epoch 831 train loss : 0 test loss : 0.0004068606989070152 epoch time : 11.0314359664917
+
+epoch 832 train loss : 0 test loss : 0.0013527557021006942 epoch time : 10.89011263847351
+
+epoch 833 train loss : 0 test loss : 0.0007865360482052589 epoch time : 11.126944303512573
+
+epoch 834 train loss : 0 test loss : 0.0005467767938777494 epoch time : 11.554558753967285
+
+epoch 835 train loss : 0 test loss : 0.0005839095732274776 epoch time : 10.85883617401123
+
+epoch 836 train loss : 0 test loss : 0.0005476566584547982 epoch time : 11.283342361450195
+
+epoch 837 train loss : 0 test loss : 0.0005619691752751047 epoch time : 11.112519979476929
+
+epoch 838 train loss : 0 test loss : 0.00036966013673615333 epoch time : 11.106933355331421
+
+epoch 839 train loss : 0 test loss : 0.0004193013519397937 epoch time : 11.11288571357727
+
+epoch 840 train loss : 0 test loss : 0.0003879948999383487 epoch time : 10.80787467956543
+
+epoch 841 train loss : 0 test loss : 0.00040986410264546674 epoch time : 10.718726396560669
+
+epoch 842 train loss : 0 test loss : 0.00043894420377910137 epoch time : 10.991178750991821
+
+epoch 843 train loss : 0 test loss : 0.00033838673213419196 epoch time : 11.334438800811768
+
+epoch 844 train loss : 0 test loss : 0.0004109457756082217 epoch time : 11.21656060218811
+
+epoch 845 train loss : 0 test loss : 0.00047428582426315796 epoch time : 11.087407112121582
+
+epoch 846 train loss : 0 test loss : 0.0005267961945113105 epoch time : 10.994286298751831
+
+epoch 847 train loss : 0 test loss : 0.0003746025880294231 epoch time : 11.287232398986816
+
+epoch 848 train loss : 0 test loss : 0.0005044225787666315 epoch time : 10.921842813491821
+
+epoch 849 train loss : 0 test loss : 0.000546812305401545 epoch time : 11.284179449081421
+
+epoch 850 train loss : 0 test loss : 0.0004685491876443848 epoch time : 11.091058492660522
+
+epoch 851 train loss : 0 test loss : 0.00047018066349361715 epoch time : 11.286217212677002
+
+epoch 852 train loss : 0 test loss : 0.0005897917023200231 epoch time : 11.161339044570923
+
+epoch 853 train loss : 0 test loss : 0.0006015165248148454 epoch time : 11.166550636291504
+
+epoch 854 train loss : 0 test loss : 0.0004558881458554727 epoch time : 11.328052520751953
+
+epoch 855 train loss : 0 test loss : 0.0008485441212542355 epoch time : 11.233916521072388
+
+epoch 856 train loss : 0 test loss : 0.0006248342106118798 epoch time : 11.038333415985107
+
+epoch 857 train loss : 0 test loss : 0.000508271754370071 epoch time : 11.134684324264526
+
+epoch 858 train loss : 0 test loss : 0.00036102384425854933 epoch time : 11.063512325286865
+
+epoch 859 train loss : 0 test loss : 0.00037181573861744255 epoch time : 11.005602359771729
+
+epoch 860 train loss : 0 test loss : 0.000523414341538834 epoch time : 10.773798704147339
+
+epoch 861 train loss : 0 test loss : 0.00047155255742836744 epoch time : 11.17868709564209
+
+epoch 862 train loss : 0 test loss : 0.0007916679727107597 epoch time : 11.252841711044312
+
+epoch 863 train loss : 0 test loss : 0.0005621953556934992 epoch time : 11.060875177383423
+
+epoch 864 train loss : 0 test loss : 0.0009574761885839204 epoch time : 11.134689807891846
+
+epoch 865 train loss : 0 test loss : 0.0006099825089525742 epoch time : 11.06493592262268
+
+epoch 866 train loss : 0 test loss : 0.0005130983263370581 epoch time : 10.93376874923706
+
+epoch 867 train loss : 0 test loss : 0.0006293174956226721 epoch time : 11.00135350227356
+
+epoch 868 train loss : 0 test loss : 0.0005143470383094003 epoch time : 10.938230514526367
+
+epoch 869 train loss : 0 test loss : 0.0005292975329211913 epoch time : 10.98613977432251
+
+epoch 870 train loss : 0 test loss : 0.0006283131709399944 epoch time : 11.093892812728882
+
+epoch 871 train loss : 0 test loss : 0.0006847645272500813 epoch time : 11.114803314208984
+
+epoch 872 train loss : 0 test loss : 0.0006112776124306644 epoch time : 11.20810604095459
+
+epoch 873 train loss : 0 test loss : 0.0006644106179010123 epoch time : 11.199060916900635
+
+epoch 874 train loss : 0 test loss : 0.0012746526044793427 epoch time : 11.086244583129883
+
+epoch 875 train loss : 0 test loss : 0.000753920185767735 epoch time : 11.28849458694458
+
+epoch 876 train loss : 0 test loss : 0.0005798875936307013 epoch time : 11.207311153411865
+
+epoch 877 train loss : 0 test loss : 0.0005508386384462938 epoch time : 10.929641485214233
+
+epoch 878 train loss : 0 test loss : 0.0005001613826607354 epoch time : 11.304911851882935
+
+epoch 879 train loss : 0 test loss : 0.00037929477063395706 epoch time : 11.129325866699219
+
+epoch 880 train loss : 0 test loss : 0.000421672952749456 epoch time : 11.070108413696289
+
+epoch 881 train loss : 0 test loss : 0.0005635711083111042 epoch time : 11.141892910003662
+
+epoch 882 train loss : 0 test loss : 0.0004974151136896884 epoch time : 11.299097299575806
+
+epoch 883 train loss : 0 test loss : 0.00046164217686358217 epoch time : 11.167402982711792
+
+epoch 884 train loss : 0 test loss : 0.0005204683548072353 epoch time : 11.02061653137207
+
+epoch 885 train loss : 0 test loss : 0.00046483625677259016 epoch time : 10.972835302352905
+
+epoch 886 train loss : 0 test loss : 0.0006132050524077689 epoch time : 11.084143161773682
+
+epoch 887 train loss : 0 test loss : 0.0006131212527786071 epoch time : 11.230300188064575
+
+epoch 888 train loss : 0 test loss : 0.0006699751635702947 epoch time : 11.174720764160156
+
+epoch 889 train loss : 0 test loss : 0.0006334293284453452 epoch time : 11.250597953796387
+
+epoch 890 train loss : 0 test loss : 0.0005694750871043652 epoch time : 11.012338638305664
+
+epoch 891 train loss : 0 test loss : 0.0005264806629080946 epoch time : 11.025582551956177
+
+epoch 892 train loss : 0 test loss : 0.0003413368031033315 epoch time : 11.133557081222534
+
+epoch 893 train loss : 0 test loss : 0.0003893789180438034 epoch time : 11.174981832504272
+
+epoch 894 train loss : 0 test loss : 0.0004541821132685679 epoch time : 10.948133945465088
+
+epoch 895 train loss : 0 test loss : 0.0005860302626388147 epoch time : 11.26353406906128
+
+epoch 896 train loss : 0 test loss : 0.0004268237486636887 epoch time : 11.242349624633789
+
+epoch 897 train loss : 0 test loss : 0.0004893710138276219 epoch time : 10.915810585021973
+
+epoch 898 train loss : 0 test loss : 0.00035933093749918044 epoch time : 10.88484787940979
+
+epoch 899 train loss : 0 test loss : 0.00044983517970346537 epoch time : 10.971557140350342
+
+epoch 900 train loss : 0 test loss : 0.0005053345036382476 epoch time : 11.139984846115112
+
+epoch 901 train loss : 0 test loss : 0.0005019255113438703 epoch time : 11.046735048294067
+
+epoch 902 train loss : 0 test loss : 0.0006574181534233503 epoch time : 11.304000616073608
+
+epoch 903 train loss : 0 test loss : 0.0005443017532040054 epoch time : 11.149954080581665
+
+epoch 904 train loss : 0 test loss : 0.0005280082017028084 epoch time : 11.070990085601807
+
+epoch 905 train loss : 0 test loss : 0.0005325406818883494 epoch time : 11.369165658950806
+
+epoch 906 train loss : 0 test loss : 0.0007812826079316437 epoch time : 11.037544250488281
+
+epoch 907 train loss : 0 test loss : 0.0006469102881965227 epoch time : 11.244950532913208
+
+epoch 908 train loss : 0 test loss : 0.0008422993269050494 epoch time : 11.174907445907593
+
+epoch 909 train loss : 0 test loss : 0.0005610295290049786 epoch time : 11.304439067840576
+
+epoch 910 train loss : 0 test loss : 0.0004853474529227242 epoch time : 11.217697381973267
+
+epoch 911 train loss : 0 test loss : 0.0007000981519619623 epoch time : 11.165576457977295
+
+epoch 912 train loss : 0 test loss : 0.0006029090266868783 epoch time : 10.945310115814209
+
+epoch 913 train loss : 0 test loss : 0.0009979064052458853 epoch time : 11.259134769439697
+
+epoch 914 train loss : 0 test loss : 0.0007327950394634778 epoch time : 11.05453634262085
+
+epoch 915 train loss : 0 test loss : 0.0008817519556032494 epoch time : 11.246798038482666
+
+epoch 916 train loss : 0 test loss : 0.0007604286074638367 epoch time : 11.200947999954224
+
+epoch 917 train loss : 0 test loss : 0.000685885965746517 epoch time : 11.020217180252075
+
+epoch 918 train loss : 0 test loss : 0.0007003428593937618 epoch time : 11.199337720870972
+
+epoch 919 train loss : 0 test loss : 0.0005707518163641604 epoch time : 11.257954835891724
+
+epoch 920 train loss : 0 test loss : 0.0007037173830516016 epoch time : 10.941341638565063
+
+epoch 921 train loss : 0 test loss : 0.0006847581995922761 epoch time : 11.141529560089111
+
+epoch 922 train loss : 0 test loss : 0.0006391341667040251 epoch time : 10.96464204788208
+
+epoch 923 train loss : 0 test loss : 0.0004566781353787519 epoch time : 11.139318466186523
+
+epoch 924 train loss : 0 test loss : 0.0007006465117835129 epoch time : 11.101061820983887
+
+epoch 925 train loss : 0 test loss : 0.001009974192129448 epoch time : 11.133929967880249
+
+epoch 926 train loss : 0 test loss : 0.00044218541734153405 epoch time : 11.088085889816284
+
+epoch 927 train loss : 0 test loss : 0.00036761666463765624 epoch time : 11.164874076843262
+
+epoch 928 train loss : 0 test loss : 0.0004257531351565073 epoch time : 11.206988096237183
+
+epoch 929 train loss : 0 test loss : 0.00043828135676449165 epoch time : 11.067102193832397
+
+epoch 930 train loss : 0 test loss : 0.0004180748146609403 epoch time : 11.065858840942383
+
+epoch 931 train loss : 0 test loss : 0.0003580150563114633 epoch time : 10.752713441848755
+
+epoch 932 train loss : 0 test loss : 0.00040086055620728683 epoch time : 11.482792615890503
+
+epoch 933 train loss : 0 test loss : 0.0003469887863805828 epoch time : 11.27786660194397
+
+epoch 934 train loss : 0 test loss : 0.0005091725106467493 epoch time : 11.091945171356201
+
+epoch 935 train loss : 0 test loss : 0.0003249895792881337 epoch time : 11.10451626777649
+
+epoch 936 train loss : 0 test loss : 0.00036075588286621496 epoch time : 11.029126405715942
+
+epoch 937 train loss : 0 test loss : 0.0003505651548039168 epoch time : 11.188996076583862
+
+epoch 938 train loss : 0 test loss : 0.00037089061273339513 epoch time : 11.21566891670227
+
+epoch 939 train loss : 0 test loss : 0.0003975394308023776 epoch time : 11.02153992652893
+
+epoch 940 train loss : 0 test loss : 0.0003777278131262089 epoch time : 11.22033166885376
+
+epoch 941 train loss : 0 test loss : 0.00041987357932763797 epoch time : 11.153261423110962
+
+epoch 942 train loss : 0 test loss : 0.0003410358986002393 epoch time : 10.885108709335327
+
+epoch 943 train loss : 0 test loss : 0.00033964360773097724 epoch time : 11.205494165420532
+
+epoch 944 train loss : 0 test loss : 0.0003425109777405548 epoch time : 11.129885911941528
+
+epoch 945 train loss : 0 test loss : 0.0008601198060205206 epoch time : 11.068889141082764
+
+epoch 946 train loss : 0 test loss : 0.0006154014360314856 epoch time : 11.078468799591064
+
+epoch 947 train loss : 0 test loss : 0.0005395485859480686 epoch time : 11.194199562072754
+
+epoch 948 train loss : 0 test loss : 0.0006099407449558688 epoch time : 11.146962642669678
+
+epoch 949 train loss : 0 test loss : 0.0005350660406596338 epoch time : 11.075407028198242
+
+epoch 950 train loss : 0 test loss : 0.0005522685072113139 epoch time : 11.07663083076477
+
+epoch 951 train loss : 0 test loss : 0.00035459563756982487 epoch time : 11.129844188690186
+
+epoch 952 train loss : 0 test loss : 0.0004763463221024722 epoch time : 11.04745364189148
+
+epoch 953 train loss : 0 test loss : 0.0005062198154822303 epoch time : 11.02144980430603
+
+epoch 954 train loss : 0 test loss : 0.0005855059862369671 epoch time : 11.014102458953857
+
+epoch 955 train loss : 0 test loss : 0.0007863949140300974 epoch time : 10.924023866653442
+
+epoch 956 train loss : 0 test loss : 0.0005869884965553259 epoch time : 11.140813112258911
+
+epoch 957 train loss : 0 test loss : 0.0005611390127645185 epoch time : 11.221553802490234
+
+epoch 958 train loss : 0 test loss : 0.0005517005993169732 epoch time : 11.241491317749023
+
+epoch 959 train loss : 0 test loss : 0.000591611213167198 epoch time : 10.920485258102417
+
+epoch 960 train loss : 0 test loss : 0.0005058175641655301 epoch time : 11.22055721282959
+
+epoch 961 train loss : 0 test loss : 0.0005970298613344008 epoch time : 11.204481363296509
+
+epoch 962 train loss : 0 test loss : 0.0009833121536454807 epoch time : 11.135961055755615
+
+epoch 963 train loss : 0 test loss : 0.0004297130653867498 epoch time : 11.078962802886963
+
+epoch 964 train loss : 0 test loss : 0.0005838528110568101 epoch time : 10.979071617126465
+
+epoch 965 train loss : 0 test loss : 0.00042701897958371166 epoch time : 10.994078397750854
+
+epoch 966 train loss : 0 test loss : 0.000543026430629349 epoch time : 11.149241209030151
+
+epoch 967 train loss : 0 test loss : 0.00038694690010743216 epoch time : 11.075069665908813
+
+epoch 968 train loss : 0 test loss : 0.0004952914993433902 epoch time : 11.188191413879395
+
+epoch 969 train loss : 0 test loss : 0.0004956612538080662 epoch time : 11.054962396621704
+
+epoch 970 train loss : 0 test loss : 0.0006436666978212694 epoch time : 11.176779508590698
+
+epoch 971 train loss : 0 test loss : 0.000525593585431731 epoch time : 11.180130958557129
+
+epoch 972 train loss : 0 test loss : 0.0004559985682135448 epoch time : 11.048749923706055
+
+epoch 973 train loss : 0 test loss : 0.0005344903814451148 epoch time : 11.100151062011719
+
+epoch 974 train loss : 0 test loss : 0.0004959424453166624 epoch time : 11.016943216323853
+
+epoch 975 train loss : 0 test loss : 0.00045575468539027497 epoch time : 11.220935344696045
+
+epoch 976 train loss : 0 test loss : 0.0006644689250000132 epoch time : 11.01614785194397
+
+epoch 977 train loss : 0 test loss : 0.00102869477996137 epoch time : 10.87240743637085
+
+epoch 978 train loss : 0 test loss : 0.001463361414304624 epoch time : 10.984166145324707
+
+epoch 979 train loss : 0 test loss : 0.000642787951316374 epoch time : 11.231866359710693
+
+epoch 980 train loss : 0 test loss : 0.00047285904778012383 epoch time : 11.279412508010864
+
+epoch 981 train loss : 0 test loss : 0.0006651531026970284 epoch time : 10.947031497955322
+
+epoch 982 train loss : 0 test loss : 0.0004407849579971905 epoch time : 11.214728355407715
+
+epoch 983 train loss : 0 test loss : 0.0005410829859708125 epoch time : 11.316571235656738
+
+epoch 984 train loss : 0 test loss : 0.0006166469296052431 epoch time : 11.00666332244873
+
+epoch 985 train loss : 0 test loss : 0.0004245652647417349 epoch time : 11.184690713882446
+
+epoch 986 train loss : 0 test loss : 0.000349192710321707 epoch time : 11.175317287445068
+
+epoch 987 train loss : 0 test loss : 0.0003185993482475169 epoch time : 10.889482975006104
+
+epoch 988 train loss : 0 test loss : 0.0003401096788972306 epoch time : 11.03780221939087
+
+epoch 989 train loss : 0 test loss : 0.00033086442029646906 epoch time : 10.963972330093384
+
+epoch 990 train loss : 0 test loss : 0.00036026536448237795 epoch time : 11.155886888504028
+
+epoch 991 train loss : 0 test loss : 0.00034578225313453004 epoch time : 11.199705362319946
+
+epoch 992 train loss : 0 test loss : 0.00038368852983694524 epoch time : 11.23300290107727
+
+epoch 993 train loss : 0 test loss : 0.000613454127839456 epoch time : 11.034072160720825
+
+epoch 994 train loss : 0 test loss : 0.000502112588340727 epoch time : 10.94182014465332
+
+epoch 995 train loss : 0 test loss : 0.00039809659695796046 epoch time : 11.099637746810913
+
+epoch 996 train loss : 0 test loss : 0.0003216384939150885 epoch time : 11.169439315795898
+
+epoch 997 train loss : 0 test loss : 0.00042282248856887844 epoch time : 10.886024951934814
+
+epoch 998 train loss : 0 test loss : 0.0003231077183348437 epoch time : 11.148661375045776
+
+epoch 999 train loss : 0 test loss : 0.0003674348651353891 epoch time : 10.966564655303955
+
+epoch 1000 train loss : 0 test loss : 0.0005251083251399299 epoch time : 11.245549201965332
+
