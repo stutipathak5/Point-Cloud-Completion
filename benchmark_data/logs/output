@@ -1,0 +1,3 @@
+True
+[Warning] Since Open3D 0.15, installing Open3D via conda is deprecated. Please re-install Open3D via: `pip install open3d -U`.
+Number of files in 'data_ours/difficult/train/complete/Dutch': 36
