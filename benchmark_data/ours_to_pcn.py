@@ -4,6 +4,7 @@ import open3d as o3d
 import uuid
 from collections import defaultdict
 
+#done on lumi due to less storage here
 
 def array_to_tuple(arr):
     return tuple(map(tuple, arr))
@@ -31,7 +32,7 @@ def numpy_to_pcd(array, file_path):
     o3d.io.write_point_cloud(file_path, pcd)
 
 
-ii = "difficult"
+ii = "easy"
 
 
 for i in ["Dutch", "SNCF", "Hungarian", "Chinese"]:
