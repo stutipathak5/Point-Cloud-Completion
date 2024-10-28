@@ -1,0 +1,2 @@
+/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
