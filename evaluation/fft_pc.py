@@ -4,6 +4,9 @@ import open3d as o3d
 import uuid
 from collections import defaultdict
 import torch
+from sklearn.neighbors import NearestNeighbors
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 
 
 def array_to_tuple(arr):
@@ -37,16 +40,6 @@ print(len(duplicates))
 arr_list = []
 for k, v in duplicates.items():
     arr_list.append(v[1])
-
-
-
-
-
-
-
-
-
-
 
 
 def fft(points, voxel_size):
@@ -94,8 +87,6 @@ def fft(points, voxel_size):
     plt.show()
 
 
-
-
 def curv_avg(points, neigh_size):
 
     from pytorch3d.io import IO
@@ -130,32 +121,94 @@ def curv_avg(points, neigh_size):
     return curv, average
 
 
+def noise(points, k):
+    nbrs = NearestNeighbors(n_neighbors=k, algorithm='auto').fit(points)
+    distances_to_planes = []
+
+    for i, point in enumerate(points):
+        _, indices = nbrs.kneighbors([point])
+        neighbors = points[indices[0]]
+
+        X = neighbors[:, :2]  
+        y = neighbors[:, 2]   
+        plane_model = LinearRegression().fit(X, y)
+
+        a, b = plane_model.coef_
+        c, d = -1, plane_model.intercept_
+
+        x0, y0, z0 = point
+        distance = abs(a * x0 + b * y0 + c * z0 + d) / np.sqrt(a**2 + b**2 + c**2)
+        distances_to_planes.append(distance)
+
+    average_distance = np.mean(distances_to_planes)
+    return average_distance
+
+
+
+
+
+
 
 # points = arr_list[7]
 # fft(points, 0.1)
 
 
-avg = 0
+avg1 = 0
+avg2 = 0
 for points in arr_list[0:30]:
 
     point_cloud = o3d.geometry.PointCloud()
     point_cloud.points = o3d.utility.Vector3dVector(points)
     # o3d.visualization.draw_geometries([point_cloud])
     curv, average = curv_avg(points, 15)
-    avg+=average
-print(avg/30)
+    avg_noise = noise(points, 15)
+    avg1+=average
+    avg2+=avg_noise
+print(avg1/30)
 # tensor(0.0813, dtype=torch.float64)
+print(avg2/30)
+# 0.014823254270785619
 
 
 
 directory_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\PCN\train\complete\02691156"
 file_paths = [os.path.join(directory_path, file) for file in os.listdir(directory_path)]
 
-avg = 0
+avg1 = 0
+avg2 = 0
 for file_path in file_paths[0:30]:
     pcd = o3d.io.read_point_cloud(file_path)
     points = np.asarray(pcd.points)
     curv, average = curv_avg(points, 15)
-    avg+=average
-print(avg/30)
+    avg_noise = noise(points, 15)
+    avg1+=average
+    avg2+=avg_noise
+print(avg1/30)
 # tensor(0.0770, dtype=torch.float64)
+print(avg2/30)
+# 0.0008009077898960473
+
+
+
+# voxel
+# distance 
+
+
+def distance(points, k):
+    pcd = o3d.io.read_point_cloud("path_to_point_cloud.ply")
+    points = np.asarray(pcd.points)
+
+    # Initialize Nearest Neighbors with k=2 (k=1 is the point itself, k=2 is the nearest other point)
+    nbrs = NearestNeighbors(n_neighbors=2, algorithm='auto').fit(points)
+    distances, indices = nbrs.kneighbors(points)
+
+    # The distances to the nearest neighbor (excluding the point itself) are in distances[:, 1]
+    nearest_neighbor_distances = distances[:, 1]
+
+    # Plotting the histogram
+    plt.figure(figsize=(8, 6))
+    plt.hist(nearest_neighbor_distances, bins=30, color='c', edgecolor='k', alpha=0.7)
+    plt.title("Histogram of Nearest Neighbor Distances (k=1)")
+    plt.xlabel("Distance")
+    plt.ylabel("Frequency")
+    plt.show()
