@@ -144,13 +144,63 @@ def noise(points, k):
     return average_distance
 
 
+def distance(points, k):
+    # Initialize Nearest Neighbors with k=2 (k=1 is the point itself, k=2 is the nearest other point)
+    nbrs = NearestNeighbors(n_neighbors=k, algorithm='auto').fit(points)
+    distances, indices = nbrs.kneighbors(points)
+
+    nearest_neighbor_distances = distances[:, 1]
+
+    # Plotting the histogram
+    plt.figure(figsize=(8, 6))
+    plt.hist(nearest_neighbor_distances, bins=30, color='c', edgecolor='k', alpha=0.7)
+    plt.title("Histogram of Nearest Neighbor Distances (k=1)")
+    plt.xlabel("Distance")
+    plt.ylabel("Frequency")
+    plt.show()
 
 
+def voxel(points, voxel_size):
+
+    point_cloud = o3d.geometry.PointCloud()
+    point_cloud.points = o3d.utility.Vector3dVector(points)
+
+    voxel_size = voxel_size 
+
+    voxel_grid = o3d.geometry.VoxelGrid.create_from_point_cloud(point_cloud, voxel_size)
+
+    o3d.visualization.draw_geometries([voxel_grid])
+
+    min_bound = np.min(points, axis=0)
+    max_bound = np.max(points, axis=0)
+    grid_size = tuple(np.ceil((max_bound - min_bound) / voxel_size).astype(int))
+    voxel_counts = np.zeros(grid_size)
+
+
+    for point in points:
+        voxel_index = ((point - min_bound) / voxel_size).astype(int)
+        voxel_counts[voxel_index[0], voxel_index[1], voxel_index[2]] += 1
+
+    flattened_counts = voxel_counts[voxel_counts > 0]
+
+    plt.figure(figsize=(10, 6))
+    plt.hist(flattened_counts, bins=30, color='c', edgecolor='k', alpha=0.7)
+    plt.title("Histogram of Points per Voxel")
+    plt.xlabel("Number of Points in Voxel")
+    plt.ylabel("Frequency")
+    plt.show()
 
 
 
 # points = arr_list[7]
 # fft(points, 0.1)
+
+
+points = arr_list[7]
+distance(points, 2)
+point_cloud = o3d.io.read_point_cloud(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\PCN\train\complete\02691156\1a04e3eab45ca15dd86060f189eb133.pcd")
+points = np.asarray(point_cloud.points)
+distance(points, 2)
 
 
 avg1 = 0
@@ -188,27 +238,8 @@ print(avg1/30)
 print(avg2/30)
 # 0.0008009077898960473
 
-
-
-# voxel
-# distance 
-
-
-def distance(points, k):
-    pcd = o3d.io.read_point_cloud("path_to_point_cloud.ply")
-    points = np.asarray(pcd.points)
-
-    # Initialize Nearest Neighbors with k=2 (k=1 is the point itself, k=2 is the nearest other point)
-    nbrs = NearestNeighbors(n_neighbors=2, algorithm='auto').fit(points)
-    distances, indices = nbrs.kneighbors(points)
-
-    # The distances to the nearest neighbor (excluding the point itself) are in distances[:, 1]
-    nearest_neighbor_distances = distances[:, 1]
-
-    # Plotting the histogram
-    plt.figure(figsize=(8, 6))
-    plt.hist(nearest_neighbor_distances, bins=30, color='c', edgecolor='k', alpha=0.7)
-    plt.title("Histogram of Nearest Neighbor Distances (k=1)")
-    plt.xlabel("Distance")
-    plt.ylabel("Frequency")
-    plt.show()
+points = arr_list[7]
+voxel(points, 0.1)
+point_cloud = o3d.io.read_point_cloud(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\PCN\train\complete\02691156\1a04e3eab45ca15dd86060f189eb133.pcd")
+points = np.asarray(point_cloud.points)
+voxel(points, 0.01)
