@@ -2,3 +2,7 @@ data/
 Point-Cloud-Autoencoder/data/
 curriculum/data/
 benchmark_data/data_ours/
+new/comp_te.npy
+new/comp_tr.npy
+new/part_te.npy
+new/part_tr.npy

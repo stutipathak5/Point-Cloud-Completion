@@ -1,3 +1,13 @@
+/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+cp: cannot stat 'PointClout_seeds_version_curriculum_L1_pytorch3d.py': No such file or directory
 Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-ModuleNotFoundError: No module named 'torch'
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/PointClout_seeds_version_curriculum_correct_L1_pytorch3d.py", line 252, in <module>
+    train_loss = train_epoch() #train one epoch, get the average loss
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/PointClout_seeds_version_curriculum_correct_L1_pytorch3d.py", line 67, in train_epoch
+    cham_loss_compl,_ = chamfer_distance(complete_data, output_compl.permute(0,2,1), norm = 1)
+  File "/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/pytorch3d/loss/chamfer.py", line 231, in chamfer_distance
+    cham_x, cham_norm_x = _chamfer_distance_single_direction(
+  File "/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/pytorch3d/loss/chamfer.py", line 96, in _chamfer_distance_single_direction
+    raise ValueError("y does not have the correct shape.")
+ValueError: y does not have the correct shape.

@@ -1,0 +1,1008 @@
+epoch 0 train loss : tensor(0.1126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.17122044804550351 epoch time : 78.78494310379028
+
+epoch 1 train loss : tensor(0.0951, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.14685000266347611 epoch time : 72.201500415802
+
+epoch 2 train loss : tensor(0.0858, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.13112634065605344 epoch time : 72.37281036376953
+
+epoch 3 train loss : tensor(0.0809, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.12896639108657837 epoch time : 72.21233010292053
+
+epoch 4 train loss : tensor(0.0820, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.12767947500660307 epoch time : 72.38000798225403
+
+epoch 5 train loss : tensor(0.0740, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.11624021225032352 epoch time : 72.35795855522156
+
+epoch 6 train loss : tensor(0.0685, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.11106529299701963 epoch time : 72.41786813735962
+
+epoch 7 train loss : tensor(0.0673, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.10735643051919483 epoch time : 72.25251483917236
+
+epoch 8 train loss : tensor(0.0698, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.10457811681997209 epoch time : 72.18240022659302
+
+epoch 9 train loss : tensor(0.0663, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.10247498076586496 epoch time : 72.2886610031128
+
+epoch 10 train loss : tensor(0.0682, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.09987474020038332 epoch time : 72.45579862594604
+
+epoch 11 train loss : tensor(0.0600, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0963520538948831 epoch time : 72.25070881843567
+
+epoch 12 train loss : tensor(0.0604, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.09486982474724452 epoch time : 72.17872667312622
+
+epoch 13 train loss : tensor(0.0578, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.09136974847032911 epoch time : 72.34257316589355
+
+epoch 14 train loss : tensor(0.0575, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.09435825830414182 epoch time : 72.17907977104187
+
+epoch 15 train loss : tensor(0.0589, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08963302735771451 epoch time : 72.28944754600525
+
+epoch 16 train loss : tensor(0.0534, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08648328554062616 epoch time : 72.2375841140747
+
+epoch 17 train loss : tensor(0.0553, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08566868872869582 epoch time : 72.0227530002594
+
+epoch 18 train loss : tensor(0.0528, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08726187227737336 epoch time : 72.03031468391418
+
+epoch 19 train loss : tensor(0.0521, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08406596027669452 epoch time : 72.53183555603027
+
+epoch 20 train loss : tensor(0.0493, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08405827482541402 epoch time : 72.10882210731506
+
+epoch 21 train loss : tensor(0.0503, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08093135697501046 epoch time : 72.26149296760559
+
+epoch 22 train loss : tensor(0.0509, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08134607261135465 epoch time : 72.13637614250183
+
+epoch 23 train loss : tensor(0.0500, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07973629910321463 epoch time : 72.23326778411865
+
+epoch 24 train loss : tensor(0.0503, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08109183467569805 epoch time : 72.2304368019104
+
+epoch 25 train loss : tensor(0.0517, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.08220912941864558 epoch time : 72.1617865562439
+
+epoch 26 train loss : tensor(0.0497, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07846647252639134 epoch time : 72.582590341568
+
+epoch 27 train loss : tensor(0.0512, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0808793150243305 epoch time : 71.89886713027954
+
+epoch 28 train loss : tensor(0.0499, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07885492486613137 epoch time : 72.1034255027771
+
+epoch 29 train loss : tensor(0.0473, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07643977871962956 epoch time : 72.04713296890259
+
+epoch 30 train loss : tensor(0.0481, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07597178859370095 epoch time : 72.25731182098389
+
+epoch 31 train loss : tensor(0.0481, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07420945309457325 epoch time : 72.08488082885742
+
+epoch 32 train loss : tensor(0.0463, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07598854849735896 epoch time : 71.98338913917542
+
+epoch 33 train loss : tensor(0.0432, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07374722439618338 epoch time : 72.19308519363403
+
+epoch 34 train loss : tensor(0.0453, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07286030054092407 epoch time : 72.47486233711243
+
+epoch 35 train loss : tensor(0.0433, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07488785187403361 epoch time : 71.98093843460083
+
+epoch 36 train loss : tensor(0.0439, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07388792683680852 epoch time : 72.00627899169922
+
+epoch 37 train loss : tensor(0.0444, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0716741674003147 epoch time : 72.36520075798035
+
+epoch 38 train loss : tensor(0.0473, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.07370420332465853 epoch time : 72.05312490463257
+
+epoch 39 train loss : tensor(0.0426, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06952759410653796 epoch time : 72.10749244689941
+
+epoch 40 train loss : tensor(0.0418, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0699246476093928 epoch time : 72.13309144973755
+
+epoch 41 train loss : tensor(0.0436, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06967948483569282 epoch time : 71.93261694908142
+
+epoch 42 train loss : tensor(0.0417, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06730020294586818 epoch time : 72.42125153541565
+
+epoch 43 train loss : tensor(0.0400, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06709154092130207 epoch time : 72.2864511013031
+
+epoch 44 train loss : tensor(0.0424, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06628690305210296 epoch time : 72.62976694107056
+
+epoch 45 train loss : tensor(0.0408, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06627932279592469 epoch time : 72.02706146240234
+
+epoch 46 train loss : tensor(0.0378, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06691837612362135 epoch time : 72.67425179481506
+
+epoch 47 train loss : tensor(0.0385, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06669276172206515 epoch time : 72.58581948280334
+
+epoch 48 train loss : tensor(0.0377, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.064244523112263 epoch time : 72.52971339225769
+
+epoch 49 train loss : tensor(0.0396, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06702496696795736 epoch time : 72.30736565589905
+
+epoch 50 train loss : tensor(0.0366, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06466928834006899 epoch time : 72.13474607467651
+
+epoch 51 train loss : tensor(0.0393, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06449908550296511 epoch time : 71.9178159236908
+
+epoch 52 train loss : tensor(0.0395, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06731782942300751 epoch time : 72.00492477416992
+
+epoch 53 train loss : tensor(0.0390, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06415656368647303 epoch time : 72.47864603996277
+
+epoch 54 train loss : tensor(0.0390, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06423610573013623 epoch time : 71.99007987976074
+
+epoch 55 train loss : tensor(0.0366, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06026063611110052 epoch time : 72.05809783935547
+
+epoch 56 train loss : tensor(0.0375, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06349030474112147 epoch time : 72.08148741722107
+
+epoch 57 train loss : tensor(0.0343, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05924682638474873 epoch time : 72.47786545753479
+
+epoch 58 train loss : tensor(0.0344, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.060023799183822814 epoch time : 72.08676743507385
+
+epoch 59 train loss : tensor(0.0365, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0625039507590589 epoch time : 71.88499879837036
+
+epoch 60 train loss : tensor(0.0353, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05986044963910466 epoch time : 72.26427221298218
+
+epoch 61 train loss : tensor(0.0334, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.06044837832450867 epoch time : 72.09420943260193
+
+epoch 62 train loss : tensor(0.0370, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05941365907589594 epoch time : 71.88705253601074
+
+epoch 63 train loss : tensor(0.0350, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05797558614895457 epoch time : 72.23682379722595
+
+epoch 64 train loss : tensor(0.0338, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05695217191463425 epoch time : 72.37823796272278
+
+epoch 65 train loss : tensor(0.0348, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05637715437582561 epoch time : 72.70251035690308
+
+epoch 66 train loss : tensor(0.0344, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.058868437473263056 epoch time : 72.18960738182068
+
+epoch 67 train loss : tensor(0.0330, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.057797858580237345 epoch time : 72.08254313468933
+
+epoch 68 train loss : tensor(0.0321, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05618678955804734 epoch time : 72.41725659370422
+
+epoch 69 train loss : tensor(0.0326, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05654933108460335 epoch time : 72.52801847457886
+
+epoch 70 train loss : tensor(0.0325, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05700371591817765 epoch time : 72.24654531478882
+
+epoch 71 train loss : tensor(0.0327, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05509329285650026 epoch time : 72.42215633392334
+
+epoch 72 train loss : tensor(0.0308, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.056104831042743865 epoch time : 72.10190653800964
+
+epoch 73 train loss : tensor(0.0338, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05473506095863524 epoch time : 72.30728721618652
+
+epoch 74 train loss : tensor(0.0329, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05415691311160723 epoch time : 72.52791714668274
+
+epoch 75 train loss : tensor(0.0305, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.054247475805736724 epoch time : 72.25429368019104
+
+epoch 76 train loss : tensor(0.0329, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05883487881649108 epoch time : 72.22962999343872
+
+epoch 77 train loss : tensor(0.0322, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.055568566102357136 epoch time : 71.8586676120758
+
+epoch 78 train loss : tensor(0.0292, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05147578762400718 epoch time : 72.2523078918457
+
+epoch 79 train loss : tensor(0.0319, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05402996320100058 epoch time : 72.2430727481842
+
+epoch 80 train loss : tensor(0.0312, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05366812681867963 epoch time : 71.87898325920105
+
+epoch 81 train loss : tensor(0.0308, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.054417772307282404 epoch time : 71.99248433113098
+
+epoch 82 train loss : tensor(0.0310, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.054543880479676385 epoch time : 72.26880812644958
+
+epoch 83 train loss : tensor(0.0294, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05169453365462167 epoch time : 72.33277869224548
+
+epoch 84 train loss : tensor(0.0339, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05594781041145325 epoch time : 72.00311517715454
+
+epoch 85 train loss : tensor(0.0309, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05484509840607643 epoch time : 72.26924180984497
+
+epoch 86 train loss : tensor(0.0310, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.052856412317071645 epoch time : 71.92357587814331
+
+epoch 87 train loss : tensor(0.0292, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05423852890020325 epoch time : 72.16192245483398
+
+epoch 88 train loss : tensor(0.0295, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05070806578511283 epoch time : 72.43387198448181
+
+epoch 89 train loss : tensor(0.0275, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.049784022250345776 epoch time : 72.69739413261414
+
+epoch 90 train loss : tensor(0.0293, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05246734477224804 epoch time : 72.03058052062988
+
+epoch 91 train loss : tensor(0.0259, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04864641420897983 epoch time : 72.50624346733093
+
+epoch 92 train loss : tensor(0.0300, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0505508870950767 epoch time : 72.15346240997314
+
+epoch 93 train loss : tensor(0.0282, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.049993092992476056 epoch time : 72.23944520950317
+
+epoch 94 train loss : tensor(0.0299, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.052392524267945974 epoch time : 72.09501695632935
+
+epoch 95 train loss : tensor(0.0277, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.049310412435304554 epoch time : 72.03822565078735
+
+epoch 96 train loss : tensor(0.0276, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.049577366560697556 epoch time : 72.17877721786499
+
+epoch 97 train loss : tensor(0.0278, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05011122656010446 epoch time : 72.11673641204834
+
+epoch 98 train loss : tensor(0.0266, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04999507537909916 epoch time : 71.99966311454773
+
+epoch 99 train loss : tensor(0.0268, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04946639725849742 epoch time : 72.01015329360962
+
+epoch 100 train loss : tensor(0.0293, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.05015069157594726 epoch time : 72.04740691184998
+
+epoch 101 train loss : tensor(0.0265, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.046629187606629874 epoch time : 72.29419612884521
+
+epoch 102 train loss : tensor(0.0260, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04646631223814828 epoch time : 72.45017552375793
+
+epoch 103 train loss : tensor(0.0274, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04906781106477692 epoch time : 71.87986397743225
+
+epoch 104 train loss : tensor(0.0268, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04724939681944393 epoch time : 72.09833288192749
+
+epoch 105 train loss : tensor(0.0251, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04680492835385459 epoch time : 72.29524683952332
+
+epoch 106 train loss : tensor(0.0257, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.045555817584196724 epoch time : 72.36860799789429
+
+epoch 107 train loss : tensor(0.0254, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.046933263717662724 epoch time : 72.15392518043518
+
+epoch 108 train loss : tensor(0.0251, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0470492493893419 epoch time : 72.05601978302002
+
+epoch 109 train loss : tensor(0.0255, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04743033310487157 epoch time : 72.18267464637756
+
+epoch 110 train loss : tensor(0.0245, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.045790745211499076 epoch time : 72.08310389518738
+
+epoch 111 train loss : tensor(0.0236, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04525604116774741 epoch time : 72.25797605514526
+
+epoch 112 train loss : tensor(0.0219, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.043608564706075756 epoch time : 72.49879479408264
+
+epoch 113 train loss : tensor(0.0254, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04501456217396827 epoch time : 72.1035795211792
+
+epoch 114 train loss : tensor(0.0234, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.044313949843247734 epoch time : 71.93450617790222
+
+epoch 115 train loss : tensor(0.0238, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0456468773384889 epoch time : 72.0977988243103
+
+epoch 116 train loss : tensor(0.0251, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04618880205920765 epoch time : 72.12522459030151
+
+epoch 117 train loss : tensor(0.0252, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04715362137981823 epoch time : 72.0798602104187
+
+epoch 118 train loss : tensor(0.0253, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04550409795982497 epoch time : 72.03956127166748
+
+epoch 119 train loss : tensor(0.0259, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.044749785569452104 epoch time : 72.01186990737915
+
+epoch 120 train loss : tensor(0.0227, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04253416313301949 epoch time : 72.49477767944336
+
+epoch 121 train loss : tensor(0.0240, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.046022553174268635 epoch time : 72.04115796089172
+
+epoch 122 train loss : tensor(0.0243, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04546959911073957 epoch time : 72.089022397995
+
+epoch 123 train loss : tensor(0.0237, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04492763536317008 epoch time : 71.8981204032898
+
+epoch 124 train loss : tensor(0.0228, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04241743346764928 epoch time : 72.58595156669617
+
+epoch 125 train loss : tensor(0.0235, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04362507306394123 epoch time : 72.08292388916016
+
+epoch 126 train loss : tensor(0.0236, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04529432704051336 epoch time : 72.10418033599854
+
+epoch 127 train loss : tensor(0.0236, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04325302406435921 epoch time : 71.91290712356567
+
+epoch 128 train loss : tensor(0.0241, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.043806369815553935 epoch time : 72.14727449417114
+
+epoch 129 train loss : tensor(0.0220, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04194939384857813 epoch time : 72.54296541213989
+
+epoch 130 train loss : tensor(0.0231, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04211324808143434 epoch time : 72.13975477218628
+
+epoch 131 train loss : tensor(0.0221, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.041003260584104625 epoch time : 72.50831055641174
+
+epoch 132 train loss : tensor(0.0237, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04191438374774797 epoch time : 72.29682493209839
+
+epoch 133 train loss : tensor(0.0232, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.044381115762960346 epoch time : 72.15766787528992
+
+epoch 134 train loss : tensor(0.0235, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.044206985050723666 epoch time : 72.0879979133606
+
+epoch 135 train loss : tensor(0.0226, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04400886985517684 epoch time : 71.98523259162903
+
+epoch 136 train loss : tensor(0.0224, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04120418429374695 epoch time : 72.28860712051392
+
+epoch 137 train loss : tensor(0.0213, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.042073838057972136 epoch time : 71.95889019966125
+
+epoch 138 train loss : tensor(0.0207, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04097973537586984 epoch time : 72.41885209083557
+
+epoch 139 train loss : tensor(0.0221, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.040594104854833515 epoch time : 72.23087811470032
+
+epoch 140 train loss : tensor(0.0206, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04035158384413946 epoch time : 72.37095093727112
+
+epoch 141 train loss : tensor(0.0208, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.041822074069863276 epoch time : 72.12878966331482
+
+epoch 142 train loss : tensor(0.0217, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.039530842431953976 epoch time : 72.31283378601074
+
+epoch 143 train loss : tensor(0.0220, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04291632239307676 epoch time : 72.30906176567078
+
+epoch 144 train loss : tensor(0.0209, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03944555581325576 epoch time : 72.10293245315552
+
+epoch 145 train loss : tensor(0.0213, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.041496142212833674 epoch time : 71.91383218765259
+
+epoch 146 train loss : tensor(0.0206, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04089566320180893 epoch time : 71.91721868515015
+
+epoch 147 train loss : tensor(0.0217, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04038888482110841 epoch time : 72.28945565223694
+
+epoch 148 train loss : tensor(0.0208, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.038809170857781454 epoch time : 72.28865385055542
+
+epoch 149 train loss : tensor(0.0196, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03803226156603722 epoch time : 72.5728874206543
+
+epoch 150 train loss : tensor(0.0213, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03850654282030605 epoch time : 72.13858795166016
+
+epoch 151 train loss : tensor(0.0201, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03998076117464474 epoch time : 71.87308144569397
+
+epoch 152 train loss : tensor(0.0192, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.038091057468028294 epoch time : 71.9550108909607
+
+epoch 153 train loss : tensor(0.0197, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03718006628609839 epoch time : 72.55449986457825
+
+epoch 154 train loss : tensor(0.0215, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.038950990175917036 epoch time : 72.21044969558716
+
+epoch 155 train loss : tensor(0.0196, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.04001663696198236 epoch time : 71.86977624893188
+
+epoch 156 train loss : tensor(0.0187, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.039882628513234 epoch time : 72.00403571128845
+
+epoch 157 train loss : tensor(0.0193, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03831751360779717 epoch time : 72.11818504333496
+
+epoch 158 train loss : tensor(0.0188, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03813204257970765 epoch time : 72.01312637329102
+
+epoch 159 train loss : tensor(0.0196, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03801166372639792 epoch time : 72.17939972877502
+
+epoch 160 train loss : tensor(0.0200, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03815550126490139 epoch time : 73.3492591381073
+
+epoch 161 train loss : tensor(0.0213, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.036523016258364634 epoch time : 72.37680435180664
+
+epoch 162 train loss : tensor(0.0192, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03665668588309061 epoch time : 72.10159111022949
+
+epoch 163 train loss : tensor(0.0196, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.037489824617902436 epoch time : 72.02890086174011
+
+epoch 164 train loss : tensor(0.0195, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.037068434414409455 epoch time : 72.08032441139221
+
+epoch 165 train loss : tensor(0.0199, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.037591055035591125 epoch time : 72.15463447570801
+
+epoch 166 train loss : tensor(0.0196, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03907877623680092 epoch time : 72.14897632598877
+
+epoch 167 train loss : tensor(0.0187, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03916902148297855 epoch time : 72.02058243751526
+
+epoch 168 train loss : tensor(0.0191, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03584660873526618 epoch time : 72.39481663703918
+
+epoch 169 train loss : tensor(0.0192, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.036624444382531304 epoch time : 71.9470272064209
+
+epoch 170 train loss : tensor(0.0190, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03734337068384602 epoch time : 71.9088089466095
+
+epoch 171 train loss : tensor(0.0194, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.037163363148768745 epoch time : 72.04129147529602
+
+epoch 172 train loss : tensor(0.0202, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0370895035919689 epoch time : 72.320805311203
+
+epoch 173 train loss : tensor(0.0189, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.036998188211804346 epoch time : 72.10635161399841
+
+epoch 174 train loss : tensor(0.0190, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03761309509476026 epoch time : 72.32707405090332
+
+epoch 175 train loss : tensor(0.0184, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03538224358289015 epoch time : 72.26622748374939
+
+epoch 176 train loss : tensor(0.0177, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03767181879707745 epoch time : 72.21369671821594
+
+epoch 177 train loss : tensor(0.0180, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03710308564560754 epoch time : 72.26196599006653
+
+epoch 178 train loss : tensor(0.0191, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.037131130074461303 epoch time : 72.29336643218994
+
+epoch 179 train loss : tensor(0.0193, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0359948965765181 epoch time : 72.06772541999817
+
+epoch 180 train loss : tensor(0.0181, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03556973079130763 epoch time : 72.30600500106812
+
+epoch 181 train loss : tensor(0.0178, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03638349482346149 epoch time : 72.09005641937256
+
+epoch 182 train loss : tensor(0.0175, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034629657598478455 epoch time : 72.36051678657532
+
+epoch 183 train loss : tensor(0.0169, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03501276317096892 epoch time : 72.0197823047638
+
+epoch 184 train loss : tensor(0.0169, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.035118794157391504 epoch time : 72.03229022026062
+
+epoch 185 train loss : tensor(0.0189, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.035907502685274394 epoch time : 72.04768395423889
+
+epoch 186 train loss : tensor(0.0180, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.035803310839193206 epoch time : 72.03173303604126
+
+epoch 187 train loss : tensor(0.0169, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03588809427760896 epoch time : 71.8079092502594
+
+epoch 188 train loss : tensor(0.0175, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034496287416134565 epoch time : 72.17406034469604
+
+epoch 189 train loss : tensor(0.0192, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03539317615685009 epoch time : 72.11337447166443
+
+epoch 190 train loss : tensor(0.0174, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03478270015191464 epoch time : 72.17642545700073
+
+epoch 191 train loss : tensor(0.0170, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.035516606111611636 epoch time : 71.98067855834961
+
+epoch 192 train loss : tensor(0.0156, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033998441838082816 epoch time : 72.6021499633789
+
+epoch 193 train loss : tensor(0.0172, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03427967047762303 epoch time : 71.93392062187195
+
+epoch 194 train loss : tensor(0.0188, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0349642765663919 epoch time : 72.16459584236145
+
+epoch 195 train loss : tensor(0.0168, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034300991910554114 epoch time : 71.9356062412262
+
+epoch 196 train loss : tensor(0.0168, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03417372038321836 epoch time : 72.27042126655579
+
+epoch 197 train loss : tensor(0.0168, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034877914580560866 epoch time : 72.17679715156555
+
+epoch 198 train loss : tensor(0.0172, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034638774802997 epoch time : 72.06483292579651
+
+epoch 199 train loss : tensor(0.0178, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03420734733697914 epoch time : 72.08875489234924
+
+epoch 200 train loss : tensor(0.0182, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033653995022177696 epoch time : 72.29940986633301
+
+epoch 201 train loss : tensor(0.0169, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034461114378202526 epoch time : 71.87064671516418
+
+epoch 202 train loss : tensor(0.0172, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.035287924288284214 epoch time : 72.14531397819519
+
+epoch 203 train loss : tensor(0.0172, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03326274552160785 epoch time : 72.49314665794373
+
+epoch 204 train loss : tensor(0.0158, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033363908263189454 epoch time : 71.8984923362732
+
+epoch 205 train loss : tensor(0.0162, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03343361678222815 epoch time : 71.86469030380249
+
+epoch 206 train loss : tensor(0.0174, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034574844918790315 epoch time : 71.86383295059204
+
+epoch 207 train loss : tensor(0.0159, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03341629826242015 epoch time : 71.86727213859558
+
+epoch 208 train loss : tensor(0.0165, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033405891575274016 epoch time : 72.0156991481781
+
+epoch 209 train loss : tensor(0.0169, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03312129864380473 epoch time : 72.44292378425598
+
+epoch 210 train loss : tensor(0.0168, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033722011461144404 epoch time : 72.20355892181396
+
+epoch 211 train loss : tensor(0.0178, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03431725200443041 epoch time : 72.03896903991699
+
+epoch 212 train loss : tensor(0.0168, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.034458404584299954 epoch time : 72.06962656974792
+
+epoch 213 train loss : tensor(0.0166, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03507412171789578 epoch time : 72.0908555984497
+
+epoch 214 train loss : tensor(0.0160, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03357968701138383 epoch time : 71.93937587738037
+
+epoch 215 train loss : tensor(0.0156, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03395482472011021 epoch time : 72.02529907226562
+
+epoch 216 train loss : tensor(0.0160, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.032649378336611246 epoch time : 72.42405271530151
+
+epoch 217 train loss : tensor(0.0177, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03344495603371234 epoch time : 71.90837240219116
+
+epoch 218 train loss : tensor(0.0159, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03178524137252853 epoch time : 72.46933841705322
+
+epoch 219 train loss : tensor(0.0155, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03248405030795506 epoch time : 72.33243727684021
+
+epoch 220 train loss : tensor(0.0162, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0326023484979357 epoch time : 72.03732538223267
+
+epoch 221 train loss : tensor(0.0160, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03170067843581949 epoch time : 72.39462327957153
+
+epoch 222 train loss : tensor(0.0161, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03465625501814343 epoch time : 73.19649028778076
+
+epoch 223 train loss : tensor(0.0152, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031703979220418704 epoch time : 72.68983888626099
+
+epoch 224 train loss : tensor(0.0154, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.032663424543681596 epoch time : 72.2056393623352
+
+epoch 225 train loss : tensor(0.0155, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03224722065386318 epoch time : 72.04194974899292
+
+epoch 226 train loss : tensor(0.0158, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.033181119798904375 epoch time : 71.9001955986023
+
+epoch 227 train loss : tensor(0.0158, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.032560709065624645 epoch time : 71.93709063529968
+
+epoch 228 train loss : tensor(0.0155, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03164064556005455 epoch time : 72.73110461235046
+
+epoch 229 train loss : tensor(0.0158, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030981731734105518 epoch time : 72.53894090652466
+
+epoch 230 train loss : tensor(0.0163, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031226612095321928 epoch time : 72.29222106933594
+
+epoch 231 train loss : tensor(0.0159, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03134069272450039 epoch time : 72.15137958526611
+
+epoch 232 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031924912972109656 epoch time : 72.07233929634094
+
+epoch 233 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03129008917936257 epoch time : 72.18436288833618
+
+epoch 234 train loss : tensor(0.0166, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03201096806497801 epoch time : 71.91503739356995
+
+epoch 235 train loss : tensor(0.0143, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030727190275986988 epoch time : 72.4962146282196
+
+epoch 236 train loss : tensor(0.0156, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.032895807531617936 epoch time : 72.34298825263977
+
+epoch 237 train loss : tensor(0.0149, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031180641835644132 epoch time : 71.94901609420776
+
+epoch 238 train loss : tensor(0.0154, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03313671407245454 epoch time : 72.16734981536865
+
+epoch 239 train loss : tensor(0.0151, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03209671200740905 epoch time : 72.09247136116028
+
+epoch 240 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031784520617553165 epoch time : 72.18056750297546
+
+epoch 241 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0314443332276174 epoch time : 71.9403612613678
+
+epoch 242 train loss : tensor(0.0153, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03271614281194551 epoch time : 72.01455521583557
+
+epoch 243 train loss : tensor(0.0157, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031548677899298216 epoch time : 72.14312624931335
+
+epoch 244 train loss : tensor(0.0149, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03236429100590093 epoch time : 72.18378758430481
+
+epoch 245 train loss : tensor(0.0145, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030643254961995853 epoch time : 72.14917612075806
+
+epoch 246 train loss : tensor(0.0149, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030728986486792564 epoch time : 72.31486463546753
+
+epoch 247 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03163338878325054 epoch time : 72.19372653961182
+
+epoch 248 train loss : tensor(0.0145, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0322203700031553 epoch time : 72.09842038154602
+
+epoch 249 train loss : tensor(0.0140, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.031510532168405395 epoch time : 71.98353457450867
+
+epoch 250 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03093004244424048 epoch time : 71.9419960975647
+
+epoch 251 train loss : tensor(0.0163, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03014439149271874 epoch time : 72.37399864196777
+
+epoch 252 train loss : tensor(0.0149, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03058528687272753 epoch time : 72.28786945343018
+
+epoch 253 train loss : tensor(0.0156, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029903942630404516 epoch time : 72.3072726726532
+
+epoch 254 train loss : tensor(0.0146, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030147458914489972 epoch time : 71.87971830368042
+
+epoch 255 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029776586840550106 epoch time : 72.46645283699036
+
+epoch 256 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029284443528879257 epoch time : 72.38764452934265
+
+epoch 257 train loss : tensor(0.0160, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03326090141421273 epoch time : 72.01478886604309
+
+epoch 258 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03151786886155605 epoch time : 71.97277855873108
+
+epoch 259 train loss : tensor(0.0173, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03227254996697108 epoch time : 72.25890183448792
+
+epoch 260 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029812196713118327 epoch time : 71.9130551815033
+
+epoch 261 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030567410801138197 epoch time : 72.11882376670837
+
+epoch 262 train loss : tensor(0.0151, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030861039158134235 epoch time : 72.10553240776062
+
+epoch 263 train loss : tensor(0.0142, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03028501073519389 epoch time : 72.02204990386963
+
+epoch 264 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03040379188245251 epoch time : 72.03461861610413
+
+epoch 265 train loss : tensor(0.0141, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029874843767001516 epoch time : 72.28358340263367
+
+epoch 266 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029781460141142208 epoch time : 72.06186366081238
+
+epoch 267 train loss : tensor(0.0151, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03082450097870259 epoch time : 72.12901091575623
+
+epoch 268 train loss : tensor(0.0150, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02964693254658154 epoch time : 71.9950225353241
+
+epoch 269 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0290320251314413 epoch time : 72.09964919090271
+
+epoch 270 train loss : tensor(0.0135, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02998661214397067 epoch time : 71.99439358711243
+
+epoch 271 train loss : tensor(0.0133, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029813987247291066 epoch time : 72.10150814056396
+
+epoch 272 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029573838980424972 epoch time : 72.21164798736572
+
+epoch 273 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029276184205498015 epoch time : 71.96448683738708
+
+epoch 274 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030708910010400273 epoch time : 71.88341093063354
+
+epoch 275 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029192019253969193 epoch time : 72.22838068008423
+
+epoch 276 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02949660901157629 epoch time : 72.11334252357483
+
+epoch 277 train loss : tensor(0.0140, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02994748657303197 epoch time : 71.93418383598328
+
+epoch 278 train loss : tensor(0.0148, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029782752373388836 epoch time : 72.16385197639465
+
+epoch 279 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029993395099327677 epoch time : 72.0382137298584
+
+epoch 280 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029588098948200543 epoch time : 71.96339178085327
+
+epoch 281 train loss : tensor(0.0141, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0289763052548681 epoch time : 72.60845160484314
+
+epoch 282 train loss : tensor(0.0138, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02839583158493042 epoch time : 72.31966924667358
+
+epoch 283 train loss : tensor(0.0143, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030013695536624817 epoch time : 72.09499955177307
+
+epoch 284 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029781166641485123 epoch time : 71.89244318008423
+
+epoch 285 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028511383082895053 epoch time : 72.03689527511597
+
+epoch 286 train loss : tensor(0.0139, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028707995389898617 epoch time : 71.99103713035583
+
+epoch 287 train loss : tensor(0.0139, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02911039592609519 epoch time : 72.1865005493164
+
+epoch 288 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02900890793119158 epoch time : 72.18472218513489
+
+epoch 289 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.03010899546955313 epoch time : 72.0012092590332
+
+epoch 290 train loss : tensor(0.0140, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02882185418690954 epoch time : 72.11138010025024
+
+epoch 291 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027577592059969902 epoch time : 72.32494330406189
+
+epoch 292 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028966552356169337 epoch time : 71.96742057800293
+
+epoch 293 train loss : tensor(0.0145, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030222633498765174 epoch time : 71.96184396743774
+
+epoch 294 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030620151509841282 epoch time : 71.97519516944885
+
+epoch 295 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028869924623341786 epoch time : 72.05041122436523
+
+epoch 296 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028261187619396617 epoch time : 72.09086799621582
+
+epoch 297 train loss : tensor(0.0138, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029591868321100872 epoch time : 72.2105655670166
+
+epoch 298 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028584101281705358 epoch time : 71.9303891658783
+
+epoch 299 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027549566701054573 epoch time : 72.79337215423584
+
+epoch 300 train loss : tensor(0.0141, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02932353282258624 epoch time : 72.1070442199707
+
+epoch 301 train loss : tensor(0.0132, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02879911536971728 epoch time : 72.08418655395508
+
+epoch 302 train loss : tensor(0.0132, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028558624464841115 epoch time : 72.01710772514343
+
+epoch 303 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02854812065405505 epoch time : 72.10152292251587
+
+epoch 304 train loss : tensor(0.0153, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02962121039274193 epoch time : 71.96422290802002
+
+epoch 305 train loss : tensor(0.0130, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.030211745273499263 epoch time : 72.07589602470398
+
+epoch 306 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028484265009562176 epoch time : 72.12408185005188
+
+epoch 307 train loss : tensor(0.0154, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0314971978465716 epoch time : 72.04301071166992
+
+epoch 308 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0284181869633141 epoch time : 72.15253591537476
+
+epoch 309 train loss : tensor(0.0133, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029503752521815755 epoch time : 72.04807567596436
+
+epoch 310 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028878039636072658 epoch time : 72.0890154838562
+
+epoch 311 train loss : tensor(0.0138, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027911524421402385 epoch time : 72.13470602035522
+
+epoch 312 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028655420190521648 epoch time : 71.97587585449219
+
+epoch 313 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028949184698008355 epoch time : 72.18475890159607
+
+epoch 314 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02725493029824325 epoch time : 72.34025430679321
+
+epoch 315 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027783603363093875 epoch time : 71.86890697479248
+
+epoch 316 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027999186977034525 epoch time : 72.10522818565369
+
+epoch 317 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02825774456418696 epoch time : 72.03132176399231
+
+epoch 318 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02935157201829411 epoch time : 71.90203070640564
+
+epoch 319 train loss : tensor(0.0127, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02863824207867895 epoch time : 71.84063649177551
+
+epoch 320 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02913640146808965 epoch time : 72.06618356704712
+
+epoch 321 train loss : tensor(0.0130, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028106427795830228 epoch time : 72.17332077026367
+
+epoch 322 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029446149510996684 epoch time : 71.92829632759094
+
+epoch 323 train loss : tensor(0.0122, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02743531187020597 epoch time : 72.10888886451721
+
+epoch 324 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02772007847116107 epoch time : 72.2762451171875
+
+epoch 325 train loss : tensor(0.0130, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028661246810640608 epoch time : 72.07080364227295
+
+epoch 326 train loss : tensor(0.0139, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0316180411194052 epoch time : 72.00123429298401
+
+epoch 327 train loss : tensor(0.0132, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028108675742433184 epoch time : 72.1968002319336
+
+epoch 328 train loss : tensor(0.0138, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029774823713870274 epoch time : 72.19749808311462
+
+epoch 329 train loss : tensor(0.0137, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028486570698164758 epoch time : 71.85200786590576
+
+epoch 330 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02790867421953451 epoch time : 71.94918441772461
+
+epoch 331 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02763571891756285 epoch time : 72.17561078071594
+
+epoch 332 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028185774261752766 epoch time : 72.04037189483643
+
+epoch 333 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027436763225566773 epoch time : 72.17009663581848
+
+epoch 334 train loss : tensor(0.0130, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027814542253812153 epoch time : 71.81836342811584
+
+epoch 335 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028262838898670106 epoch time : 72.24404954910278
+
+epoch 336 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027072940199148087 epoch time : 72.71195793151855
+
+epoch 337 train loss : tensor(0.0132, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027771497233992533 epoch time : 72.13654518127441
+
+epoch 338 train loss : tensor(0.0127, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028194280429964975 epoch time : 72.07191801071167
+
+epoch 339 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027926189913636164 epoch time : 71.8468747138977
+
+epoch 340 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028106135892726127 epoch time : 72.23228406906128
+
+epoch 341 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02765210984008653 epoch time : 72.0691785812378
+
+epoch 342 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027301454295714695 epoch time : 72.22386050224304
+
+epoch 343 train loss : tensor(0.0147, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02870609966062364 epoch time : 71.93280625343323
+
+epoch 344 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028237562005718548 epoch time : 72.30735373497009
+
+epoch 345 train loss : tensor(0.0136, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028193775475734754 epoch time : 72.18119215965271
+
+epoch 346 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027033664907018345 epoch time : 72.15340662002563
+
+epoch 347 train loss : tensor(0.0130, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02691729295821417 epoch time : 72.47454524040222
+
+epoch 348 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02743591900382723 epoch time : 72.19942831993103
+
+epoch 349 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026917601979914167 epoch time : 72.05052018165588
+
+epoch 350 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02652083177651678 epoch time : 72.10060906410217
+
+epoch 351 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028941611360226358 epoch time : 72.19506049156189
+
+epoch 352 train loss : tensor(0.0132, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027366306277967635 epoch time : 71.9987530708313
+
+epoch 353 train loss : tensor(0.0127, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028216465864153134 epoch time : 71.9701042175293
+
+epoch 354 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02720836186338039 epoch time : 71.79613852500916
+
+epoch 355 train loss : tensor(0.0139, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028528071230366117 epoch time : 72.05927848815918
+
+epoch 356 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027015895360992068 epoch time : 72.14387702941895
+
+epoch 357 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02761833972874142 epoch time : 72.07651376724243
+
+epoch 358 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026868104845994993 epoch time : 71.99460053443909
+
+epoch 359 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026903851756027768 epoch time : 72.09609484672546
+
+epoch 360 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028301153509389786 epoch time : 72.07547688484192
+
+epoch 361 train loss : tensor(0.0127, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027406823510924976 epoch time : 72.30275321006775
+
+epoch 362 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027768997918991817 epoch time : 72.0590078830719
+
+epoch 363 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025962673127651215 epoch time : 72.4689736366272
+
+epoch 364 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026652139744588306 epoch time : 72.28702306747437
+
+epoch 365 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026914453311335473 epoch time : 72.06029391288757
+
+epoch 366 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027419916309771083 epoch time : 72.12605142593384
+
+epoch 367 train loss : tensor(0.0133, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028089681817662148 epoch time : 72.10477995872498
+
+epoch 368 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027105696499347687 epoch time : 71.66964912414551
+
+epoch 369 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02758135726409299 epoch time : 72.11943078041077
+
+epoch 370 train loss : tensor(0.0123, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027490001792709034 epoch time : 72.13469219207764
+
+epoch 371 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025926800089932624 epoch time : 72.427889585495
+
+epoch 372 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026717917904967352 epoch time : 72.20163774490356
+
+epoch 373 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027487741517169133 epoch time : 72.30274033546448
+
+epoch 374 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027471548478518213 epoch time : 72.06255793571472
+
+epoch 375 train loss : tensor(0.0135, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027064195168869837 epoch time : 72.11972236633301
+
+epoch 376 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02732363103755883 epoch time : 72.14606833457947
+
+epoch 377 train loss : tensor(0.0123, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02566746888416154 epoch time : 72.42875242233276
+
+epoch 378 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027816010195584523 epoch time : 72.03217077255249
+
+epoch 379 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02810590323947725 epoch time : 72.0373260974884
+
+epoch 380 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026769465633801053 epoch time : 72.19954705238342
+
+epoch 381 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02776764625949519 epoch time : 72.12368774414062
+
+epoch 382 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028274485043116977 epoch time : 72.08814740180969
+
+epoch 383 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02810206033644222 epoch time : 72.093754529953
+
+epoch 384 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027408518695405552 epoch time : 72.05755257606506
+
+epoch 385 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02682752658923467 epoch time : 71.94110441207886
+
+epoch 386 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02761506697251683 epoch time : 72.03263759613037
+
+epoch 387 train loss : tensor(0.0134, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027715629676268214 epoch time : 72.03684949874878
+
+epoch 388 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0261975760083823 epoch time : 72.14110159873962
+
+epoch 389 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02728301632617201 epoch time : 72.01889371871948
+
+epoch 390 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026614419938552947 epoch time : 72.02723217010498
+
+epoch 391 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02638117108671438 epoch time : 72.0985758304596
+
+epoch 392 train loss : tensor(0.0123, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026776673094857307 epoch time : 72.1653380393982
+
+epoch 393 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026798721668975695 epoch time : 72.18067693710327
+
+epoch 394 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026844923162744158 epoch time : 72.22495102882385
+
+epoch 395 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02667062268370674 epoch time : 72.10468196868896
+
+epoch 396 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.028037191856475102 epoch time : 72.13830351829529
+
+epoch 397 train loss : tensor(0.0127, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026504807351600556 epoch time : 72.11266493797302
+
+epoch 398 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02795586504396938 epoch time : 72.21804594993591
+
+epoch 399 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026666052550787016 epoch time : 72.27503490447998
+
+epoch 400 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02574835815245197 epoch time : 71.92805171012878
+
+epoch 401 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02655895985662937 epoch time : 72.36667227745056
+
+epoch 402 train loss : tensor(0.0111, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025924147505845343 epoch time : 72.23421788215637
+
+epoch 403 train loss : tensor(0.0131, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02808327041566372 epoch time : 72.04987859725952
+
+epoch 404 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02698385768703052 epoch time : 72.10321235656738
+
+epoch 405 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026601802912496385 epoch time : 72.11378049850464
+
+epoch 406 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026516688100638845 epoch time : 72.03953146934509
+
+epoch 407 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027453510977682612 epoch time : 72.13974928855896
+
+epoch 408 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02775659083965279 epoch time : 72.22802758216858
+
+epoch 409 train loss : tensor(0.0133, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025918573229795412 epoch time : 72.09835410118103
+
+epoch 410 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025837160646915436 epoch time : 72.09564304351807
+
+epoch 411 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026906580619868777 epoch time : 72.06382703781128
+
+epoch 412 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02641730329820088 epoch time : 72.24302458763123
+
+epoch 413 train loss : tensor(0.0125, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026622013055852482 epoch time : 72.09722948074341
+
+epoch 414 train loss : tensor(0.0113, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026798619666979426 epoch time : 72.20025491714478
+
+epoch 415 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027044455387762616 epoch time : 72.2176125049591
+
+epoch 416 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026681671096455483 epoch time : 72.23601579666138
+
+epoch 417 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025998980693873904 epoch time : 72.07704782485962
+
+epoch 418 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02563213406219369 epoch time : 72.49755907058716
+
+epoch 419 train loss : tensor(0.0111, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026672307490592913 epoch time : 72.17706418037415
+
+epoch 420 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027870524231167065 epoch time : 72.17431616783142
+
+epoch 421 train loss : tensor(0.0122, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02733533563358443 epoch time : 72.20401334762573
+
+epoch 422 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02684880429435344 epoch time : 72.29435753822327
+
+epoch 423 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.029985447990752402 epoch time : 72.24388527870178
+
+epoch 424 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02578950220985072 epoch time : 72.2109682559967
+
+epoch 425 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026152874298748515 epoch time : 72.01280975341797
+
+epoch 426 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02612272987053508 epoch time : 72.17278838157654
+
+epoch 427 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02546240690918196 epoch time : 72.37044167518616
+
+epoch 428 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026643024225320135 epoch time : 72.15004014968872
+
+epoch 429 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0260804406411591 epoch time : 72.1996099948883
+
+epoch 430 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0257432105108386 epoch time : 72.14881896972656
+
+epoch 431 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026044773026591257 epoch time : 72.05356478691101
+
+epoch 432 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026933834045415835 epoch time : 72.20643258094788
+
+epoch 433 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026057438570119086 epoch time : 72.17708730697632
+
+epoch 434 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02649473017525105 epoch time : 72.20197057723999
+
+epoch 435 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026658877286882626 epoch time : 72.28031659126282
+
+epoch 436 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02651695960334369 epoch time : 72.26483988761902
+
+epoch 437 train loss : tensor(0.0122, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025837138383871035 epoch time : 71.89691805839539
+
+epoch 438 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02602615792836462 epoch time : 71.88266324996948
+
+epoch 439 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0262571070343256 epoch time : 72.1194076538086
+
+epoch 440 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026014857260244235 epoch time : 72.1809766292572
+
+epoch 441 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02641907591550123 epoch time : 71.89943027496338
+
+epoch 442 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026800295604126795 epoch time : 72.12541627883911
+
+epoch 443 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026274794890057473 epoch time : 72.10404634475708
+
+epoch 444 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.0261370436776252 epoch time : 72.05692911148071
+
+epoch 445 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02616700849362782 epoch time : 71.95319271087646
+
+epoch 446 train loss : tensor(0.0129, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.027742528134868258 epoch time : 71.92741012573242
+
+epoch 447 train loss : tensor(0.0123, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026416443377023653 epoch time : 71.99139499664307
+
+epoch 448 train loss : tensor(0.0128, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02572001028983366 epoch time : 72.0812439918518
+
+epoch 449 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026221571667563347 epoch time : 72.11925482749939
+
+epoch 450 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026138428332550184 epoch time : 72.10162806510925
+
+epoch 451 train loss : tensor(0.0110, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025905701464840343 epoch time : 72.21037364006042
+
+epoch 452 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02698527125730401 epoch time : 72.35406804084778
+
+epoch 453 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02621039047482468 epoch time : 72.30645370483398
+
+epoch 454 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02593498836670603 epoch time : 72.18518662452698
+
+epoch 455 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02772428361432893 epoch time : 72.01044249534607
+
+epoch 456 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02575653445507799 epoch time : 72.20621395111084
+
+epoch 457 train loss : tensor(0.0113, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026587691956332753 epoch time : 72.03364586830139
+
+epoch 458 train loss : tensor(0.0110, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025351490914112047 epoch time : 73.05405235290527
+
+epoch 459 train loss : tensor(0.0113, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025755908695005235 epoch time : 72.06804490089417
+
+epoch 460 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026083654591015408 epoch time : 72.07965993881226
+
+epoch 461 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025791122267643612 epoch time : 72.31130790710449
+
+epoch 462 train loss : tensor(0.0122, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026005037040227934 epoch time : 71.93316626548767
+
+epoch 463 train loss : tensor(0.0113, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.024966968400847344 epoch time : 72.3545401096344
+
+epoch 464 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026054725849202702 epoch time : 72.09916925430298
+
+epoch 465 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025581505859181994 epoch time : 71.94054985046387
+
+epoch 466 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026071459321039065 epoch time : 72.15384364128113
+
+epoch 467 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02542570996142569 epoch time : 72.06598210334778
+
+epoch 468 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025598139635154178 epoch time : 71.92787575721741
+
+epoch 469 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026980647373767125 epoch time : 72.26866793632507
+
+epoch 470 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02659784479155427 epoch time : 72.27638912200928
+
+epoch 471 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025592287292792684 epoch time : 72.02352237701416
+
+epoch 472 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025016357235255696 epoch time : 72.11574482917786
+
+epoch 473 train loss : tensor(0.0124, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025793632669817834 epoch time : 72.10041642189026
+
+epoch 474 train loss : tensor(0.0110, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02632262504526547 epoch time : 71.96181869506836
+
+epoch 475 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02590980531559104 epoch time : 72.1099259853363
+
+epoch 476 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025279440606633823 epoch time : 72.35426139831543
+
+epoch 477 train loss : tensor(0.0119, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02602158903720833 epoch time : 72.03128743171692
+
+epoch 478 train loss : tensor(0.0109, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025052860290521665 epoch time : 71.94632959365845
+
+epoch 479 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025084775739482472 epoch time : 72.12390446662903
+
+epoch 480 train loss : tensor(0.0111, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025161611714533398 epoch time : 71.93972873687744
+
+epoch 481 train loss : tensor(0.0110, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02553851166296573 epoch time : 72.6195924282074
+
+epoch 482 train loss : tensor(0.0114, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026745521419105075 epoch time : 72.69258618354797
+
+epoch 483 train loss : tensor(0.0111, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02551905775354022 epoch time : 72.14617586135864
+
+epoch 484 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025390828560505594 epoch time : 72.08647584915161
+
+epoch 485 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02648484884273438 epoch time : 72.25403070449829
+
+epoch 486 train loss : tensor(0.0110, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02514638884791306 epoch time : 72.19618391990662
+
+epoch 487 train loss : tensor(0.0120, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02514040372556164 epoch time : 71.99186658859253
+
+epoch 488 train loss : tensor(0.0112, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02582656592130661 epoch time : 72.06208753585815
+
+epoch 489 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02497249220808347 epoch time : 71.99694514274597
+
+epoch 490 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025526679342701322 epoch time : 72.04831981658936
+
+epoch 491 train loss : tensor(0.0109, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02575205568046797 epoch time : 72.0622489452362
+
+epoch 492 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02647064608477411 epoch time : 72.21920561790466
+
+epoch 493 train loss : tensor(0.0121, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.026421745263394854 epoch time : 71.95161867141724
+
+epoch 494 train loss : tensor(0.0113, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025516090914607048 epoch time : 72.12411046028137
+
+epoch 495 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02615477792209103 epoch time : 72.07736301422119
+
+epoch 496 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02546516770408267 epoch time : 72.1546242237091
+
+epoch 497 train loss : tensor(0.0118, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02630250005140191 epoch time : 72.16679191589355
+
+epoch 498 train loss : tensor(0.0111, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02520773834770634 epoch time : 72.10296773910522
+
+epoch 499 train loss : tensor(0.0126, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02686208025330589 epoch time : 72.16303634643555
+
+epoch 500 train loss : tensor(0.0115, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025464059518916265 epoch time : 72.21323609352112
+
+epoch 501 train loss : tensor(0.0109, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02539068478203955 epoch time : 71.90740323066711
+
+epoch 502 train loss : tensor(0.0116, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.025712158442253157 epoch time : 72.05337357521057
+
+epoch 503 train loss : tensor(0.0117, device='cuda:0', grad_fn=<DivBackward0>) test loss : 0.02541184780143556 epoch time : 72.19680261611938
+
