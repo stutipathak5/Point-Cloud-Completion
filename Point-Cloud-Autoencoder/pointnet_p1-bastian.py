@@ -82,11 +82,11 @@ def train_epoch():
 
         # expand z dimesion to 1 at end
         z = z.unsqueeze(2)
+        viri = VietorisRipsComplex(dim=0)
+        pi_x = viri(complete_data)   #[bs,5000,3]
+        pi_z = viri(z)               #[bs,512,1]  to be 
 
-        pi_x = VietorisRipsComplex(complete_data)   #[bs,5000,3]
-        pi_z = VietorisRipsComplex(z)               #[bs,512,1]  to be 
-
-        Topoloss = SignatureLoss(p=1)
+        Topoloss = SignatureLoss(p=2)
         topo_loss = Topoloss([complete_data, pi_x], [z, pi_z])
         #-------------------------------------------------------
 
