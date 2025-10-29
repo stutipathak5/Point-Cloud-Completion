@@ -12,6 +12,7 @@ import h5py
 import random
 import torch.nn.functional as F
 from ripser import Rips
+import time
 
 
 # def array_to_tuple(arr):
@@ -395,6 +396,58 @@ no_samples = 30
 
 
 
+"non uniformity shapenet34"
+
+# # file_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\ShapeNet-55\train.txt"
+# file_path = "ShapeNet55/ShapeNet-34/train.txt"
+# with open(file_path, 'r') as file:
+#     lines = file.readlines()
+# lines = [line.strip() for line in lines]
+# first_8_letters = [word[:8] for word in lines]
+# indices_dict = defaultdict(list)
+# for idx, element in enumerate(first_8_letters):
+#     indices_dict[element].append(idx)
+# repeated_indices = {element: idx_list for element, idx_list in indices_dict.items() if len(idx_list) > 1}
+# print(len(repeated_indices.keys()))
+
+# for k,v in repeated_indices.items():
+#     print(k)
+#     if len(v) > 30:
+#         std=0
+#         for i in v[:30]:
+#             # points = np.load(os.path.join(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\shapenet_pc", lines[i]))
+#             points = np.load(os.path.join("ShapeNet55/shapenet_pc", lines[i]))
+#             point_cloud = o3d.geometry.PointCloud()
+#             point_cloud.points = o3d.utility.Vector3dVector(points)
+#             std+=distance(points, 2)
+#         print(std/no_samples)
+#     else:
+#         print("x")
+
+
+
+
+
+
+"non uniformity mvp"
+
+# with h5py.File('data/MVP_complete_pcs/mvp_complete_train.h5', 'r') as f:
+#     complete = f['complete_pcds'][:]
+
+# print(complete.shape)
+
+# std=0
+# for i in range(complete.shape[0]):
+#     points = complete[i]
+#     point_cloud = o3d.geometry.PointCloud()
+#     point_cloud.points = o3d.utility.Vector3dVector(points)
+#     # o3d.visualization.draw_geometries([point_cloud])
+#     std+=distance(points, 2)
+# print(std/complete.shape[0])
+
+
+
+
 "curv and noise ours"
 
 # npy_folder_path = 'data/Hungarian/easy_0.8'         
@@ -522,6 +575,83 @@ no_samples = 30
 
 
 
+
+"curv and noise shapenet34"
+
+# # file_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\ShapeNet-55\train.txt"
+# # file_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\ShapeNet-34\train.txt"
+# file_path = "ShapeNet55/ShapeNet-34/train.txt"
+
+# with open(file_path, 'r') as file:
+#     lines = file.readlines()
+# lines = [line.strip() for line in lines]
+# first_8_letters = [word[:8] for word in lines]
+# indices_dict = defaultdict(list)
+# for idx, element in enumerate(first_8_letters):
+#     indices_dict[element].append(idx)
+# repeated_indices = {element: idx_list for element, idx_list in indices_dict.items() if len(idx_list) > 1}
+
+# print(len(repeated_indices.keys()))
+
+# for k,v in repeated_indices.items():
+#     print(k)
+#     if len(v) > 30:
+#         avg1 = 0
+#         avg2 = 0
+#         for i in v[:30]:
+#             # points = np.load(os.path.join(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\shapenet_pc", lines[i]))
+#             points = np.load(os.path.join("ShapeNet55/shapenet_pc", lines[i]))
+#             point_cloud = o3d.geometry.PointCloud()
+#             point_cloud.points = o3d.utility.Vector3dVector(points)
+#             # o3d.visualization.draw_geometries([point_cloud])
+#             curv, average = curv_avg(points, 15)
+#             avg_noise = noise(points, 15)
+#             avg1+=average
+#             avg2+=avg_noise
+#         print(avg1/no_samples)
+#         print(avg2/no_samples)
+#     else:
+#         print("x")
+
+
+
+
+"curv and noise mvp"
+
+# with h5py.File('data/MVP_complete_pcs/mvp_complete_train.h5', 'r') as f:
+#     complete = f['complete_pcds'][:]
+
+# print(complete.shape)
+
+
+# avg1 = 0
+# avg2 = 0
+# for i in range(complete.shape[0]):
+#     print(i)
+#     points = complete[i]
+#     point_cloud = o3d.geometry.PointCloud()
+#     point_cloud.points = o3d.utility.Vector3dVector(points)
+#     # o3d.visualization.draw_geometries([point_cloud])
+#     curv, average = curv_avg(points.astype(np.float64), 15)
+#     avg_noise = noise(points, 15)
+#     avg1+=average
+#     avg2+=avg_noise
+# print(avg1/complete.shape[0])
+# print(avg2/complete.shape[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "topo pcn"
 
 
@@ -630,20 +760,177 @@ no_samples = 30
 "topo ours"
 
  
-npy_folder_path = "/home/scratch/prashant/martini-scratch2/temp/scratch2/prashant/stuti/code-stuti/new/Dutch" 
-# npy_folder_path = 'data/Dutch/easy_0.8'      
+# npy_folder_path = "/home/scratch/prashant/martini-scratch2/temp/scratch2/prashant/stuti/code-stuti/new/Dutch" 
+# # npy_folder_path = 'data/Dutch/easy_0.8'      
 
-complete = load_h5(os.path.join(npy_folder_path, "complete.h5"), "complete")
+# complete = load_h5(os.path.join(npy_folder_path, "complete.h5"), "complete")
 
 
-np.random.shuffle(complete)
-print(complete.shape)
+# np.random.shuffle(complete)
+# print(complete.shape)
 
+
+# s0 = 0
+# s1 = 0
+# for i in range(no_samples):
+#     data = complete[i]
+#     rips = Rips()
+#     dgms = rips.fit_transform(data)
+#     H0_dgm = dgms[0]
+#     H1_dgm = dgms[1]
+#     # print(H0_dgm)
+#     s0+=np.sum(H0_dgm[1:-1][:,1] - H0_dgm[1:-1][:,0])/len(H0_dgm[1:-1])
+#     s1+=np.sum(H1_dgm[:,1] - H1_dgm[:,0])/len(H1_dgm)
+#     # print(s0, s1)
+# avg0 = s0/no_samples
+# avg1 = s1/no_samples
+# print(avg0, avg1)
+
+
+
+
+"topo mvp"
+
+ 
+
+# with h5py.File('data/MVP_complete_pcs/mvp_complete_train.h5', 'r') as f:
+#     complete = f['complete_pcds'][:]
+
+# print(complete.shape)
+
+
+# s0 = 0
+# s1 = 0
+# for i in range(complete.shape[0]):
+#     print(i)
+#     data = complete[i]
+#     rips = Rips()
+#     dgms = rips.fit_transform(data)
+#     H0_dgm = dgms[0]
+#     H1_dgm = dgms[1]
+#     # print(H0_dgm)
+#     s0+=np.sum(H0_dgm[1:-1][:,1] - H0_dgm[1:-1][:,0])/len(H0_dgm[1:-1])
+#     s1+=np.sum(H1_dgm[:,1] - H1_dgm[:,0])/len(H1_dgm)
+#     # print(s0, s1)
+# avg0 = s0/complete.shape[0]
+# avg1 = s1/complete.shape[0]
+# print(avg0, avg1)
+
+
+
+
+
+
+
+
+
+
+"topo shapenet34"
+
+ 
+
+# # file_path = r"/home/scratch/prashant/martini-scratch2/temp/scratch2/prashant/stuti/code-stuti/ShapeNet55/train.txt"
+# # file_path = r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\ShapeNet-34\train.txt"
+# file_path = "ShapeNet55/ShapeNet-34/train.txt"
+
+# with open(file_path, 'r') as file:
+#     lines = file.readlines()
+# lines = [line.strip() for line in lines]
+# first_8_letters = [word[:8] for word in lines]
+# indices_dict = defaultdict(list)
+# for idx, element in enumerate(first_8_letters):
+#     indices_dict[element].append(idx)
+# repeated_indices = {element: idx_list for element, idx_list in indices_dict.items() if len(idx_list) > 1}
+
+# print(len(repeated_indices.keys()))
+
+# start_time = time.time()
+# ii=0
+# # for k, v in list(repeated_indices.items())[0:5]:
+# for k,v in repeated_indices.items():
+#     print(ii)
+#     ii+=1
+#     print(k)
+#     if len(v) > 30:
+#         s0 = 0
+#         s1 = 0
+#         for i in v[:30]:
+#             # print(i)
+#             # data = np.load(os.path.join("/home/scratch/prashant/martini-scratch2/temp/scratch2/prashant/stuti/code-stuti/ShapeNet55/shapenet_pc", lines[i]))
+#             # data = np.load(os.path.join(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\shapenet_pc", lines[i]))
+#             data = np.load(os.path.join("ShapeNet55/shapenet_pc", lines[i]))
+#             random_indices = np.random.choice(data.shape[0], size=5000, replace=False)
+#             data = data[random_indices]
+#             rips = Rips()
+#             dgms = rips.fit_transform(data)
+#             H0_dgm = dgms[0]
+#             H1_dgm = dgms[1]
+#             # print(H0_dgm)
+#             s0+=np.sum(H0_dgm[1:-1][:,1] - H0_dgm[1:-1][:,0])/len(H0_dgm[1:-1])
+#             s1+=np.sum(H1_dgm[:,1] - H1_dgm[:,0])/len(H1_dgm)
+#             # print(s0, s1)
+#         avg0 = s0/no_samples
+#         avg1 = s1/no_samples
+#         print(avg0, avg1)
+#     else:
+#         print("x")
+# end_time = time.time()
+# print(f"\nExecution time: {end_time - start_time:.2f} seconds")
+
+# for selected folders only
+
+# selected_keys = ['03624134', '04099429', '04090263', '03636649']
+# new_dict = {key: repeated_indices[key] for key in selected_keys if key in repeated_indices}
+
+# for k,v in new_dict.items():
+#     print(k)
+#     if len(v) > 30:
+#         s0 = 0
+#         s1 = 0
+#         for i in v[:30]:
+#             data = np.load(os.path.join("/home/scratch/prashant/martini-scratch2/temp/scratch2/prashant/stuti/code-stuti/ShapeNet55/shapenet_pc", lines[i]))
+#             random_indices = np.random.choice(data.shape[0], size=5000, replace=False)
+#             data = data[random_indices]
+#             rips = Rips()
+#             dgms = rips.fit_transform(data)
+#             H0_dgm = dgms[0]
+#             H1_dgm = dgms[1]
+#             # print(H0_dgm)
+#             s0+=np.sum(H0_dgm[1:-1][:,1] - H0_dgm[1:-1][:,0])/len(H0_dgm[1:-1])
+#             s1+=np.sum(H1_dgm[:,1] - H1_dgm[:,0])/len(H1_dgm)
+#             # print(s0, s1)
+#         avg0 = s0/no_samples
+#         avg1 = s1/no_samples
+#         print(avg0, avg1)
+#     else:
+#         print("x")
+
+
+
+
+
+
+
+
+"topo KITTI cars"
+
+
+folder_path = "KITTI/cars/"
+
+pcd_files = [f for f in os.listdir(folder_path) if f.endswith(".pcd") and f.startswith("frame")]
+pcd_files.sort()  
+# print(pcd_files)
 
 s0 = 0
 s1 = 0
-for i in range(no_samples):
-    data = complete[i]
+for pcd_file in pcd_files[0:200]:
+    file_path = os.path.join(folder_path, pcd_file)
+    print(f"Showing: {file_path}")
+
+    pcd = o3d.io.read_point_cloud(file_path)
+    # o3d.visualization.draw_geometries([pcd])
+    data = np.asarray(pcd.points)
+    # print(data.shape)
     rips = Rips()
     dgms = rips.fit_transform(data)
     H0_dgm = dgms[0]
@@ -652,12 +939,9 @@ for i in range(no_samples):
     s0+=np.sum(H0_dgm[1:-1][:,1] - H0_dgm[1:-1][:,0])/len(H0_dgm[1:-1])
     s1+=np.sum(H1_dgm[:,1] - H1_dgm[:,0])/len(H1_dgm)
     # print(s0, s1)
-avg0 = s0/no_samples
-avg1 = s1/no_samples
+avg0 = s0/200
+avg1 = s1/200
 print(avg0, avg1)
-
-
-
 
 
 
