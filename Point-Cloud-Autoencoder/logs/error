@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
 ModuleNotFoundError: No module named 'torch'
+=======
+/CALCUA_TYKKY_msHs1Jp/miniconda/envs/container/lib/python3.9/site-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+  0%|          | 0/1001 [00:00<?, ?it/s]  0%|          | 0/1001 [02:26<?, ?it/s]
+Traceback (most recent call last):
+  File "/scratch/antwerpen/209/vsc20902/Point_Cloud_Completion/Point-Cloud-Autoencoder/PointClout_seeds_version_both_complete_and_partial_only_1_backbone.py", line 295, in <module>
+    utils.plotPCbatch_comp_new(test_samples[2], test_samples[1], test_output.permute(0,2,1),output_folder+'/'+str(i), show=False, save=True, name = str(i)) # complete_gt, occl_input, complete_output
+AttributeError: module 'utils' has no attribute 'plotPCbatch_comp_new'
+>>>>>>> 2ccf4ae94f6ab6cadc92904eb23764d8e2e4522c

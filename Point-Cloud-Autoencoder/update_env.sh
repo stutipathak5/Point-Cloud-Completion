@@ -10,6 +10,11 @@
 #pip install pyemd
 # pip install pykeops tqdm
 # pip install torch_topological
+<<<<<<< HEAD
 pip install torchsummary
+=======
+pip install -U torch-topological
+# pip install torchsummary
+>>>>>>> 2ccf4ae94f6ab6cadc92904eb23764d8e2e4522c
 # Or from a file:
 #  pip install -r requirements.txt

@@ -1,0 +1,7 @@
+name: pointnet_ae_topo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pip=24.2
+  - python=3.10

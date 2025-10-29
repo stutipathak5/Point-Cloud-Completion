@@ -24,7 +24,15 @@ python -c "import torch; print(torch.cuda.is_available())"
 # # python misc.py
 # # python PointCloudAEcat_comp_new_loader.py --data data/final_splits/Dutch/difficult/splits --batch_size 256
 # python PointCloudAEcat_PDloss.py --data data/final_splits/Dutch/easy/splits --batch_size 256 --log "output/Dutch_easy_pd_loss/"
+<<<<<<< HEAD
 python pointnet_p1-bastian.py --data data/final_splits/SNCF/difficult/splits --batch_size 50 --log 
 
 
 
+=======
+# python pointnet_p1-bastian.py --data data/final_splits/SNCF/difficult/splits --batch_size 50 --log "bastian_trial"
+
+# python PointClout_seeds_version_curriculum_correct_L1_pytorch3d.py --data ./   --log catenary_all_4_curriculum --batch_size 512
+
+python PointClout_seeds_version_both_complete_and_partial_only_1_backbone.py --data data/cate --log "log_new"
+>>>>>>> 2ccf4ae94f6ab6cadc92904eb23764d8e2e4522c
