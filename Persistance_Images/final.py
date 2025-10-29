@@ -12,6 +12,9 @@ pcd = o3d.io.read_point_cloud(pcd_file_path)
 # Convert to NumPy array
 points = np.asarray(pcd.points)
 
+
+points=np.load(r"\\datanasop3mech\ProjectData\3_phd\Stuti\PCC&PSS\Code\ODGNet\data\ShapeNet55-34\shapenet_pc\03797390-ef24c302911bcde6ea6ff2182dd34668.npy")
+
 data = points
 
 print(data.shape)
