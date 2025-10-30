@@ -1,4 +1,4 @@
-# GP-PCS: One-Shot Feature-Preserving Point Cloud Simplification with Gaussian Processes on Riemannian Manifolds [ICPR 2024 (Oral)]
+# Revisiting Point Cloud Completion: Are We Ready For The Real-World?[ICCV 2025]
 
 Read our paper here:
 
