@@ -1,4 +1,4 @@
-# Revisiting Point Cloud Completion: Are We Ready For The Real-World?[ICCV 2025]
+# Revisiting Point Cloud Completion: Are We Ready For The Real-World? [ICCV 2025]
 
 Read our paper here:
 
@@ -20,6 +20,59 @@ We convert the individual .pcd files to paired Numpy arrays, hence obtaining two
 We use a smaller subset of the dataset above for TopODGNet, which can be downloaded here:
 
 [![TopODGNet Dataset](https://img.shields.io/badge/TopODGNet-Dataset-green)](https://drive.google.com/file/d/1L7NWkhkkaKP6q74o1jBO-2SxuAkeDBLn/view?usp=sharing)
+
+
+## 🛠️ Setup
+
+Environment setup instructions for TopODGNet and BOSHNet via Conda are provided below:
+
+### TopODGNet
+
+1) Clone this repository.
+2) Extract the TopODGNet dataset given above and place it where the repository folder is located.
+3) Follow this repository for the setting up the appropriate conda environment in a GPU enabled system: [ODGNet](https://github.com/corecai163/ODGNet)
+
+Note: For installing necessary extensions you need to download the extension folder from the above ODGNet github link and paste it in your repository folder and then install the extensions using instructions from the same ODGNet link.
+
+### BOSHNet
+
+TODO
+
+## 🚀 Quick Start
+
+### TopODGNet
+
+
+Training:
+```bash
+python main.py --config cfgs/our_models/UpTrans.yaml --exp_name test --val_freq 10 --val_interval 100
+```
+Testing:
+```bash
+python main.py --config cfgs/our_models/UpTrans.yaml --exp_name test --val_freq 10 --val_interval 100 --test --ckpts experiments/UpTrans/our_models/ckpt-best.pth
+```
+
+### BOSHNet
+
+Running:
+```bash
+python BOSHnet.py --data [location_of_train] --log [name_of_log]
+```
+
+## 📝 Citation
+
+Please consider citing the following if you find this work useful:
+
+```bibtex
+@InProceedings{Pathak_2025_ICCV,
+    author    = {Pathak, Stuti and Kumar, Prashant and Baiju, Dheeraj and Mboga, Nicholus and Steenackers, Gunther and Penne, Rudi},
+    title     = {Revisiting Point Cloud Completion: Are We Ready For The Real-World?},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {25388-25398}
+}
+```
 
 
 
